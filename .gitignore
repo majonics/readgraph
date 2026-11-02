@@ -1,0 +1,12 @@
+# Third-party skills, installed locally (see CLAUDE.md > Design work)
+.claude/skills/design-taste-frontend/
+
+# OS / editor
+.DS_Store
+
+# Node
+node_modules/
+dist/
+.agents/
+# taste-skill working files (screenshots, inspector reports); decisions are copied into design/
+.taste-skill/
