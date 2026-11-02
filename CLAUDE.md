@@ -49,17 +49,18 @@ The `docs/` folder is the project's memory. Keep it current, because it is how w
 
 ## Commands
 
-> Phase 1 not scaffolded yet. These are the intended commands. Update this block when they become real.
-
 ```bash
 npm install
-npm run dev          # local app at http://localhost:5173
-npm run validate     # validate every book/entity in library/ against the schema + depth/spoiler rules
+npm run dev          # local app + API at http://localhost:5173
+npm run validate     # every book and entity in library/: schema, graph rules, spoiler consistency
 npm run validate -- divine-comedy   # one book
-npm run check-links  # verify every media/source URL still resolves (planned)
-npm test             # vitest: schema, visibility (spoiler) logic, graph building
-npm run typecheck && npm run lint
+npm test             # vitest: visibility (spoiler) logic, graph rules, the real library on disk
+npm run typecheck && npm run lint && npm run build
+npm run check-links  # (planned, Phase 2) verify every media/source URL still resolves
 ```
+
+Before finishing any change: `npm run validate && npm test && npm run typecheck && npm run lint`.
+Stack pins: TypeScript stays on 6.0.x until typescript-eslint supports 7 (D-013).
 
 Claude Code skills (planned, Phase 2):
 

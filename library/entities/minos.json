@@ -1,0 +1,17 @@
+{
+  "id": "minos",
+  "type": "figure",
+  "name": {
+    "en": "Minos"
+  },
+  "wikidataId": "Q23168",
+  "summary": {
+    "en": "Legendary king of Crete, son of Zeus and Europa. In classical myth he became one of the judges of the dead."
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Minos"
+    }
+  }
+}

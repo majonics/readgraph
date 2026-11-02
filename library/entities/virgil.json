@@ -1,0 +1,68 @@
+{
+  "id": "virgil",
+  "type": "person",
+  "name": {
+    "en": "Virgil",
+    "la": "Publius Vergilius Maro"
+  },
+  "wikidataId": "Q1398",
+  "dates": {
+    "start": "-0070-10-15",
+    "end": "-0019-09-21",
+    "label": "70–19 BC"
+  },
+  "image": {
+    "kind": "artwork",
+    "title": "Virgil between Clio and Melpomene",
+    "creator": "Boyd Dwyer (photograph of a 3rd-century mosaic)",
+    "year": "2014",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Virgil_mosaic_in_the_Bardo_National_Museum_(Tunis)_(12241228546).jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Virgil_mosaic_in_the_Bardo_National_Museum_%28Tunis%29_%2812241228546%29.jpg/1920px-Virgil_mosaic_in_the_Bardo_National_Museum_%28Tunis%29_%2812241228546%29.jpg",
+    "license": "Public domain",
+    "attribution": "Boyd Dwyer (photograph of a 3rd-century mosaic), public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "The only ancient portrait of Virgil, holding a scroll of the Aeneid",
+    "verifiedAt": "2026-11-02"
+  },
+  "summary": {
+    "en": "Roman poet of the age of Augustus, born near Mantua. He wrote the Eclogues, the Georgics and the Aeneid, the epic of Rome's founding. The Middle Ages read him as a sage, almost a prophet."
+  },
+  "facts": {
+    "en": [
+      "Born at Andes, near Mantua, in 70 BC",
+      "Died at Brundisium in 19 BC",
+      "Wrote the Eclogues, the Georgics and the Aeneid"
+    ]
+  },
+  "media": [
+    {
+      "kind": "podcast",
+      "title": "The Aeneid",
+      "creator": "In Our Time, with Edith Hall, Philip Hardie and Catharine Edwards",
+      "publisher": "BBC Radio 4",
+      "url": "https://www.bbc.co.uk/programmes/p003k9c1",
+      "durationMin": 45,
+      "language": "en",
+      "tier": 1,
+      "why": "Virgil's own epic, and why Augustan Rome needed it",
+      "verifiedAt": "2026-11-02"
+    },
+    {
+      "kind": "book",
+      "title": "The Aeneid, in Dryden's translation",
+      "publisher": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/228",
+      "language": "en",
+      "tier": 1,
+      "why": "Book VI is the descent to the underworld that Dante builds on",
+      "verifiedAt": "2026-11-02"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Virgil"
+    }
+  }
+}

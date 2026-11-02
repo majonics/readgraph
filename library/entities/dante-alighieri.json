@@ -1,0 +1,46 @@
+{
+  "id": "dante-alighieri",
+  "type": "person",
+  "name": {
+    "en": "Dante Alighieri",
+    "it": "Dante Alighieri"
+  },
+  "wikidataId": "Q1067",
+  "dates": {
+    "start": "1265",
+    "end": "1321-09-14",
+    "label": "1265–1321"
+  },
+  "image": {
+    "kind": "artwork",
+    "title": "Portrait of Dante",
+    "creator": "Sandro Botticelli",
+    "year": "1495",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_Ritratto_di_Dante_Alighieri.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Sandro_Botticelli_-_Ritratto_di_Dante_Alighieri.jpg",
+    "license": "Public domain",
+    "attribution": "Sandro Botticelli, public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "The profile, laurel and red cap that fixed Dante's image for centuries",
+    "verifiedAt": "2026-11-02"
+  },
+  "summary": {
+    "en": "Florentine poet, philosopher and politician. A White Guelph, he was exiled from Florence in 1302 and never returned; he wrote the Commedia in exile and died in Ravenna."
+  },
+  "facts": {
+    "en": [
+      "Born in Florence in 1265",
+      "Served as one of Florence's six priors in 1300",
+      "Exiled in 1302",
+      "Died in Ravenna in 1321"
+    ]
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Dante_Alighieri"
+    }
+  }
+}

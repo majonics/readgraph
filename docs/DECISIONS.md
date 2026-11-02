@@ -72,3 +72,15 @@ Entity types are encoded by node shape, and context nodes are hollow. The signat
 Phases 3–4. The React app ports its tokens and components rather than redesigning them.
 **Consequences:** The design was verified in a real browser (0 FAIL at 1440/768/390) before any app code exists.
 Its sample data (two finished books, reading progress, the edition) must not leak into `library/`.
+
+### D-013 · Toolchain pins (2026-11-03)
+**Context:** TypeScript 7 (the native compiler) is current, but typescript-eslint 8.72 supports only TypeScript <6.1.
+**Decision:** Pin TypeScript to 6.0.x. Everything else is on the latest release at scaffold time: Vite 8, React 19.3,
+Zod 4, Vitest 5, Tailwind 4 (tokens in `@theme`, taken from the prototype). Phase 1 uses no router. React Router
+arrives with the real screens in Phase 3.
+**Consequences:** Revisit the pin when typescript-eslint supports TypeScript 7.
+
+### D-014 · Validation lives in shared pure code (2026-11-03)
+**Decision:** Graph rules (`src/lib/rules.ts`) and spoiler visibility (`src/lib/visibility.ts`) are pure functions. The CLI
+validator, the dev-server API and the tests all call the same code. The API refuses to serve a book that fails validation (422 with the issues).
+**Consequences:** A broken generation can never reach the UI silently, and every rule has a unit test with a failing case.

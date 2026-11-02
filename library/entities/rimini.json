@@ -1,0 +1,21 @@
+{
+  "id": "rimini",
+  "type": "place",
+  "name": {
+    "en": "Rimini"
+  },
+  "wikidataId": "Q13369",
+  "location": {
+    "lat": 44.0594,
+    "lon": 12.5683
+  },
+  "summary": {
+    "en": "Adriatic city in Romagna, ruled from the late 13th century by the Malatesta family."
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Rimini"
+    }
+  }
+}

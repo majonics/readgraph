@@ -1,0 +1,22 @@
+{
+  "id": "aristotle",
+  "type": "person",
+  "name": {
+    "en": "Aristotle"
+  },
+  "wikidataId": "Q868",
+  "dates": {
+    "start": "-0384",
+    "end": "-0322",
+    "label": "384–322 BC"
+  },
+  "summary": {
+    "en": "Greek philosopher, pupil of Plato and tutor of Alexander the Great. To medieval scholars he was simply \"the Philosopher\", the authority on logic, nature and ethics."
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Aristotle"
+    }
+  }
+}

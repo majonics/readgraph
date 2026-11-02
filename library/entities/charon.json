@@ -1,0 +1,17 @@
+{
+  "id": "charon",
+  "type": "figure",
+  "name": {
+    "en": "Charon"
+  },
+  "wikidataId": "Q6612",
+  "summary": {
+    "en": "In Greek and Roman myth, the ferryman who carries the souls of the dead across the river into the underworld, for a coin."
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Charon"
+    }
+  }
+}

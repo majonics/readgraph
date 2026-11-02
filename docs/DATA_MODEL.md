@@ -116,7 +116,14 @@ The book node itself (depth 0) is implicit: every depth-1 node is drawn connecte
 4. Depth-2 nodes have no `firstSection` or `inBook`. They inherit visibility from their `via` parents.
 5. Every `section` reference exists in `book.sections`. Every entity id resolves to a file in `library/entities/`.
 6. Edge `section` ≥ the `firstSection` of both its depth-1 endpoints.
-7. Every MediaItem passes the MediaItem schema. URLs are `https`.
+7. Every MediaItem passes the MediaItem schema: `https` URLs, tier 1 or 2, a `why`, a `verifiedAt` date, and a
+   `license` + `attribution` whenever `imageUrl` is set.
+8. An in-book note's `section` is not before its node's `firstSection`.
+9. Global entity media never carries a `section` (it would leak past the spoiler line); book-specific media lives on the graph node or the book.
+10. No duplicate nodes, no duplicate edges (same source, target and type), no self-loops; `book.slug` matches its folder;
+    an entity's `id` matches its file name; `book.author` resolves to an entity.
+
+Required vs optional fields are exactly what `src/schema/index.ts` says; every object is strict (unknown keys are errors).
 
 ## MediaItem
 

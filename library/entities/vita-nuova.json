@@ -1,0 +1,21 @@
+{
+  "id": "vita-nuova",
+  "type": "work",
+  "name": {
+    "en": "Vita Nuova",
+    "it": "La Vita Nuova"
+  },
+  "wikidataId": "Q18084",
+  "dates": {
+    "label": "c. 1294"
+  },
+  "summary": {
+    "en": "Dante's early book of poems joined by prose commentary, telling the story of his love for Beatrice."
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/La_Vita_Nuova"
+    }
+  }
+}

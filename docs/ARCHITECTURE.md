@@ -30,7 +30,7 @@ versioned, diffable and easy to repair by hand or by Claude.
 | Styling | **Tailwind CSS** | Quick to iterate on a visual design; tokens live in DESIGN.md |
 | Graph rendering | **Cytoscape.js** + `cytoscape-fcose` layout | Rich styling, good layouts (force, concentric), handles hundreds of nodes |
 | Schema / validation | **Zod** | One schema for the validator CLI and runtime parsing in the app |
-| Routing | **React Router** | `/`, `/book/:slug`, `/book/:slug/e/:entityId` |
+| Routing | **React Router** *(Phase 3)* | `/`, `/book/:slug`, `/book/:slug/e/:entityId` |
 | Lightbox for artwork | **yet-another-react-lightbox** *(planned)* | Zoomable images with captions |
 | Map view | **MapLibre GL JS** + OpenStreetMap tiles *(planned, Phase 6)* | Open-source, no key needed |
 | Timeline view | **vis-timeline** *(planned, Phase 6)* | Mature open-source timeline |
@@ -52,16 +52,18 @@ readgraph/
 │       └── progress.json      # reader's current section
 ├── scripts/
 │   ├── validate.ts            # schema + depth rule + spoiler consistency + referential integrity
-│   ├── wikidata.ts            # fetch canonical facts/coords/dates/images by QID or search
-│   ├── commons.ts             # Wikimedia Commons image info (url, thumb, author, license)
-│   └── check-links.ts         # HEAD/GET every URL, report dead ones
+│   ├── wikidata.ts            # (planned) fetch canonical facts/coords/dates/images by QID or search
+│   ├── commons.ts             # (planned) Wikimedia Commons image info (url, thumb, author, license)
+│   └── check-links.ts         # (planned) HEAD/GET every URL, report dead ones
 ├── src/
 │   ├── schema/                # Zod schemas (source of truth) + inferred types
-│   ├── lib/                   # pure logic: load, resolve, visibility, graph→cytoscape elements
-│   ├── api/                   # Vite plugin: /api/books, /api/books/:slug, PUT progress
-│   ├── components/            # GraphCanvas, EntityPanel, MediaCard, SectionSlider, ...
-│   └── routes/                # Library, BookGraph, EntityFocus
-└── tests/
+│   ├── lib/                   # pure, shared: sections, rules (graph checks), visibility (spoilers)
+│   ├── server/                # Node only: library.ts reads/validates library/, writes progress
+│   ├── api/                   # Vite plugin: GET /api/books, GET /api/books/:slug, PUT /api/books/:slug/progress
+│   ├── client/                # browser: API calls, every response parsed with the schema
+│   ├── components/            # (Phase 3+) GraphCanvas, CantoStrip, EntityPanel, MediaCard, ...
+│   └── routes/                # (Phase 3+) Library, BookGraph, EntityFocus
+└── tests/                     # vitest; helpers.ts builds a tiny in-memory book
 ```
 
 ## Data flow in the app

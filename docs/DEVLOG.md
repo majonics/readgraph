@@ -4,6 +4,15 @@ Newest entry first. Each entry: what was done, what was learned, what's next. Ke
 
 ---
 
+## 2026-11-03 · Phase 1: foundation
+- **Done:** Scaffolded Vite 8 + React 19 + TS 6.0 (strict) + Tailwind 4 + Vitest 5 + ESLint. Wrote the Zod schemas, the graph rules,
+  spoiler visibility, a library loader, the validator CLI, and the Vite-plugin API (list, bundle, PUT progress). Added a hand-written
+  Divine Comedy fixture for Inferno I–V (10 + 7 nodes, 21 edges, Wikidata ids looked up, 45 URLs checked live) and a minimal page.
+  20 tests pass; typecheck, lint and build are clean; the API was exercised live.
+- **Learned:** Wikidata rate-limits quick bursts (back off and retry). Limbo has no obvious Wikidata item, so it's left without one.
+  `Map.groupBy` needs lib ES2024.
+- **Next:** Phase 2. Helper scripts (wikidata, commons, check-links), then the `/build-graph` skill, then the full Comedy.
+
 ## 2026-11-03 · Visual design with Taste Skill
 - **Done:** Ran the skill's app-screen run. Dealt *true-black-flat* (seed 1898414268), chose gilt as the face and the
   canto strip as the signature element, and built `design/prototype/` (library, book graph, entity) with real Doré, Botticelli, Michelino

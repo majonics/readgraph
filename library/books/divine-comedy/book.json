@@ -1,0 +1,597 @@
+{
+  "slug": "divine-comedy",
+  "title": "The Divine Comedy",
+  "originalTitle": "Commedia",
+  "author": "dante-alighieri",
+  "wikidataId": "Q40185",
+  "year": {
+    "label": "c. 1308–1321"
+  },
+  "language": "en",
+  "edition": "Trans. Henry Wadsworth Longfellow",
+  "cover": {
+    "kind": "artwork",
+    "title": "Dante and the Three Kingdoms",
+    "creator": "Domenico di Michelino",
+    "year": "1465",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Domenico_di_Michelino_Dante_Duomo_Florence_duomofirenze.it.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Domenico_di_Michelino_Dante_Duomo_Florence_duomofirenze.it.jpg",
+    "license": "Public domain",
+    "attribution": "Domenico di Michelino, public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "The fresco in Florence Cathedral: Dante holds his poem between Hell, Purgatory and the city that exiled him",
+    "verifiedAt": "2026-11-02"
+  },
+  "about": "A narrative poem in a hundred cantos in which Dante, lost in a dark wood, journeys through Hell, Purgatory and Paradise. Written in Italian rather than Latin, it gathers the theology, science, politics and poetry of its age.",
+  "sections": [
+    {
+      "id": "inf-01",
+      "label": "Canto I",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-02",
+      "label": "Canto II",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-03",
+      "label": "Canto III",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-04",
+      "label": "Canto IV",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-05",
+      "label": "Canto V",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-06",
+      "label": "Canto VI",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-07",
+      "label": "Canto VII",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-08",
+      "label": "Canto VIII",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-09",
+      "label": "Canto IX",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-10",
+      "label": "Canto X",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-11",
+      "label": "Canto XI",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-12",
+      "label": "Canto XII",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-13",
+      "label": "Canto XIII",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-14",
+      "label": "Canto XIV",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-15",
+      "label": "Canto XV",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-16",
+      "label": "Canto XVI",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-17",
+      "label": "Canto XVII",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-18",
+      "label": "Canto XVIII",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-19",
+      "label": "Canto XIX",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-20",
+      "label": "Canto XX",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-21",
+      "label": "Canto XXI",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-22",
+      "label": "Canto XXII",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-23",
+      "label": "Canto XXIII",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-24",
+      "label": "Canto XXIV",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-25",
+      "label": "Canto XXV",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-26",
+      "label": "Canto XXVI",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-27",
+      "label": "Canto XXVII",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-28",
+      "label": "Canto XXVIII",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-29",
+      "label": "Canto XXIX",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-30",
+      "label": "Canto XXX",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-31",
+      "label": "Canto XXXI",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-32",
+      "label": "Canto XXXII",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-33",
+      "label": "Canto XXXIII",
+      "group": "Inferno"
+    },
+    {
+      "id": "inf-34",
+      "label": "Canto XXXIV",
+      "group": "Inferno"
+    },
+    {
+      "id": "purg-01",
+      "label": "Canto I",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-02",
+      "label": "Canto II",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-03",
+      "label": "Canto III",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-04",
+      "label": "Canto IV",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-05",
+      "label": "Canto V",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-06",
+      "label": "Canto VI",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-07",
+      "label": "Canto VII",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-08",
+      "label": "Canto VIII",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-09",
+      "label": "Canto IX",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-10",
+      "label": "Canto X",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-11",
+      "label": "Canto XI",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-12",
+      "label": "Canto XII",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-13",
+      "label": "Canto XIII",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-14",
+      "label": "Canto XIV",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-15",
+      "label": "Canto XV",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-16",
+      "label": "Canto XVI",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-17",
+      "label": "Canto XVII",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-18",
+      "label": "Canto XVIII",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-19",
+      "label": "Canto XIX",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-20",
+      "label": "Canto XX",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-21",
+      "label": "Canto XXI",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-22",
+      "label": "Canto XXII",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-23",
+      "label": "Canto XXIII",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-24",
+      "label": "Canto XXIV",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-25",
+      "label": "Canto XXV",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-26",
+      "label": "Canto XXVI",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-27",
+      "label": "Canto XXVII",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-28",
+      "label": "Canto XXVIII",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-29",
+      "label": "Canto XXIX",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-30",
+      "label": "Canto XXX",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-31",
+      "label": "Canto XXXI",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-32",
+      "label": "Canto XXXII",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "purg-33",
+      "label": "Canto XXXIII",
+      "group": "Purgatorio"
+    },
+    {
+      "id": "par-01",
+      "label": "Canto I",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-02",
+      "label": "Canto II",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-03",
+      "label": "Canto III",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-04",
+      "label": "Canto IV",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-05",
+      "label": "Canto V",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-06",
+      "label": "Canto VI",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-07",
+      "label": "Canto VII",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-08",
+      "label": "Canto VIII",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-09",
+      "label": "Canto IX",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-10",
+      "label": "Canto X",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-11",
+      "label": "Canto XI",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-12",
+      "label": "Canto XII",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-13",
+      "label": "Canto XIII",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-14",
+      "label": "Canto XIV",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-15",
+      "label": "Canto XV",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-16",
+      "label": "Canto XVI",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-17",
+      "label": "Canto XVII",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-18",
+      "label": "Canto XVIII",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-19",
+      "label": "Canto XIX",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-20",
+      "label": "Canto XX",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-21",
+      "label": "Canto XXI",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-22",
+      "label": "Canto XXII",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-23",
+      "label": "Canto XXIII",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-24",
+      "label": "Canto XXIV",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-25",
+      "label": "Canto XXV",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-26",
+      "label": "Canto XXVI",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-27",
+      "label": "Canto XXVII",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-28",
+      "label": "Canto XXVIII",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-29",
+      "label": "Canto XXIX",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-30",
+      "label": "Canto XXX",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-31",
+      "label": "Canto XXXI",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-32",
+      "label": "Canto XXXII",
+      "group": "Paradiso"
+    },
+    {
+      "id": "par-33",
+      "label": "Canto XXXIII",
+      "group": "Paradiso"
+    }
+  ],
+  "media": [
+    {
+      "kind": "artwork",
+      "title": "Dante and the Three Kingdoms",
+      "creator": "Domenico di Michelino",
+      "year": "1465",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Domenico_di_Michelino_Dante_Duomo_Florence_duomofirenze.it.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Domenico_di_Michelino_Dante_Duomo_Florence_duomofirenze.it.jpg",
+      "license": "Public domain",
+      "attribution": "Domenico di Michelino, public domain, via Wikimedia Commons",
+      "language": "en",
+      "tier": 1,
+      "why": "The fresco in Florence Cathedral: Dante holds his poem between Hell, Purgatory and the city that exiled him",
+      "verifiedAt": "2026-11-02"
+    },
+    {
+      "kind": "article",
+      "title": "Dante Alighieri",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/dante/",
+      "language": "en",
+      "tier": 1,
+      "why": "The philosophy and theology underneath the poem, without plot",
+      "verifiedAt": "2026-11-02"
+    },
+    {
+      "kind": "book",
+      "title": "Hell, in Longfellow's translation",
+      "publisher": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/1001",
+      "language": "en",
+      "tier": 1,
+      "why": "The text itself, free, in the translation this graph follows",
+      "verifiedAt": "2026-11-02"
+    },
+    {
+      "kind": "lecture",
+      "title": "Inferno I, II, III, IV",
+      "creator": "Giuseppe Mazzotta, Dante in Translation (ITAL 310)",
+      "publisher": "Open Yale Courses",
+      "url": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-3",
+      "language": "en",
+      "tier": 1,
+      "why": "Mazzotta on the opening cantos: the dark wood, the guide, the gate and Limbo",
+      "section": "inf-04",
+      "verifiedAt": "2026-11-02"
+    },
+    {
+      "kind": "podcast",
+      "title": "Dante's Inferno",
+      "creator": "In Our Time, with Margaret Kean, John Took and Claire Honess",
+      "publisher": "BBC Radio 4",
+      "url": "https://www.bbc.co.uk/programmes/b00f05zj",
+      "durationMin": 45,
+      "language": "en",
+      "tier": 1,
+      "why": "Three Dante scholars on the whole of Inferno",
+      "section": "inf-34",
+      "verifiedAt": "2026-11-02"
+    }
+  ],
+  "generatedAt": "2026-11-03",
+  "generator": {
+    "skill": "hand-written-fixture",
+    "version": 1
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "nodes": [
+    {
+      "entity": "dante-alighieri",
+      "depth": 1,
+      "importance": 3,
+      "role": "The poet, and the pilgrim who walks through the poem",
+      "firstSection": "inf-01",
+      "inBook": [
+        {
+          "section": "inf-01",
+          "text": "Midway through life, lost in a dark wood, he is driven back from a sunlit hill by three beasts."
+        },
+        {
+          "section": "inf-02",
+          "text": "Doubts he is worthy of the journey until Virgil tells him who sent him."
+        },
+        {
+          "section": "inf-05",
+          "text": "Faints from pity after hearing Francesca's story."
+        }
+      ],
+      "media": []
+    },
+    {
+      "entity": "virgil",
+      "depth": 1,
+      "importance": 3,
+      "role": "Dante's guide through Hell",
+      "firstSection": "inf-01",
+      "inBook": [
+        {
+          "section": "inf-01",
+          "text": "Appears in the dark wood and offers to lead Dante by another road."
+        },
+        {
+          "section": "inf-02",
+          "text": "Explains that Beatrice came down from Heaven to ask for his help."
+        },
+        {
+          "section": "inf-03",
+          "text": "Silences Charon: the journey is willed where will is power."
+        },
+        {
+          "section": "inf-04",
+          "text": "Turns pale in Limbo, the circle that is his own home, and is greeted by the poets of antiquity."
+        },
+        {
+          "section": "inf-05",
+          "text": "Names the famous lovers in the storm for Dante, beginning with Semiramis and Dido."
+        }
+      ],
+      "media": [
+        {
+          "kind": "artwork",
+          "title": "Dante meets Virgil",
+          "creator": "Gustave Doré",
+          "year": "1857",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_4_(Dante_meets_Virgil).jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_4_%28Dante_meets_Virgil%29.jpg/1920px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_4_%28Dante_meets_Virgil%29.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Doré's dark wood, at the moment the guide appears",
+          "section": "inf-01",
+          "verifiedAt": "2026-11-02"
+        },
+        {
+          "kind": "artwork",
+          "title": "Virgil and Beatrice",
+          "creator": "Gustave Doré",
+          "year": "1857",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_7_(Beatrice).jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_7_%28Beatrice%29.jpg/1920px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_7_%28Beatrice%29.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Beatrice in Limbo, sending Virgil to Dante",
+          "section": "inf-02",
+          "verifiedAt": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "entity": "beatrice-portinari",
+      "depth": 1,
+      "importance": 3,
+      "role": "The woman who sends Virgil to rescue Dante",
+      "firstSection": "inf-02",
+      "inBook": [
+        {
+          "section": "inf-02",
+          "text": "Comes down from Heaven to Limbo and, in tears, asks Virgil to help Dante."
+        }
+      ],
+      "media": []
+    },
+    {
+      "entity": "charon",
+      "depth": 1,
+      "importance": 2,
+      "role": "Ferryman of the Acheron, with eyes like burning coals",
+      "firstSection": "inf-03",
+      "inBook": [
+        {
+          "section": "inf-03",
+          "text": "Refuses to carry a living man across until Virgil silences him."
+        }
+      ],
+      "media": [
+        {
+          "kind": "artwork",
+          "title": "Charon",
+          "creator": "Gustave Doré",
+          "year": "1857",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_9_(Canto_III_-_Charon).jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_9_%28Canto_III_-_Charon%29.jpg/1920px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_9_%28Canto_III_-_Charon%29.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "The ferryman driving the souls into his boat",
+          "section": "inf-03",
+          "verifiedAt": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "entity": "limbo",
+      "depth": 1,
+      "importance": 2,
+      "role": "The first circle: the virtuous unbaptised, sighing but not tormented",
+      "firstSection": "inf-04",
+      "inBook": [
+        {
+          "section": "inf-04",
+          "text": "Dante sees the great souls of antiquity, poets, heroes and philosophers, living in a castle of light without hope."
+        }
+      ],
+      "media": [
+        {
+          "kind": "artwork",
+          "title": "Limbo: Dante among the poets",
+          "creator": "Gustave Doré",
+          "year": "1857",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_12_(Canto_IV_-_Limbo,_Dante_is_accepted_as_an_equal_by_the_great_Greek_and_Roman_poets).jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_12_%28Canto_IV_-_Limbo%2C_Dante_is_accepted_as_an_equal_by_the_great_Greek_and_Roman_poets%29.jpg/1920px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_12_%28Canto_IV_-_Limbo%2C_Dante_is_accepted_as_an_equal_by_the_great_Greek_and_Roman_poets%29.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "The four poets receiving Dante as one of their own",
+          "section": "inf-04",
+          "verifiedAt": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "entity": "homer",
+      "depth": 1,
+      "importance": 2,
+      "role": "Leads the poets of antiquity who greet Virgil",
+      "firstSection": "inf-04",
+      "inBook": [
+        {
+          "section": "inf-04",
+          "text": "Walks out with Horace, Ovid and Lucan to greet Virgil, and they make Dante sixth in their company."
+        }
+      ],
+      "media": []
+    },
+    {
+      "entity": "aristotle",
+      "depth": 1,
+      "importance": 2,
+      "role": "\"The master of those who know\", seated among the philosophers",
+      "firstSection": "inf-04",
+      "inBook": [
+        {
+          "section": "inf-04",
+          "text": "Seen in Limbo surrounded by the philosophers, all of whom look up to him."
+        }
+      ],
+      "media": []
+    },
+    {
+      "entity": "minos",
+      "depth": 1,
+      "importance": 2,
+      "role": "Judge of the damned, at the entrance to the second circle",
+      "firstSection": "inf-05",
+      "inBook": [
+        {
+          "section": "inf-05",
+          "text": "Wraps his tail around himself once for each circle a soul must fall, and warns Dante to watch whom he trusts."
+        }
+      ],
+      "media": [
+        {
+          "kind": "artwork",
+          "title": "Minos",
+          "creator": "Gustave Doré",
+          "year": "1857",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_13_(Canto_V_-_Minos).jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_13_%28Canto_V_-_Minos%29.jpg/1920px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_13_%28Canto_V_-_Minos%29.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "The judge on his rock, the damned confessing before him",
+          "section": "inf-05",
+          "verifiedAt": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "entity": "francesca-da-rimini",
+      "depth": 1,
+      "importance": 3,
+      "role": "Tells Dante how a book led to the first kiss",
+      "firstSection": "inf-05",
+      "inBook": [
+        {
+          "section": "inf-05",
+          "text": "Tells how reading of Lancelot and Guinevere led her and Paolo to their first kiss."
+        }
+      ],
+      "media": [
+        {
+          "kind": "artwork",
+          "title": "Paolo and Francesca da Rimini",
+          "creator": "Gustave Doré",
+          "year": "1863",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Paolo_and_Francesca_da_Rimini.jpg",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/Gustave_Dor%C3%A9_-_Paolo_and_Francesca_da_Rimini.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "The lovers held together in the whirlwind",
+          "section": "inf-05",
+          "verifiedAt": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "entity": "paolo-malatesta",
+      "depth": 1,
+      "importance": 2,
+      "role": "Weeps beside Francesca as she speaks",
+      "firstSection": "inf-05",
+      "inBook": [
+        {
+          "section": "inf-05",
+          "text": "Weeps in silence while Francesca tells their story."
+        }
+      ],
+      "media": []
+    },
+    {
+      "entity": "florence",
+      "depth": 2,
+      "via": [
+        "dante-alighieri"
+      ],
+      "why": "Dante's city: its feuds explain whom he places in Hell"
+    },
+    {
+      "entity": "guelphs-and-ghibellines",
+      "depth": 2,
+      "via": [
+        "dante-alighieri"
+      ],
+      "why": "The factional war that ended in his exile in 1302"
+    },
+    {
+      "entity": "ravenna",
+      "depth": 2,
+      "via": [
+        "dante-alighieri",
+        "francesca-da-rimini"
+      ],
+      "why": "Francesca's home, and the city where Dante died in exile"
+    },
+    {
+      "entity": "mantua",
+      "depth": 2,
+      "via": [
+        "virgil"
+      ],
+      "why": "Virgil's birthplace, named in his first words to Dante"
+    },
+    {
+      "entity": "aeneid",
+      "depth": 2,
+      "via": [
+        "virgil"
+      ],
+      "why": "His guide's own epic, which Dante knew by heart"
+    },
+    {
+      "entity": "vita-nuova",
+      "depth": 2,
+      "via": [
+        "beatrice-portinari"
+      ],
+      "why": "Dante's early book of his love for her"
+    },
+    {
+      "entity": "rimini",
+      "depth": 2,
+      "via": [
+        "francesca-da-rimini",
+        "paolo-malatesta"
+      ],
+      "why": "Seat of the Malatesta family she married into"
+    }
+  ],
+  "edges": [
+    {
+      "source": "dante-alighieri",
+      "target": "virgil",
+      "type": "guided-by",
+      "label": "guided by",
+      "section": "inf-01"
+    },
+    {
+      "source": "beatrice-portinari",
+      "target": "virgil",
+      "type": "sends",
+      "label": "sends",
+      "section": "inf-02"
+    },
+    {
+      "source": "dante-alighieri",
+      "target": "beatrice-portinari",
+      "type": "loves",
+      "label": "loves",
+      "section": "inf-02"
+    },
+    {
+      "source": "virgil",
+      "target": "charon",
+      "type": "silences",
+      "label": "silences",
+      "section": "inf-03"
+    },
+    {
+      "source": "virgil",
+      "target": "limbo",
+      "type": "dwells-in",
+      "label": "dwells in",
+      "section": "inf-04"
+    },
+    {
+      "source": "homer",
+      "target": "virgil",
+      "type": "greets",
+      "label": "greets",
+      "section": "inf-04"
+    },
+    {
+      "source": "homer",
+      "target": "limbo",
+      "type": "located-in",
+      "label": "in",
+      "section": "inf-04"
+    },
+    {
+      "source": "aristotle",
+      "target": "limbo",
+      "type": "located-in",
+      "label": "in",
+      "section": "inf-04"
+    },
+    {
+      "source": "minos",
+      "target": "dante-alighieri",
+      "type": "warns",
+      "label": "warns",
+      "section": "inf-05"
+    },
+    {
+      "source": "virgil",
+      "target": "minos",
+      "type": "silences",
+      "label": "silences",
+      "section": "inf-05"
+    },
+    {
+      "source": "francesca-da-rimini",
+      "target": "paolo-malatesta",
+      "type": "loves",
+      "label": "loves",
+      "section": "inf-05"
+    },
+    {
+      "source": "dante-alighieri",
+      "target": "francesca-da-rimini",
+      "type": "pities",
+      "label": "pities",
+      "section": "inf-05"
+    },
+    {
+      "source": "dante-alighieri",
+      "target": "florence",
+      "type": "born-in",
+      "label": "born in"
+    },
+    {
+      "source": "dante-alighieri",
+      "target": "guelphs-and-ghibellines",
+      "type": "exiled-by",
+      "label": "exiled in their feud"
+    },
+    {
+      "source": "dante-alighieri",
+      "target": "ravenna",
+      "type": "died-in",
+      "label": "died in"
+    },
+    {
+      "source": "francesca-da-rimini",
+      "target": "ravenna",
+      "type": "born-in",
+      "label": "born in"
+    },
+    {
+      "source": "virgil",
+      "target": "mantua",
+      "type": "born-near",
+      "label": "born near"
+    },
+    {
+      "source": "virgil",
+      "target": "aeneid",
+      "type": "wrote",
+      "label": "wrote"
+    },
+    {
+      "source": "beatrice-portinari",
+      "target": "vita-nuova",
+      "type": "subject-of",
+      "label": "subject of"
+    },
+    {
+      "source": "francesca-da-rimini",
+      "target": "rimini",
+      "type": "married-into",
+      "label": "married into"
+    },
+    {
+      "source": "paolo-malatesta",
+      "target": "rimini",
+      "type": "family-seat",
+      "label": "family seat"
+    }
+  ]
+}

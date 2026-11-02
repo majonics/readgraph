@@ -1,0 +1,21 @@
+{
+  "id": "aeneid",
+  "type": "work",
+  "name": {
+    "en": "The Aeneid",
+    "la": "Aeneis"
+  },
+  "wikidataId": "Q60220",
+  "dates": {
+    "label": "29–19 BC"
+  },
+  "summary": {
+    "en": "Virgil's Latin epic in twelve books about Aeneas, a Trojan who flees the fall of Troy and reaches Italy, where his descendants will found Rome."
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Aeneid"
+    }
+  }
+}

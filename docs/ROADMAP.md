@@ -2,22 +2,22 @@
 
 Tick tasks as they are completed and log them in DEVLOG.md. The first unchecked task in the current phase is "next".
 
-**Current phase: 1, Foundation**
+**Current phase: 2, Generation pipeline**
 
 ## Phase 0: Framework ✅
 - [x] Clarify intent with the owner (AI engine, app form, spoilers, language)
 - [x] CLAUDE.md and docs/ framework (vision, architecture, data model, generation, sources, design, decisions, devlog)
 - [x] Visual design with Taste Skill: a static prototype of the library, book graph and entity screens (`design/prototype/`)
 
-## Phase 1: Foundation
-- [ ] Scaffold Vite + React + TS (strict) + Tailwind + Vitest + ESLint at the repo root
-- [ ] Zod schemas in `src/schema/` matching DATA_MODEL.md (Entity, Book, Graph, MediaItem, Progress)
-- [ ] `scripts/validate.ts`: schema, graph rules 1–7, referential integrity, and clear error messages
-- [ ] Hand-written fixture: *Divine Comedy*, Inferno Cantos I–V, ~10 depth-1 and ~6 depth-2 nodes, real verified media
-- [ ] `src/lib/visibility.ts` (spoiler logic), with unit tests
-- [ ] Vite plugin API: `GET /api/books`, `GET /api/books/:slug` (resolved bundle), `PUT /api/books/:slug/progress`
-- [ ] Minimal page that loads the fixture and lists visible nodes (proves the pipeline end to end)
-- [ ] Update the CLAUDE.md commands block to reality
+## Phase 1: Foundation ✅
+- [x] Scaffold Vite + React + TS (strict) + Tailwind + Vitest + ESLint at the repo root
+- [x] Zod schemas in `src/schema/` matching DATA_MODEL.md (Entity, Book, Graph, MediaItem, Progress)
+- [x] `scripts/validate.ts`: schema, graph rules 1–10, referential integrity, and clear error messages
+- [x] Hand-written fixture: *Divine Comedy*, Inferno Cantos I–V, 10 depth-1 and 7 depth-2 nodes, real verified media (45 URLs, all 200)
+- [x] `src/lib/visibility.ts` (spoiler logic), with unit tests
+- [x] Vite plugin API: `GET /api/books`, `GET /api/books/:slug` (resolved bundle), `PUT /api/books/:slug/progress`
+- [x] Minimal page that loads the fixture and lists visible nodes (proves the pipeline end to end)
+- [x] Update the CLAUDE.md commands block to reality
 
 ## Phase 2: Generation pipeline
 - [ ] Helper scripts: `wikidata`, `commons`, `check-links`

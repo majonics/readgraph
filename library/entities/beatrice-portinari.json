@@ -1,0 +1,37 @@
+{
+  "id": "beatrice-portinari",
+  "type": "person",
+  "name": {
+    "en": "Beatrice Portinari"
+  },
+  "wikidataId": "Q232913",
+  "dates": {
+    "start": "1266",
+    "end": "1290",
+    "label": "1266–1290"
+  },
+  "image": {
+    "kind": "artwork",
+    "title": "Dante and Beatrice",
+    "creator": "Henry Holiday",
+    "year": "1883",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Henry_Holiday_-_Dante_and_Beatrice_-_Google_Art_Project.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Henry_Holiday_-_Dante_and_Beatrice_-_Google_Art_Project.jpg/1920px-Henry_Holiday_-_Dante_and_Beatrice_-_Google_Art_Project.jpg",
+    "license": "Public domain",
+    "attribution": "Henry Holiday, public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "The Victorian image of Dante seeing Beatrice on a Florentine bridge",
+    "verifiedAt": "2026-11-02"
+  },
+  "summary": {
+    "en": "Florentine woman, daughter of the banker Folco Portinari, whom Dante loved from childhood. He made her the centre of the Vita Nuova after her early death."
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Beatrice_Portinari"
+    }
+  }
+}

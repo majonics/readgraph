@@ -1,0 +1,17 @@
+{
+  "id": "francesca-da-rimini",
+  "type": "person",
+  "name": {
+    "en": "Francesca da Rimini"
+  },
+  "wikidataId": "Q466048",
+  "summary": {
+    "en": "Noblewoman of Ravenna, daughter of Guido da Polenta, married for political reasons into the Malatesta family, lords of Rimini."
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Francesca_da_Rimini"
+    }
+  }
+}

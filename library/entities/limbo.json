@@ -1,0 +1,16 @@
+{
+  "id": "limbo",
+  "type": "place",
+  "name": {
+    "en": "Limbo"
+  },
+  "summary": {
+    "en": "In medieval Christian theology, the edge of Hell for those who died unbaptised but without personal sin, and for the righteous who died before Christ."
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Limbo"
+    }
+  }
+}
