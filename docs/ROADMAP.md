@@ -2,7 +2,7 @@
 
 Tick tasks as they are completed and log them in DEVLOG.md. The first unchecked task in the current phase is "next".
 
-**Current phase: 4, Entity focus view and media** (Phase 2 research paused at 19 of 59 entities, by owner's choice: finish the app first)
+**Current phase: 4, Entity page and media.** Phase 2 research is paused at 19 of 59 entities by the owner's choice (finish the app first); see Phase 2b below.
 
 ## Phase 0: Framework ✅
 - [x] Clarify intent with the owner (AI engine, app form, spoilers, language)
@@ -36,22 +36,90 @@ Tick tasks as they are completed and log them in DEVLOG.md. The first unchecked 
 - [x] Side panel preview on click
 - [x] Visual check against the prototype: the skill's `lint.mjs --app` and `inspect.mjs --app` at 0 FAIL (production build)
 
-## Phase 4: Entity focus view and media
-- [ ] Focus route: ego graph (entity, its neighbours, its context halo)
-- [ ] Entity panel sections as in DESIGN.md
-- [ ] Media cards: YouTube/Vimeo/Spotify/Apple embeds (lazy, click-to-load), artwork lightbox, article cards
-- [ ] Attribution display and tier badges
+---
+
+# Plan for the next phases (written 2026-11-03)
+
+**Recommended order:** 4 → 4.5 → 2b (any time, in the background) → 5 → 6 → 7.
+Phases 4, 4.5 and 5 make the app complete for one reader and one book. 2b fills the book. 6 makes it robust and shareable,
+and 7 adds the extras the owner picks.
+
+Every UI phase ends the same way: unit tests for the new pure logic, `npm run validate && npm test && npm run typecheck && npm run lint`,
+then the taste skill's `lint.mjs --app` and `inspect.mjs --app` on the **production build** (`npm run build && npm run preview`) at 0 FAIL,
+then a look at the screenshots at 1440, 768 and 390. Plus, from Phase 4.5 on, the browser smoke tests.
+
+**What the library holds now** (this shapes Phase 4): 55 pictures (all Commons, public domain or CC), 9 YouTube lectures with an `embed`,
+and 35 linked sources without embeds (Yale pages, BBC *In Our Time*, Gutenberg, Stanford Encyclopedia, Danteworlds, New Advent, archive.org).
+
+## Phase 4: Entity page and media (port `design/prototype/entity.html`)
+**Goal:** clicking anyone on the map opens a page that answers "who is this, what have they done so far, and what should I look at or listen to tonight?"
+- [ ] Pure view model `entityView(bundle, id, at)`: visible notes, media grouped as Look / Watch & listen / Read, context with summaries,
+      neighbours, and the counts of hidden notes and media. Unit-tested for spoiler safety, including that nothing past `at` leaks into it.
+- [ ] Route `/book/:slug/e/:id` (depth-1 and context entities), linked from the rail's "Open" button, the new-in-canto list, and node double-click.
+- [ ] About block: portrait or artwork, plot-free summary, facts, dates, picture caption and credit.
+- [ ] **Look**: a gallery of artworks (book-specific first, by canto), opening a lightbox built on the native `<dialog>` (keyboard, swipe,
+      credit line, a link to the Commons page). No new dependency unless `<dialog>` falls short.
+- [ ] **Watch and listen**: YouTube through `youtube-nocookie.com`, click-to-load (a poster first, nothing loaded from YouTube before the click).
+      Podcasts and lectures without an embed get a rich card: publisher, duration, the `why` line, opening in a new tab.
+- [ ] **Read**: article and book cards (publisher, the `why` line).
+- [ ] **In this book**: notes up to the reader's canto, the current one in gilt, and "N more after this canto" (a count, never text).
+- [ ] **To know them by**: context entries with their `why` and summary, each linking to its own page.
+- [ ] **Connections**: the ego graph (`graphElements` focus mode, already tested). A click navigates to that entity.
+- [ ] The tier is shown in words ("Definitive", "Very good") inside the card's meta line, not as a badge; the skill bans pill badges above headings.
+- **Done when:** every one of the 19 figures and 17 context entries has a page that inspects at 0 FAIL, and every picture shows its credit.
+- **Size:** one long session. No research tokens.
+
+## Phase 4.5: Browser smoke tests
+**Goal:** what the screenshots cannot show is tested: clicks, keys, saving.
+- [ ] Playwright (`@playwright/test`, using the installed Chrome channel, no browser download) against `vite preview`.
+- [ ] Scenarios: the strip moves on arrow keys and the position survives a reload; a figure ahead of the reader is never in the DOM or on the map;
+      "Show everything" reveals it without moving `progress.json`; search with Enter selects; the legend filter hides a kind;
+      a node click fills the rail; the entity page opens and the lightbox works from the keyboard.
+- [ ] The tests run against a copy of `library/` in a temp folder, so they never change the owner's reading position.
+- **Size:** half a session.
+
+## Phase 2b: Finish researching the Comedy (paused, can run any time)
+**Goal:** the remaining 40 approved figures (Inferno VIII to Paradiso XXXIII).
+- [ ] The owner picks the depth: full (about 20k tokens per entity, so about 800k) or lean for importance-1 figures (about 450–500k total).
+- [ ] Batches of about 10, two at a time, each to `.work/divine-comedy/batch-N.json`. Then `npm run merge-batches` (the 27 pending edges attach
+      automatically), then the role and `why` spoiler review, `validate`, `check-links` and `test`.
+- [ ] Afterwards: "Refine GENERATION.md and SOURCES.md" (Phase 2's last task), using what the batches reported.
+- **Done when:** 59 figures, `check-links` clean, and the owner has spot-reviewed five figures from Purgatorio and Paradiso.
 
 ## Phase 5: Library and cross-book
-- [ ] Bookshelf home with covers, progress bars and "continue reading"
-- [ ] "Also appears in" via the shared entity registry
-- [ ] Generate a second book and confirm entity reuse works (e.g. *The Prince* shares Florence)
+**Goal:** the home screen from the prototype, and a second book to prove that entities are shared.
+- [ ] Home as in `design/prototype/index.html`: the greeting, count tiles, a Continue panel with the compact strip and the faces new in this canto,
+      "For tonight" (the best sources unlocked at the current canto, chosen by a pure, tested ranking: tier, then variety of kind, then not yet opened),
+      the books list.
+- [ ] "Also appears in" on entity pages, and "Across your books" on the home screen. Spoiler-aware: an entity that is shared but still ahead in
+      one book is counted, never named.
+- [ ] Remember which sources were opened (`library/books/<slug>/visits.json` through the API) so "For tonight" doesn't repeat itself.
+- [ ] A second book with `/build-graph`. *The Prince* is a good test, because Florence and others are shared. The owner chooses the book and the budget
+      (a lean 25-figure book costs about 300–500k tokens).
+- **Done when:** both books show "Also appears in" correctly, and switching books keeps each one's own reading position.
 
-## Phase 6: Extras (ideas, to be prioritised with the owner)
-- [ ] Map view: places on a MapLibre map, filtered by progress
-- [ ] Timeline view: people, events and works on vis-timeline
-- [ ] `/refresh-sources` skill plus a periodic dead-link report
-- [ ] In-app "Build graph" button that runs Claude Code headless through the local API
-- [ ] Personal notes and "visited" marks per entity
-- [ ] Export a graph as a PNG/SVG poster
-- [ ] Wrap as a desktop app (Tauri) if the browser starts to feel limiting
+## Phase 6: Hardening and shipping
+**Goal:** solid enough to use every evening, and safe to change.
+- [ ] Merge the phase branches into `main` (the owner's call: a PR on GitHub or a local merge), then push.
+- [ ] GitHub Actions on every push: validate, test, typecheck, lint, build (no network, so no `check-links` in CI).
+- [ ] Performance: load Cytoscape only on graph routes (the build currently warns about a 500 kB chunk), and make sure no image is larger than its slot.
+- [ ] Accessibility: the graph is a canvas, so give the map a keyboard and screen-reader alternative (a "List" view of the same visible nodes)
+      and focus handling between the map, the rail and the entity page.
+- [ ] Empty, loading and error states for every block (taste-skill §11): loading placeholders at the real size, errors inside the block that failed, with a Retry.
+- [ ] A README with screenshots and a two-minute "how to build your first graph".
+- [ ] Retire `design/prototype/` sample data from the docs once the app covers every screen (keep the prototype as a design record).
+
+## Phase 7: Extras (to be chosen by the owner; each is independent)
+- [ ] **Map view:** places on a MapLibre GL map with OpenStreetMap tiles, filtered by progress (Florence, Ravenna and Mantua already have coordinates).
+- [ ] **Timeline:** people, works and events on vis-timeline, from Wikidata dates.
+- [ ] `/refresh-sources` skill, plus a scheduled dead-link report (a cloud routine or a local cron) that replaces dead or weak sources.
+- [ ] An in-app "Build graph" button: the local API runs Claude Code headless (`claude -p "/build-graph …"`) and shows progress, including the cast checkpoint as a review screen.
+- [ ] Personal notes and "visited" marks per entity, stored in `library/`.
+- [ ] Export a graph as a PNG or SVG poster.
+- [ ] Wrap it as a desktop app (Tauri) if the browser starts to feel limiting.
+
+## Decisions waiting for the owner
+1. Phase 2b: when to run it, and at full or lean depth.
+2. Phase 5: the second book, and its budget.
+3. Phase 6: how to merge into `main` (a PR or a local merge) and whether to push to GitHub.
+4. Phase 7: which extras, in what order.

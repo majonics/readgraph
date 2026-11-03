@@ -4,6 +4,11 @@ Newest entry first. Each entry: what was done, what was learned, what's next. Ke
 
 ---
 
+## 2026-11-03 · Plan for the next phases
+- **Done:** Committed Phases 2 and 3 separately. Wrote the detailed plan for Phases 4–7 (plus 4.5 browser tests and 2b research) in ROADMAP.md,
+  with goals, tasks, done-when criteria, sizes, and the decisions waiting for the owner.
+- **Next:** Phase 4, the entity page and media.
+
 ## 2026-11-03 · Phase 3: book graph view
 - **Done:** Ported the prototype's book screen to React on real data. React Router 8 routes `/` and `/book/:slug`; components Shell,
   CantoStrip (slider, keyboard, tooltips), GraphCanvas (Cytoscape behind a React boundary) and EntityPreview. Pure, tested `graphElements` (shapes,
