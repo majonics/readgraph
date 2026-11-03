@@ -1,0 +1,53 @@
+{
+  "id": "acheron",
+  "type": "place",
+  "name": {
+    "en": "Acheron",
+    "it": "Acheronte"
+  },
+  "wikidataId": "Q191087",
+  "location": {
+    "lat": 39.2361,
+    "lon": 20.4761
+  },
+  "image": {
+    "kind": "image",
+    "title": "The Acheron river near Glyki",
+    "creator": "Samuli Lintula",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Acheron_river_2.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Acheron_river_2.jpg/1280px-Acheron_river_2.jpg",
+    "license": "CC BY 2.5",
+    "attribution": "Samuli Lintula, CC BY 2.5, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "The real river in Epirus that the Greeks believed flowed down to the underworld",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "A river in Epirus, north-west Greece, which Greek myth made the entrance to the underworld: the river across which Charon ferried the souls of the dead."
+  },
+  "facts": {
+    "en": [
+      "Flows through Epirus to the Ionian Sea",
+      "Roman poets often give Charon's role to the Styx instead"
+    ]
+  },
+  "media": [
+    {
+      "kind": "book",
+      "title": "The Aeneid, in Dryden's translation",
+      "publisher": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/228",
+      "language": "en",
+      "tier": 1,
+      "why": "Book VI shows the dead crowding the bank of Virgil's underworld river",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Acheron"
+    }
+  }
+}

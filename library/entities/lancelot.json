@@ -1,0 +1,67 @@
+{
+  "id": "lancelot",
+  "type": "work",
+  "name": {
+    "en": "Lancelot (Old French prose romance)"
+  },
+  "wikidataId": "Q1467333",
+  "dates": {
+    "label": "c. 1215–1235"
+  },
+  "image": {
+    "kind": "image",
+    "title": "Lancelot's dream, from a Lancelot-Grail manuscript (BnF fr. 114, fol. 352)",
+    "creator": "Évrard d'Espinques",
+    "year": "1475",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:BnF,_Manuscrits,_Fran%C3%A7ais_114_fol._352.png",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f2/BnF%2C_Manuscrits%2C_Fran%C3%A7ais_114_fol._352.png",
+    "license": "Public domain",
+    "attribution": "Évrard d'Espinques, Public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "A miniature from a luxury copy of the prose Lancelot made for Jacques d'Armagnac, showing what the romance looked like as a book",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "The great Old French prose romance of Lancelot du Lac, the central part of the Lancelot-Grail (Vulgate) Cycle, written by anonymous authors in the early 13th century. It tells of Lancelot's chivalry and his love for Queen Guinevere, and was among the most widely read books of medieval Europe."
+  },
+  "facts": {
+    "en": [
+      "Part of the Lancelot-Grail or Vulgate Cycle",
+      "Anonymous; later manuscripts attribute parts to Walter Map",
+      "Galehaut (Galeotto in Italian) acts as go-between for Lancelot and Guinevere"
+    ]
+  },
+  "media": [
+    {
+      "kind": "book",
+      "title": "Le livre de Lancelot del Lac, part I (The Vulgate Version of the Arthurian Romances, vol. 3)",
+      "creator": "H. Oskar Sommer (ed.)",
+      "year": "1910",
+      "publisher": "Internet Archive",
+      "url": "https://archive.org/details/vulgateversionof03sommuoft",
+      "language": "fr",
+      "tier": 1,
+      "why": "The scholarly edition of the Old French text that contains the scene of the first kiss, free to read",
+      "verifiedAt": "2026-11-03"
+    },
+    {
+      "kind": "book",
+      "title": "The Legend of Sir Lancelot du Lac",
+      "creator": "Jessie L. Weston",
+      "year": "1901",
+      "publisher": "Internet Archive",
+      "url": "https://archive.org/details/legendofsirlance00west",
+      "language": "en",
+      "tier": 2,
+      "why": "A classic English study of how the Lancelot story grew from Chrétien de Troyes into the prose romance",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Lancelot-Grail_Cycle"
+    }
+  }
+}

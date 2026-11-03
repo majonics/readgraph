@@ -1,0 +1,22 @@
+{
+  "id": "mantua",
+  "type": "place",
+  "name": {
+    "en": "Mantua",
+    "it": "Mantova"
+  },
+  "wikidataId": "Q6247",
+  "location": {
+    "lat": 45.1564,
+    "lon": 10.7914
+  },
+  "summary": {
+    "en": "City in Lombardy surrounded by lakes formed by the Mincio river. Virgil was born in the village of Andes nearby."
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Mantua"
+    }
+  }
+}

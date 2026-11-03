@@ -1,0 +1,29 @@
+{
+  "id": "francesca-da-rimini",
+  "type": "person",
+  "name": {
+    "en": "Francesca da Rimini"
+  },
+  "wikidataId": "Q466048",
+  "dates": {
+    "start": "1259",
+    "end": "1285",
+    "label": "c. 1259 – c. 1285"
+  },
+  "summary": {
+    "en": "Noblewoman of Ravenna, daughter of Guido da Polenta, married for political reasons into the Malatesta family, lords of Rimini. Dante's poem is the earliest surviving record of her; later knowledge comes largely from his commentators."
+  },
+  "facts": {
+    "en": [
+      "Daughter of Guido I da Polenta, lord of Ravenna",
+      "Married Giovanni ('Gianciotto') Malatesta of Rimini",
+      "Her nephew Guido Novello da Polenta later hosted Dante in Ravenna"
+    ]
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Francesca_da_Rimini"
+    }
+  }
+}

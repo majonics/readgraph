@@ -1,0 +1,21 @@
+{
+  "id": "ravenna",
+  "type": "place",
+  "name": {
+    "en": "Ravenna"
+  },
+  "wikidataId": "Q13364",
+  "location": {
+    "lat": 44.4184,
+    "lon": 12.2035
+  },
+  "summary": {
+    "en": "City near the Adriatic, once the capital of the Western Roman Empire, famous for its Byzantine mosaics. Ruled by the da Polenta family around 1300."
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ravenna"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "consolation-of-philosophy",
+  "type": "work",
+  "name": {
+    "en": "The Consolation of Philosophy"
+  },
+  "wikidataId": "Q861927",
+  "dates": {
+    "label": "c. 524"
+  },
+  "image": {
+    "kind": "image",
+    "title": "Boethius, Philosophy and the Wheel of Fortune (BnF fr. 809, fol. 40r)",
+    "creator": "Unknown illuminator",
+    "year": "15th century",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Boethius,_Consolatio_philosophiae_(French).jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Boethius%2C_Consolatio_philosophiae_%28French%29.jpg/1280px-Boethius%2C_Consolatio_philosophiae_%28French%29.jpg",
+    "license": "Public domain",
+    "attribution": "Unknown illuminator, Public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "Boethius with Lady Philosophy beside Fortune's wheel: the image Dante's readers carried in their heads",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "Philosophical dialogue in prose and verse written by the Roman statesman Boethius while imprisoned awaiting execution. Lady Philosophy consoles him by explaining the nature of Fortune, happiness and providence; it was one of the most read books of the Middle Ages."
+  },
+  "media": [
+    {
+      "kind": "book",
+      "title": "The Consolation of Philosophy",
+      "creator": "Boethius; trans. H. R. James",
+      "publisher": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/14328",
+      "language": "en",
+      "tier": 1,
+      "why": "Free English text; Book II is Fortune's own speech about her wheel",
+      "verifiedAt": "2026-11-03"
+    },
+    {
+      "kind": "article",
+      "title": "Anicius Manlius Severinus Boethius",
+      "creator": "John Marenbon",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/boethius/",
+      "language": "en",
+      "tier": 1,
+      "why": "Places the Consolation in Boethius's life and thought, including its arguments on providence and chance",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/On_the_Consolation_of_Philosophy"
+    }
+  }
+}

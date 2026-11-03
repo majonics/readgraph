@@ -1,0 +1,75 @@
+{
+  "id": "dante-alighieri",
+  "type": "person",
+  "name": {
+    "en": "Dante Alighieri",
+    "it": "Dante Alighieri"
+  },
+  "wikidataId": "Q1067",
+  "dates": {
+    "start": "1265",
+    "end": "1321-09-13",
+    "label": "1265–1321"
+  },
+  "image": {
+    "kind": "artwork",
+    "title": "Portrait of Dante",
+    "creator": "Sandro Botticelli",
+    "year": "1495",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_Ritratto_di_Dante_Alighieri.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Sandro_Botticelli_-_Ritratto_di_Dante_Alighieri.jpg",
+    "license": "Public domain",
+    "attribution": "Sandro Botticelli, public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "The profile, laurel and red cap that fixed Dante's image for centuries",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "Florentine poet, philosopher and politician. A White Guelph, he was exiled from Florence in 1302 and never returned; he wrote the Commedia in exile and died in Ravenna. Besides the poem he wrote the Vita Nuova and treatises on language, philosophy and empire."
+  },
+  "facts": {
+    "en": [
+      "Born in Florence in 1265",
+      "Served as one of Florence's six priors in 1300",
+      "Exiled in 1302",
+      "Also wrote the Vita Nuova, Convivio, De vulgari eloquentia and Monarchia",
+      "Died in Ravenna in 1321"
+    ]
+  },
+  "media": [
+    {
+      "kind": "article",
+      "title": "Dante Alighieri",
+      "creator": "Jason Aleksander and Winthrop Wetherbee",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/dante/",
+      "language": "en",
+      "tier": 1,
+      "why": "Dante as a thinker: his philosophy, politics and theology, beyond the poem",
+      "verifiedAt": "2026-11-03"
+    },
+    {
+      "kind": "lecture",
+      "title": "Lecture 1: Introduction",
+      "creator": "Giuseppe Mazzotta (Dante in Translation, ITAL 310)",
+      "publisher": "Open Yale Courses",
+      "url": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-1",
+      "embed": {
+        "type": "youtube",
+        "id": "679FGDpZBew"
+      },
+      "durationMin": 19,
+      "language": "en",
+      "tier": 1,
+      "why": "Mazzotta on Dante's life, his political career and the exile that shaped the whole poem",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Dante_Alighieri"
+    }
+  }
+}

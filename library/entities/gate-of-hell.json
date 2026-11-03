@@ -1,0 +1,23 @@
+{
+  "id": "gate-of-hell",
+  "type": "place",
+  "name": {
+    "en": "Gate of Hell",
+    "it": "Porta dell'Inferno"
+  },
+  "summary": {
+    "en": "The entrance to Dante's Hell, an open gateway topped by an inscription in which the gate itself speaks. Its last line, 'Lasciate ogne speranza, voi ch'intrate' ('All hope abandon, ye who enter in' in Longfellow), is among the most quoted lines in European literature. Rodin's bronze The Gates of Hell takes its subject from the Inferno."
+  },
+  "facts": {
+    "en": [
+      "The inscription runs nine lines, in the gate's own voice",
+      "Rodin's Gates of Hell, a bronze with some 180 figures, depicts the Inferno"
+    ]
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Gates_of_hell"
+    }
+  }
+}

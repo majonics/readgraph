@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>readgraph · The Divine Comedy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.2/cytoscape.min.js"></script>
+<style>
+  .strip-panel { margin-bottom: var(--gap); }
+  .strip-panel .panel-head { margin-bottom: 14px; }
+  /* the map stretches to the rail, so both columns end on one line and the graph takes all the height there is */
+  .work { display: grid; grid-template-columns: minmax(0, 1fr) 384px; gap: var(--gap); align-items: stretch; }
+  .map { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+  .map .panel-head { padding: var(--pad) var(--pad) 0; flex-wrap: wrap; }
+  .legend { display: flex; gap: 16px; color: var(--muted); font-size: 13px; flex-wrap: wrap; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+  .legend i { display: inline-block; width: 10px; height: 10px; background: var(--node); flex: none; }
+  .legend .s-person { border-radius: 50%; }
+  .legend .s-work { width: 14px; border-radius: 3px; }
+  .legend .s-idea { transform: rotate(45deg) scale(.85); }
+  .legend .s-ctx { border-radius: 50%; background: transparent; border: 1.5px solid #6b6b6b; }
+  .legend .s-new { border-radius: 50%; background: transparent; border: 2px solid var(--accent); }
+  #cy { flex: 1; min-height: 600px; }
+  .map-foot { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 0 var(--pad) 18px; flex-wrap: wrap; }
+  .rail { display: flex; flex-direction: column; gap: var(--gap); }
+  .pick .hero { aspect-ratio: 4 / 3; border-radius: var(--radius-inner); overflow: hidden; background: var(--raised); margin-bottom: 16px; }
+  .pick .hero img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; }
+  .pick h2 { font-size: 18px; line-height: 24px; font-weight: 600; }
+  .pick .type { color: var(--faint); font-size: var(--fs-small); margin-top: 2px; }
+  .pick .role { margin-top: 10px; color: var(--muted); }
+  .pick .last { margin-top: 14px; padding: 12px 14px; border-radius: var(--radius-inner); background: #191919; }
+  .pick .last .meta { display: block; margin-bottom: 2px; }
+  .pick .actions { display: flex; gap: 10px; margin-top: 18px; }
+  .new-list { display: flex; flex-direction: column; }
+  .new-list button { all: unset; cursor: pointer; display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-top: 1px solid var(--rule); color: var(--text); }
+  .new-list button:first-child { border-top: 0; }
+  .new-list button:hover span:first-child { text-decoration: underline; text-underline-offset: 3px; }
+  .new-list button:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+  .new-list .meta { white-space: nowrap; font-size: 13px; }
+  @media (max-width: 1100px) {
+    .work { grid-template-columns: 1fr; }
+    #cy { flex: none; height: 460px; min-height: 0; }
+  }
+</style>
+</head>
+<body>
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>
+  const { D, esc, listNames, progress, sectionName, shell, strip, graph } = RGUI;
+  const main = shell({
+    active: 'divine-comedy',
+    crumbs: [['Library', 'index.html'], ['The Divine Comedy']],
+    search: 'Search this book',
+    end: `<label class="toggle"><input type="checkbox" id="all"> Show everything</label>`,
+  });
+
+  let at = progress.get();
+  let showAll = false;
+  let filter = 'all';
+  let selected = 'virgil';
+  let cy;
+  const typeName = { person: 'Person', figure: 'Figure of myth or legend', place: 'Place', work: 'Work', concept: 'Idea', group: 'Group', era: 'Period' };
+
+  main.innerHTML = `
+    <div class="title-row">
+      <div><h1>The Divine Comedy</h1><p id="finding"></p></div>
+      <button class="btn" id="advance"></button>
+    </div>
+    <section class="panel strip-panel" aria-labelledby="strip-h">
+      <div class="panel-head"><h2 id="strip-h">Where you are</h2><span class="meta">Each dot is someone or something met for the first time. Ahead, only the count shows.</span></div>
+      <div id="strip"></div>
+    </section>
+    <div class="work">
+      <section class="panel map" aria-labelledby="map-h">
+        <div class="panel-head">
+          <h2 id="map-h">Everything met so far</h2>
+          <div class="legend" aria-label="Key">
+            <span><i class="s-person"></i>People and figures</span><span><i></i>Places</span><span><i class="s-work"></i>Works</span>
+            <span><i class="s-idea"></i>Ideas and groups</span><span><i class="s-ctx"></i>Context</span><span><i class="s-new"></i>New in this canto</span>
+          </div>
+        </div>
+        <div id="cy" role="img" aria-label="Graph of the people, places, works and ideas met so far"></div>
+        <div class="map-foot">
+          <div class="seg" role="group" aria-label="Show">
+            <button aria-pressed="true" data-f="all">With context</button><button aria-pressed="false" data-f="book">Only the book</button>
+          </div>
+          <span class="meta" id="counts"></span>
+        </div>
+      </section>
+      <div class="rail">
+        <section class="panel pick" id="pick" aria-live="polite"></section>
+        <section class="panel" aria-labelledby="new-h">
+          <div class="panel-head"><h2 id="new-h">New in this canto</h2><span class="meta num" id="new-count"></span></div>
+          <div class="new-list" id="new-list"></div>
+        </section>
+      </div>
+    </div>`;
+
+  const s = strip(document.getElementById('strip'), { at, onChange: (id) => { at = id; progress.set(id); update(); } });
+
+  function pick(id) {
+    const el = document.getElementById('pick');
+    const e = D.byId[id];
+    if (!e) {
+      el.innerHTML = `<div class="panel-head"><h2>Nothing selected</h2></div><p class="sub">Choose anyone or anything on the map to see who they are and what to explore.</p>`;
+      return;
+    }
+    const notes = (e.notes || []).filter(([sec]) => D.index[sec] <= D.index[at]);
+    const last = notes[notes.length - 1];
+    const parent = e.via ? e.via.map((v) => D.byId[v].name) : null;
+    el.innerHTML = `
+      ${e.image ? `<div class="hero"><img src="${e.image}" alt="${esc(e.name)}"></div>` : ''}
+      <h2>${esc(e.name)}</h2>
+      <p class="type">${typeName[e.type]}${e.dates ? ` · ${esc(e.dates)}` : ''}${e.via ? ' · context' : ` · first met in ${esc(D.sectionOf(e.first).label)}`}</p>
+      <p class="role">${esc(e.role || e.why)}</p>
+      ${last ? `<div class="last"><span class="meta">Latest, ${esc(D.sectionOf(last[0]).label)}</span>${esc(last[1])}</div>` : ''}
+      ${parent ? `<div class="last"><span class="meta">Here because of</span>${esc(listNames(parent))}</div>` : ''}
+      <div class="actions">${id === 'virgil' ? `<a class="btn btn-primary" href="entity.html">Open ${esc(e.name)}</a>` : `<a class="btn btn-primary" href="#" aria-disabled="true">Open ${esc(e.name)}</a>`}</div>`;
+  }
+
+  function update() {
+    const view = showAll ? D.sections[D.sections.length - 1].id : at;
+    const v = D.visibleAt(at);
+    const sec = D.sectionOf(at);
+    document.getElementById('finding').innerHTML = showAll
+      ? 'Showing the whole poem, spoilers included. Your place is kept.'
+      : `${esc(sec.group)}, ${esc(sec.label)}. ${v.newHere.length ? `<span class="gilt">${v.newHere.length} new</span> in this canto; ` : ''}${v.aheadInCanticle.length} more still ahead in ${esc(sec.group)}.`;
+    const next = D.sections[D.index[at] + 1];
+    const adv = document.getElementById('advance');
+    adv.hidden = !next;
+    if (next) adv.textContent = `I’ve read ${sec.label}`;
+    document.getElementById('counts').textContent = `${v.nodes.length} met · ${v.context.length} context · ${v.edges.length} connections`;
+    document.getElementById('new-count').textContent = String(v.newHere.length);
+    document.getElementById('new-list').innerHTML = v.newHere.length
+      ? v.newHere.map((n) => `<button data-id="${n.id}"><span>${esc(n.name)}</span><span class="meta">${typeName[n.type]}</span></button>`).join('')
+      : `<p class="sub">No one new in ${esc(sec.label)}.</p>`;
+    if (cy) cy.destroy();
+    if (!D.byId[selected] || (!D.byId[selected].via && D.index[D.byId[selected].first] > D.index[at])) selected = null;
+    cy = graph(document.getElementById('cy'), { at: showAll ? view : at, filter, selected, onSelect: (id) => { selected = id === 'book' ? null : id; pick(selected); } });
+    pick(selected);
+  }
+
+  document.getElementById('advance').addEventListener('click', () => { at = D.sections[D.index[at] + 1].id; progress.set(at); s.set(at); update(); });
+  document.getElementById('all').addEventListener('change', (e) => { showAll = e.target.checked; update(); });
+  document.querySelector('.seg').addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    filter = b.dataset.f;
+    document.querySelectorAll('.seg button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    update();
+  });
+  document.getElementById('new-list').addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    selected = b.dataset.id; update();
+  });
+  document.fonts.ready.then(update);
+</script>
+</body>
+</html>

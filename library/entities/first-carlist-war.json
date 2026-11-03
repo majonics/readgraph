@@ -1,0 +1,54 @@
+{
+  "id": "first-carlist-war",
+  "type": "event",
+  "name": {
+    "en": "First Carlist War",
+    "es": "Primera guerra carlista"
+  },
+  "wikidataId": "Q2341073",
+  "dates": {
+    "start": "1833",
+    "end": "1840",
+    "label": "1833–1840"
+  },
+  "image": {
+    "kind": "artwork",
+    "title": "The Battle of Mendigorría",
+    "creator": "C. X. Sandobal",
+    "year": "1846",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Batalla_Mendigorr%C3%ADa.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Batalla_Mendigorr%C3%ADa.jpg",
+    "license": "Public domain",
+    "attribution": "C. X. Sandobal, public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "A print of 1846 of one of the war's battles in Navarre",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "Civil war over the succession to Fernando VII: liberals backing his infant daughter Isabel II against the absolutist supporters of his brother, Don Carlos. It was fought mainly in the north and lasted from 1833 to 1840."
+  },
+  "media": [
+    {
+      "kind": "lecture",
+      "title": "La Primera Guerra Carlista 1833–1840: isabelinos vs carlistas",
+      "creator": "Daniel Aquillué",
+      "publisher": "BELLUMARTIS Historia Militar (YouTube)",
+      "url": "https://www.youtube.com/watch?v=bEfSZ9GgztQ",
+      "embed": {
+        "type": "youtube",
+        "id": "bEfSZ9GgztQ"
+      },
+      "language": "es",
+      "tier": 2,
+      "why": "Historian Daniel Aquillué on the war between the queen's liberals and Don Carlos's absolutists, in Spanish",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/First_Carlist_War"
+    }
+  }
+}

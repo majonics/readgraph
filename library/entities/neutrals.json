@@ -1,0 +1,24 @@
+{
+  "id": "neutrals",
+  "type": "group",
+  "name": {
+    "en": "The neutrals (the uncommitted)",
+    "it": "Ignavi"
+  },
+  "wikidataId": "Q3150521",
+  "summary": {
+    "en": "The ignavi, Dante's category of souls who lived 'without infamy or praise', committing to neither good nor evil, together with the angels who took neither side when Lucifer rebelled. The idea of placing them outside Hell proper is Dante's own invention."
+  },
+  "facts": {
+    "en": [
+      "Italian name: ignavi, 'the slothful' or 'the cowardly'",
+      "Often linked to Revelation 3:16, on the lukewarm who are neither hot nor cold"
+    ]
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "it": "https://it.wikipedia.org/wiki/Ignavi"
+    }
+  }
+}

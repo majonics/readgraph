@@ -1,0 +1,55 @@
+{
+  "id": "carthage",
+  "type": "place",
+  "name": {
+    "en": "Carthage"
+  },
+  "wikidataId": "Q6343",
+  "dates": {
+    "start": "-0814",
+    "end": "-0146",
+    "label": "c. 814–146 BC"
+  },
+  "location": {
+    "lat": 36.8526,
+    "lon": 10.3235
+  },
+  "image": {
+    "kind": "image",
+    "title": "Ruins of Carthage",
+    "creator": "Calips",
+    "year": "2006",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Tunisie_Carthage_Ruines_08.JPG",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Tunisie_Carthage_Ruines_08.JPG/1280px-Tunisie_Carthage_Ruines_08.JPG",
+    "license": "CC BY 2.5",
+    "attribution": "Calips, CC BY 2.5, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "What remains of the city on the Bay of Tunis",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "Phoenician city on the coast of present-day Tunisia, traditionally founded by Dido. It became Rome's great rival and was destroyed by Rome in 146 BC."
+  },
+  "media": [
+    {
+      "kind": "podcast",
+      "title": "In Our Time: Carthage's Destruction",
+      "creator": "Melvyn Bragg and guests",
+      "year": "2009",
+      "publisher": "BBC Radio 4",
+      "url": "https://www.bbc.co.uk/programmes/b00hdd5x",
+      "durationMin": 45,
+      "language": "en",
+      "tier": 1,
+      "why": "The history of the city whose legendary founding queen Virgil turned into tragedy",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Carthage"
+    }
+  }
+}

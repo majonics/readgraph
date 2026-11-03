@@ -1,0 +1,48 @@
+{
+  "id": "carmen-mola",
+  "type": "group",
+  "name": {
+    "en": "Carmen Mola"
+  },
+  "wikidataId": "Q99653031",
+  "summary": {
+    "en": "Pen name shared by three Spanish screenwriters, Jorge Díaz, Agustín Martínez and Antonio Mercero. Presented at first as a reclusive woman novelist, the trio stepped forward in October 2021, when La Bestia won the Premio Planeta."
+  },
+  "facts": {
+    "en": [
+      "First novel under the name: La novia gitana (The Gypsy Bride), 2018",
+      "La Bestia won the 2021 Premio Planeta, worth €1 million"
+    ]
+  },
+  "media": [
+    {
+      "kind": "article",
+      "title": "Female Spanish thriller writer Carmen Mola revealed to be three men",
+      "creator": "Emma Graham-Harrison and Sam Jones",
+      "year": "2021",
+      "publisher": "The Guardian",
+      "url": "https://www.theguardian.com/books/2021/oct/16/female-spanish-thriller-writer-carmen-mola-revealed-to-be-three-men",
+      "language": "en",
+      "tier": 1,
+      "why": "The night the pseudonym fell: three men collect the €1m Planeta prize for La Bestia",
+      "verifiedAt": "2026-11-03"
+    },
+    {
+      "kind": "article",
+      "title": "Carmen Mola was a popular Spanish novelist. Three male writers made her up",
+      "creator": "Joe Hernandez",
+      "year": "2021",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2021/10/18/1047075104/carmen-mola-was-a-popular-spanish-novelist-three-male-writers-made-her-up",
+      "language": "en",
+      "tier": 1,
+      "why": "How the three writers invented not just the novels but the author herself, and the debate that followed",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Carmen_Mola"
+    }
+  }
+}

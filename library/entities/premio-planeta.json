@@ -1,0 +1,22 @@
+{
+  "id": "premio-planeta",
+  "type": "event",
+  "name": {
+    "en": "Premio Planeta",
+    "es": "Premio Planeta de Novela"
+  },
+  "wikidataId": "Q1630979",
+  "dates": {
+    "start": "1952",
+    "label": "since 1952"
+  },
+  "summary": {
+    "en": "Spanish literary prize for an unpublished novel, awarded every October by the publisher Planeta since 1952. The winning novel is published by Planeta."
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Premio_Planeta_de_Novela"
+    }
+  }
+}

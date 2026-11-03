@@ -1,0 +1,67 @@
+{
+  "nodes": [
+    {
+      "entity": "madrid",
+      "depth": 1,
+      "importance": 3,
+      "role": "The city where the novel is set, in 1834",
+      "firstSection": "ch-01",
+      "inBook": [],
+      "media": []
+    },
+    {
+      "entity": "second-cholera-pandemic",
+      "depth": 1,
+      "importance": 3,
+      "role": "The cholera epidemic in which the novel is set",
+      "firstSection": "ch-01",
+      "inBook": [],
+      "media": []
+    },
+    {
+      "entity": "carmen-mola",
+      "depth": 1,
+      "importance": 2,
+      "role": "The name on the cover",
+      "firstSection": "ch-01",
+      "inBook": [],
+      "media": []
+    },
+    {
+      "entity": "first-carlist-war",
+      "depth": 2,
+      "via": [
+        "madrid"
+      ],
+      "why": "The civil war over the throne, under way since 1833: the background to Madrid in 1834"
+    },
+    {
+      "entity": "premio-planeta",
+      "depth": 2,
+      "via": [
+        "carmen-mola"
+      ],
+      "why": "The prize La Bestia won in 2021, where the three writers behind the name stepped forward"
+    }
+  ],
+  "edges": [
+    {
+      "source": "second-cholera-pandemic",
+      "target": "madrid",
+      "type": "strikes",
+      "label": "strikes"
+    },
+    {
+      "source": "madrid",
+      "target": "first-carlist-war",
+      "type": "capital-during",
+      "label": "is the capital during"
+    },
+    {
+      "source": "carmen-mola",
+      "target": "premio-planeta",
+      "type": "won",
+      "label": "won"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "guelphs-and-ghibellines",
+  "type": "group",
+  "name": {
+    "en": "Guelphs and Ghibellines"
+  },
+  "wikidataId": "Q187742",
+  "summary": {
+    "en": "The factions that divided Italian cities in the 12th to 14th centuries: Guelphs backed the Pope, Ghibellines the Holy Roman Emperor. In Florence the victorious Guelphs later split into Whites and Blacks."
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Guelphs_and_Ghibellines"
+    }
+  }
+}

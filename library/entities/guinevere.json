@@ -1,0 +1,32 @@
+{
+  "id": "guinevere",
+  "type": "figure",
+  "name": {
+    "en": "Guinevere"
+  },
+  "wikidataId": "Q272054",
+  "image": {
+    "kind": "image",
+    "title": "Guinevere",
+    "creator": "Henry Justice Ford",
+    "year": "c. 1910",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Guinevereford.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Guinevereford.jpg",
+    "license": "Public domain",
+    "attribution": "Henry Justice Ford, Public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "An Edwardian illustration of Arthur's queen",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "Queen of King Arthur in Arthurian legend. In the French romances she is loved by the knight Lancelot."
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Guinevere"
+    }
+  }
+}

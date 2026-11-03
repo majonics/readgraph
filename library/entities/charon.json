@@ -1,0 +1,49 @@
+{
+  "id": "charon",
+  "type": "figure",
+  "name": {
+    "en": "Charon",
+    "it": "Caronte"
+  },
+  "wikidataId": "Q6612",
+  "image": {
+    "kind": "artwork",
+    "title": "Hermes leading a deceased to Charon (Attic lekythos, Sabouroff Painter)",
+    "creator": "ArchaiOptix",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Sabouroff_Painter_ARV_846_196_Hermes_leading_a_deceased_to_Charon_(02).jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Sabouroff_Painter_ARV_846_196_Hermes_leading_a_deceased_to_Charon_%2802%29.jpg/1280px-Sabouroff_Painter_ARV_846_196_Hermes_leading_a_deceased_to_Charon_%2802%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "ArchaiOptix, CC BY-SA 4.0, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "How the Greeks pictured him: a plain boatman waiting for the dead on a funeral vase",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "In Greek and Roman myth, the ferryman who carries the souls of the dead across the river into the underworld, for a coin. Virgil's Aeneid, Book VI, gave the Middle Ages its picture of him."
+  },
+  "facts": {
+    "en": [
+      "Some Greek burials included a coin, 'Charon's obol', to pay his fare",
+      "Appears in Book VI of Virgil's Aeneid"
+    ]
+  },
+  "media": [
+    {
+      "kind": "book",
+      "title": "The Aeneid, in Dryden's translation",
+      "publisher": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/228",
+      "language": "en",
+      "tier": 1,
+      "why": "Book VI: Virgil's ferryman, the model for Dante's",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Charon"
+    }
+  }
+}

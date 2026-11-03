@@ -1,0 +1,55 @@
+{
+  "id": "dido",
+  "type": "figure",
+  "name": {
+    "en": "Dido"
+  },
+  "wikidataId": "Q905162",
+  "image": {
+    "kind": "image",
+    "title": "Dido, detail from the Vergilius Romanus (fol. 100v)",
+    "creator": "Unknown author",
+    "year": "5th century",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Didon,_d%C3%A9tail_du_Vergilius_Romanus,_folio_100,_verso.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Didon%2C_d%C3%A9tail_du_Vergilius_Romanus%2C_folio_100%2C_verso.jpg/1280px-Didon%2C_d%C3%A9tail_du_Vergilius_Romanus%2C_folio_100%2C_verso.jpg",
+    "license": "Public domain",
+    "attribution": "Unknown author, Public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "Dido as late-antique readers of Virgil pictured her, in one of the oldest illustrated Aeneid manuscripts",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "Legendary founder and first queen of Carthage, a Phoenician princess from Tyre. Her story is best known from Book IV of Virgil's Aeneid, where she welcomes the Trojan Aeneas."
+  },
+  "facts": {
+    "en": [
+      "Also called Elissa",
+      "Widow of Sychaeus (Sichaeus)",
+      "Daughter of Belus, king of Tyre, in Virgil's version"
+    ]
+  },
+  "media": [
+    {
+      "kind": "artwork",
+      "title": "The Death of Dido",
+      "creator": "Guercino",
+      "year": "1631",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Guercino_Morte_di_Didone.jpg",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Guercino_Morte_di_Didone.jpg",
+      "license": "Public domain",
+      "attribution": "Guercino, Public domain, via Wikimedia Commons",
+      "language": "en",
+      "tier": 1,
+      "why": "Guercino's Baroque staging of the Aeneid's most famous scene, the story every medieval reader knew about Dido",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Dido"
+    }
+  }
+}

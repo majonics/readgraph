@@ -1,0 +1,60 @@
+{
+  "id": "beatrice-portinari",
+  "type": "person",
+  "name": {
+    "en": "Beatrice Portinari",
+    "it": "Beatrice Portinari"
+  },
+  "wikidataId": "Q232913",
+  "dates": {
+    "start": "1266",
+    "end": "1290",
+    "label": "1266–1290"
+  },
+  "image": {
+    "kind": "artwork",
+    "title": "Dante and Beatrice",
+    "creator": "Henry Holiday",
+    "year": "1882–1884",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Henry_Holiday_-_Dante_and_Beatrice_-_Google_Art_Project.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Henry_Holiday_-_Dante_and_Beatrice_-_Google_Art_Project.jpg/1280px-Henry_Holiday_-_Dante_and_Beatrice_-_Google_Art_Project.jpg",
+    "license": "Public domain",
+    "attribution": "Henry Holiday, public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "The Victorian image of Dante seeing Beatrice on a Florentine bridge",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "Florentine woman, daughter of the banker Folco Portinari, whom Dante loved from childhood. He made her the centre of the Vita Nuova after her early death in 1290. No portrait of her from life survives; the images are all imagined."
+  },
+  "facts": {
+    "en": [
+      "Daughter of Folco Portinari, a Florentine banker",
+      "Died in June 1290, aged about 24"
+    ]
+  },
+  "media": [
+    {
+      "kind": "artwork",
+      "title": "Beata Beatrix",
+      "creator": "Dante Gabriel Rossetti",
+      "year": "1864–1870",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Dante_Gabriel_Rossetti_-_Beata_Beatrix,_1864-1870.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Dante_Gabriel_Rossetti_-_Beata_Beatrix%2C_1864-1870.jpg/1280px-Dante_Gabriel_Rossetti_-_Beata_Beatrix%2C_1864-1870.jpg",
+      "license": "Public domain",
+      "attribution": "Dante Gabriel Rossetti, public domain, via Wikimedia Commons",
+      "language": "en",
+      "tier": 1,
+      "why": "Rossetti's painting of Beatrice's death from the Vita Nuova, modelled on his own late wife",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Beatrice_Portinari"
+    }
+  }
+}

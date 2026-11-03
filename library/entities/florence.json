@@ -1,0 +1,37 @@
+{
+  "id": "florence",
+  "type": "place",
+  "name": {
+    "en": "Florence",
+    "it": "Firenze"
+  },
+  "wikidataId": "Q2044",
+  "location": {
+    "lat": 43.7696,
+    "lon": 11.2558
+  },
+  "image": {
+    "kind": "artwork",
+    "title": "View of Florence",
+    "creator": "Hartmann Schedel",
+    "year": "1493",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Hartmann_Schedel_-_Nuremberg_Chronicle,_View_of_Florence_-_WGA20967.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Hartmann_Schedel_-_Nuremberg_Chronicle%2C_View_of_Florence_-_WGA20967.jpg",
+    "license": "Public domain",
+    "attribution": "Hartmann Schedel, public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "Florence as the generation after Dante saw it, from the Nuremberg Chronicle",
+    "verifiedAt": "2026-11-02"
+  },
+  "summary": {
+    "en": "City-republic on the Arno in Tuscany, by 1300 one of the largest and richest cities in Europe, its banking and cloth trade matched by fierce factional politics."
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Florence"
+    }
+  }
+}

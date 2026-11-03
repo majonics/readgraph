@@ -1,0 +1,23 @@
+{
+  "id": "ciacco",
+  "type": "person",
+  "name": {
+    "en": "Ciacco"
+  },
+  "wikidataId": "Q652232",
+  "summary": {
+    "en": "A Florentine of the 13th century known only by his nickname, Ciacco, which early commentators linked to 'hog' or to the name Giacomo. Commentators such as Boccaccio describe him as a witty, well-mannered frequenter of the tables of the rich, but his identity is uncertain."
+  },
+  "facts": {
+    "en": [
+      "Sometimes identified with the poet Ciacco dell'Anguillara, an identification scholars reject",
+      "Boccaccio tells a story about him in the Decameron (IX, 8)"
+    ]
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ciacco"
+    }
+  }
+}

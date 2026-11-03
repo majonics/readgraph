@@ -1,0 +1,37 @@
+{
+  "id": "second-cholera-pandemic",
+  "type": "event",
+  "name": {
+    "en": "The cholera pandemic of 1826–1837"
+  },
+  "wikidataId": "Q2646343",
+  "dates": {
+    "start": "1826",
+    "end": "1837",
+    "label": "1826–1837"
+  },
+  "image": {
+    "kind": "artwork",
+    "title": "London Board of Health searching the city for cholera, 1832",
+    "creator": "Unknown (lithograph, Wellcome Collection)",
+    "year": "1832",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:London_Board_of_Health_searching_the_city_for_cholera_Wellcome_V0010896.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/London_Board_of_Health_searching_the_city_for_cholera_Wellcome_V0010896.jpg/1280px-London_Board_of_Health_searching_the_city_for_cholera_Wellcome_V0010896.jpg",
+    "license": "CC BY 2.0",
+    "attribution": "Wellcome Collection, CC BY 2.0, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "A lithograph from the same pandemic two years earlier: a city's health board hunting for the disease",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "The second worldwide wave of cholera, which spread from India through Asia, Russia and Europe between 1826 and 1837 and reached Spain in the 1830s. Doctors of the time did not know how the disease spread."
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/1826%E2%80%931837_cholera_pandemic"
+    }
+  }
+}

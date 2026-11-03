@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>readgraph · Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+<style>
+  .home { max-width: 1100px; margin: 44px auto 0; }
+  .greet h1 { font: 500 44px/1.05 var(--serif); letter-spacing: -0.02em; }
+  .greet p { color: var(--muted); margin-top: 12px; font-size: 16px; line-height: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--gap); margin-top: var(--gap); }
+  .tiles { margin-top: 40px; }
+  .tile { grid-column: span 3; background: var(--surface); border-radius: var(--radius-card); padding: 16px 20px; min-height: 128px; display: flex; flex-direction: column; }
+  .tile .label { color: var(--muted); }
+  .tile .value { font-size: var(--fs-kpi); line-height: 32px; margin-top: 8px; }
+  .tile .value small { font-size: 14px; color: var(--faint); }
+  .tile .meta { margin-top: auto; }
+  .continue { grid-column: span 9; display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 24px; }
+  .continue .art { border-radius: var(--radius-inner); overflow: hidden; background: var(--raised); }
+  .continue .art img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 30%; }
+  .continue .body { display: flex; flex-direction: column; min-width: 0; }
+  .where { display: flex; align-items: baseline; gap: 8px; margin: 20px 0 14px; }
+  .where strong { font-size: 30px; line-height: 36px; font-weight: 500; }
+  .finding { color: var(--muted); margin-top: 18px; }
+  .finding b { color: var(--text); font-weight: 500; }
+  .faces { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .faces li { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 14px; border-radius: 999px; background: #191919; white-space: nowrap; }
+  .faces li:has(img) { padding-left: 4px; }
+  .faces img { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; outline: 2px solid var(--accent); }
+  .actions { display: flex; gap: 10px; margin-top: auto; padding-top: 22px; flex-wrap: wrap; }
+  .tonight { grid-column: span 3; display: flex; flex-direction: column; }
+  .tonight .stack { flex: 1; }
+  .tonight .source { grid-template-columns: 1fr; }
+  .half { grid-column: span 6; }
+  /* no picture: the entity's shape from the graph, so the slot still says what it is */
+  .glyph { display: grid; place-items: center; }
+  .glyph::after { content: ""; width: 18px; height: 18px; background: var(--node); }
+  .glyph.person::after, .glyph.figure::after { border-radius: 50%; }
+  .glyph.concept::after, .glyph.group::after { transform: rotate(45deg) scale(.8); }
+  .credit { margin-top: 40px; color: var(--faint); font-size: var(--fs-small); }
+  .credit a { text-decoration: underline; text-underline-offset: 2px; }
+  @media (max-width: 1100px) {
+    .home { margin-top: 8px; }
+    .greet h1 { font-size: 28px; }
+    .tile { grid-column: span 6; }
+    .continue, .tonight, .half { grid-column: 1 / -1; }
+  }
+  @media (max-width: 640px) {
+    .continue { grid-template-columns: 1fr; }
+    .continue .art { height: 200px; }
+  }
+</style>
+</head>
+<body>
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>
+  const { D, esc, fmt, listNames, progress, sectionName, shell, strip } = RGUI;
+  const main = shell({
+    active: 'library',
+    end: `<button class="btn" id="build">Build a graph</button>`,
+  });
+
+  let at = progress.get();
+  const comedy = D.books[0];
+  const cast = D.met.length + D.ahead.length;
+  const hour = new Date().getHours();
+  const hello = hour < 5 ? 'Good night' : hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
+  const today = new Intl.DateTimeFormat('en-GB', { weekday: 'long', day: 'numeric', month: 'long' }).format(new Date());
+
+  function render() {
+    const v = D.visibleAt(at);
+    const s = D.sectionOf(at);
+    const sharedNow = D.shared.filter((x) => x.id === 'florence' ? v.context.some((c) => c.id === 'florence') : v.nodes.some((n) => n.id === x.id));
+    const sharedLater = D.shared.length - sharedNow.length;
+    const tonight = [...D.media.virgil, ...D.media.book].filter((m) => m.kind !== 'Look' && (!m.section || D.index[m.section] <= D.index[at])).slice(0, 3);
+    const next = D.sections[D.index[at] + 1];
+
+    main.innerHTML = `
+    <div class="home">
+      <section class="greet">
+        <h1>${hello}</h1>
+        <p>${today}. You are in ${esc(s.group)}, ${esc(s.label)} of The Divine Comedy.</p>
+      </section>
+
+      <section class="grid tiles" aria-label="Your atlas in numbers">
+        <div class="tile"><span class="label">Books mapped</span><span class="value num">${D.books.length}</span><span class="meta">One in progress, ${D.books.length - 1} finished</span></div>
+        <div class="tile"><span class="label">In your atlas</span><span class="value num">${fmt(D.atlas.size)}</span><span class="meta">People, places, works and ideas</span></div>
+        <div class="tile"><span class="label">Met in the Comedy</span><span class="value num">${v.nodes.length} <small>of ${cast}</small></span><span class="meta">Plus ${v.context.length} to know them by</span></div>
+        <div class="tile"><span class="label">Shared between books</span><span class="value num">${sharedNow.length}</span><span class="meta">${sharedLater} more further into the Comedy</span></div>
+      </section>
+
+      <section class="grid">
+        <article class="panel continue" aria-labelledby="cont-h">
+          <div class="art"><img src="${comedy.cover}" width="1280" height="962" alt="Domenico di Michelino’s 1465 fresco: Dante holds his poem between Hell, Mount Purgatory and Florence"></div>
+          <div class="body">
+            <div class="panel-head" style="margin-bottom:0"><h2 id="cont-h">Continue: ${esc(comedy.title)}</h2></div>
+            <p class="sub">${esc(comedy.author)} · ${esc(comedy.edition)}</p>
+            <div class="where"><strong>${esc(s.label)}</strong><span class="sub">${esc(s.group)}, canto ${D.index[at] + 1} of ${D.sections.length}</span></div>
+            <div id="strip"></div>
+            <p class="finding">${v.newHere.length ? `<b>${v.newHere.length} new in this canto.</b>` : 'No one new in this canto.'}
+              ${v.aheadInCanticle.length} more still ahead in ${esc(s.group)}.</p>
+            ${v.newHere.length ? `<ul class="faces">${v.newHere.map((n) => `<li>${n.image ? `<img src="${n.image}" alt="">` : ''}${esc(n.name)}</li>`).join('')}</ul>` : ''}
+            <div class="actions">
+              <a class="btn btn-primary" href="book.html">Open the graph</a>
+              ${next ? `<button class="btn" id="advance">I’ve read ${esc(s.label)}</button>` : ''}
+            </div>
+          </div>
+        </article>
+
+        <aside class="panel tonight" aria-labelledby="tonight-h">
+          <div class="panel-head"><h2 id="tonight-h">For tonight</h2></div>
+          <div class="stack">
+            ${tonight.map((m) => `<a class="source" href="${m.url}" target="_blank" rel="noopener">
+              <span class="kind">${m.kind} · ${esc(m.publisher)}${m.minutes ? ` · <span class="num">${m.minutes}</span> min` : ''}</span>
+              <span class="t">${esc(m.title)}</span><span class="why">${esc(m.why)}</span></a>`).join('')}
+          </div>
+        </aside>
+
+        <section class="panel half" aria-labelledby="lib-h">
+          <div class="panel-head"><h2 id="lib-h">Your books</h2><span class="meta num">${D.books.length} books</span></div>
+          <div class="stack">
+            ${D.books.map((b) => `<a class="row-card" href="${b.slug === 'divine-comedy' ? 'book.html' : '#'}">
+              <img class="thumb" src="${b.cover}" alt="">
+              <span class="grow"><span>${esc(b.title)}</span><span class="meta">${esc(b.author)}</span></span>
+              <span class="end"><span class="num">${b.status === 'reading' ? `${esc(D.sectionOf(at).label)}` : 'Finished'}</span><br>
+              <span class="meta num">${b.entityCount} entries</span></span></a>`).join('')}
+          </div>
+        </section>
+
+        <section class="panel half" aria-labelledby="shared-h">
+          <div class="panel-head"><h2 id="shared-h">Across your books</h2><span class="meta">So far in the Comedy</span></div>
+          <div class="stack">
+            ${sharedNow.map((x) => {
+              const e = D.byId[x.id];
+              const titles = x.books.map((slug) => D.books.find((b) => b.slug === slug).title);
+              return `<div class="row-card">
+                ${e.image ? `<img class="thumb" src="${e.image}" alt="">` : `<span class="thumb glyph ${e.type}" aria-hidden="true"></span>`}
+                <span class="grow"><span>${esc(e.name)}</span><span class="meta">${esc(listNames(titles))}</span></span>
+                <span class="end num">${titles.length} books</span></div>`;
+            }).join('')}
+            <div class="empty-line">${sharedLater} more are shared further into the Comedy. Their names stay hidden until you get there.</div>
+          </div>
+        </section>
+      </section>
+
+      <p class="credit">Pictures: Domenico di Michelino, <a href="https://commons.wikimedia.org/wiki/File:Domenico_di_Michelino_Dante_Duomo_Florence_duomofirenze.it.jpg">Dante and the Three Kingdoms</a> (1465);
+      Hartmann Schedel, <a href="https://commons.wikimedia.org/wiki/File:Hartmann_Schedel_-_Nuremberg_Chronicle,_View_of_Florence_-_WGA20967.jpg">View of Florence</a> (1493);
+      John William Waterhouse, <a href="https://commons.wikimedia.org/wiki/File:John_William_Waterhouse_-_The_Decameron.jpg">The Decameron</a> (1916);
+      Santi di Tito, <a href="https://commons.wikimedia.org/wiki/File:Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg">Niccolò Machiavelli</a>. All public domain, via Wikimedia Commons.</p>
+    </div>`;
+
+    strip(document.getElementById('strip'), { at, compact: true, labels: false, onChange: (id) => { at = id; progress.set(id); render(); document.querySelector('.strip').focus(); } });
+    const adv = document.getElementById('advance');
+    if (adv) adv.addEventListener('click', () => { at = D.sections[D.index[at] + 1].id; progress.set(at); render(); });
+  }
+  render();
+
+  document.getElementById('build').addEventListener('click', () => {
+    const cmd = '/build-graph "Title of the book"';
+    try { navigator.clipboard.writeText(cmd); } catch {}
+    const b = document.getElementById('build');
+    b.textContent = 'Copied: run it in Claude Code';
+    setTimeout(() => { b.textContent = 'Build a graph'; }, 2400);
+  });
+</script>
+</body>
+</html>

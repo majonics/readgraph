@@ -1,0 +1,43 @@
+{
+  "id": "can-grande-della-scala",
+  "type": "person",
+  "name": {
+    "en": "Cangrande I della Scala",
+    "it": "Cangrande della Scala"
+  },
+  "wikidataId": "Q785349",
+  "dates": {
+    "start": "1291-03-09",
+    "end": "1329-07-22",
+    "label": "1291–1329"
+  },
+  "image": {
+    "kind": "image",
+    "title": "Cangrande I della Scala",
+    "creator": "Borde Carlo",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Cangrande_I.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Cangrande_I.jpg",
+    "license": "Public domain",
+    "attribution": "Borde Carlo, public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "The lord of Verona who sheltered Dante in exile",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "Lord of Verona from 1308 (sole ruler from 1311) and leader of the Ghibellines in northern Italy, who took Vicenza, Padua and Treviso. He was Dante's leading patron during his exile."
+  },
+  "facts": {
+    "en": [
+      "Christened Can Francesco; his name means 'big dog'",
+      "Died at Treviso in 1329"
+    ]
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cangrande_I_della_Scala"
+    }
+  }
+}
