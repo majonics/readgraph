@@ -1,11 +1,9 @@
 // The rail card for the selected node: picture, what it is, its role as of now, the latest note, what there is to explore.
 import type { BookBundle, BookNode, ContextNode, Edge, MediaItem } from '../schema/index.ts';
+import { Link } from 'react-router';
 import { pictureOf, thumb } from '../lib/media.ts';
+import { TYPE_LABEL } from '../lib/labels.ts';
 
-const TYPE_LABEL: Record<string, string> = {
-  person: 'Person', figure: 'Figure of myth or legend', place: 'Place', work: 'Work',
-  concept: 'Idea', group: 'Group', event: 'Event', era: 'Period',
-};
 const KIND_LABEL: Record<MediaItem['kind'], [string, string]> = {
   artwork: ['artwork', 'artworks'], image: ['picture', 'pictures'], video: ['video', 'videos'], lecture: ['lecture', 'lectures'],
   podcast: ['podcast', 'podcasts'], article: ['article', 'articles'], book: ['book', 'books'], map: ['map', 'maps'],
@@ -21,9 +19,11 @@ interface Props {
   edges?: Edge[];
   /** Select another node from the relations list. */
   onPick?: (id: string) => void;
+  /** Where the "Open" button goes: this entity's page. */
+  pageUrl?: string;
 }
 
-export function EntityPreview({ bundle, node, sectionLabel, edges = [], onPick }: Props) {
+export function EntityPreview({ bundle, node, sectionLabel, edges = [], onPick, pageUrl }: Props) {
   const entity = bundle.entities[node.entity];
   if (!entity) return null;
   const lang = bundle.book.language;
@@ -73,6 +73,7 @@ export function EntityPreview({ bundle, node, sectionLabel, edges = [], onPick }
           {[...counts].map(([kind, n]) => <span key={kind}><span className="num">{n}</span> {KIND_LABEL[kind][n === 1 ? 0 : 1]}</span>)}
         </div>
       )}
+      {pageUrl && <div className="actions"><Link className="btn btn-primary" to={pageUrl}>Open {name}</Link></div>}
     </>
   );
 }

@@ -36,6 +36,7 @@ export interface ElementOptions {
 export interface NodeData {
   id: string;
   label: string;
+  /** Ring for the ego graph's concentric layout: the focus (2) in the centre, every neighbour (1) on one ring. */
   level: number;
   w: number;
   h: number;
@@ -101,7 +102,7 @@ export function graphElements(bundle: BookBundle, visible: Visible, opts: Elemen
       group: 'nodes',
       classes: ['d1', n.firstSection === visible.at ? 'new' : '', pic ? 'img' : '', n.importance === 1 ? 'minor' : '', companions.includes(n.entity) ? 'companion' : ''].filter(Boolean).join(' '),
       data: {
-        id: n.entity, label: name(n.entity), level: focused ? 4 : n.importance === 3 ? 3 : 2,
+        id: n.entity, label: name(n.entity), level: focused ? 2 : 1,
         w: focused ? h : sizeOf(n.importance, type), h, shape: SHAPE[type], kind: kindOf(type),
         ...(pic?.imageUrl ? { image: thumb(pic.imageUrl, 330) } : {}),
       },

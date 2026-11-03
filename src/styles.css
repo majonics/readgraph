@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "./styles/app.css";
 @import "./styles/book.css";
+@import "./styles/entity.css";
 
 /* The same tokens for Tailwind utilities. Source of truth: src/styles/app.css :root (docs/DESIGN.md). */
 @theme {

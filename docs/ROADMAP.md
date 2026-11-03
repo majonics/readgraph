@@ -2,7 +2,7 @@
 
 Tick tasks as they are completed and log them in DEVLOG.md. The first unchecked task in the current phase is "next".
 
-**Current phase: 4, Entity page and media.** Phase 2 research is paused at 19 of 59 entities by the owner's choice (finish the app first); see Phase 2b below.
+**Current phase: 4.5, Browser smoke tests.** Phase 4 is done (2026-11-03). Phase 2 research is paused at 19 of 59 entities by the owner's choice (finish the app first); see Phase 2b below.
 
 ## Phase 0: Framework ✅
 - [x] Clarify intent with the owner (AI engine, app form, spoilers, language)
@@ -51,21 +51,21 @@ then a look at the screenshots at 1440, 768 and 390. Plus, from Phase 4.5 on, th
 **What the library holds now** (this shapes Phase 4): 55 pictures (all Commons, public domain or CC), 9 YouTube lectures with an `embed`,
 and 35 linked sources without embeds (Yale pages, BBC *In Our Time*, Gutenberg, Stanford Encyclopedia, Danteworlds, New Advent, archive.org).
 
-## Phase 4: Entity page and media (port `design/prototype/entity.html`)
+## Phase 4: Entity page and media (port `design/prototype/entity.html`) ✅
 **Goal:** clicking anyone on the map opens a page that answers "who is this, what have they done so far, and what should I look at or listen to tonight?"
-- [ ] Pure view model `entityView(bundle, id, at)`: visible notes, media grouped as Look / Watch & listen / Read, context with summaries,
+- [x] Pure view model `entityView(bundle, id, at)`: visible notes, media grouped as Look / Watch & listen / Read, context with summaries,
       neighbours, and the counts of hidden notes and media. Unit-tested for spoiler safety, including that nothing past `at` leaks into it.
-- [ ] Route `/book/:slug/e/:id` (depth-1 and context entities), linked from the rail's "Open" button, the new-in-canto list, and node double-click.
-- [ ] About block: portrait or artwork, plot-free summary, facts, dates, picture caption and credit.
-- [ ] **Look**: a gallery of artworks (book-specific first, by canto), opening a lightbox built on the native `<dialog>` (keyboard, swipe,
+- [x] Route `/book/:slug/e/:id` (depth-1 and context entities), linked from the rail's "Open" button, the new-in-canto list, and node double-click.
+- [x] About block: portrait or artwork, plot-free summary, facts, dates, picture caption and credit.
+- [x] **Look**: a gallery of artworks (book-specific first, by canto), opening a lightbox built on the native `<dialog>` (keyboard, swipe,
       credit line, a link to the Commons page). No new dependency unless `<dialog>` falls short.
-- [ ] **Watch and listen**: YouTube through `youtube-nocookie.com`, click-to-load (a poster first, nothing loaded from YouTube before the click).
+- [x] **Watch and listen**: YouTube through `youtube-nocookie.com`, click-to-load (a poster first, nothing loaded from YouTube before the click).
       Podcasts and lectures without an embed get a rich card: publisher, duration, the `why` line, opening in a new tab.
-- [ ] **Read**: article and book cards (publisher, the `why` line).
-- [ ] **In this book**: notes up to the reader's canto, the current one in gilt, and "N more after this canto" (a count, never text).
-- [ ] **To know them by**: context entries with their `why` and summary, each linking to its own page.
-- [ ] **Connections**: the ego graph (`graphElements` focus mode, already tested). A click navigates to that entity.
-- [ ] The tier is shown in words ("Definitive", "Very good") inside the card's meta line, not as a badge; the skill bans pill badges above headings.
+- [x] **Read**: article and book cards (publisher, the `why` line).
+- [x] **In this book**: notes up to the reader's canto, the current one in gilt, and "N more after this canto" (a count, never text).
+- [x] **To know them by**: context entries with their `why` and summary, each linking to its own page.
+- [x] **Connections**: the ego graph (`graphElements` focus mode, already tested). A click navigates to that entity.
+- [x] The tier is shown in words ("Definitive", "Very good") inside the card's meta line, not as a badge; the skill bans pill badges above headings.
 - **Done when:** every one of the 19 figures and 17 context entries has a page that inspects at 0 FAIL, and every picture shows its credit.
 - **Size:** one long session. No research tokens.
 

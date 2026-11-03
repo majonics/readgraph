@@ -4,6 +4,51 @@ Newest entry first. Each entry: what was done, what was learned, what's next. Ke
 
 ---
 
+## 2026-11-03 · Phase 4 done: In this book, To know them by, Connections
+- **Done:** The rail (notes up to the reader, the current canto in gilt, hidden notes and sources as counts), context cards with their own
+  credits line, and the ego graph with its connections as sentences (first 8, the rest folded). The ego layout now puts the focus in the
+  centre and every neighbour on one ring. Layout per D-016. Section labels name the canticle. Done-when met: all 36 pages inspect at
+  0 FAIL with "show everything" on, and a browser check confirms a credit for every picture on every page.
+- **Defended WARNs:** ragged-row on six figures with "show everything" on (the whole poem's notes make the rail longer than the page);
+  colour-sprawl at 390px on Beatrice and the Virgin Mary (the portrait is a colourful painting, and the picture is the content).
+- **Learned:** Concentric layout with one node per level puts every ring's node at twelve o'clock, a vertical line. Stretching a short panel
+  to match a rail only moves the void inside it.
+- **Next:** Phase 4.5, Playwright smoke tests (the CDP checks in this phase are the first draft of its scenarios).
+
+## 2026-11-03 · Phase 4: Watch and listen, and Read
+- **Done:** `Sources.tsx`: players for YouTube (`youtube-nocookie.com`) and Vimeo (`dnt=1`) behind a poster drawn locally, and link cards
+  for podcasts, lectures without an embed, articles and books. The meta line names the kind, the publisher and the tier in words.
+  `embedSrc` is tested, including id escaping. Other embed types (Spotify, Apple Podcasts, iframe) fall back to a card until a real item needs them.
+  Checked in Chrome: before the click, no request goes to YouTube or Google other than Fonts. The click loads the nocookie player and focuses it.
+- **Learned:** A YouTube thumbnail would itself be a request to YouTube, so the poster is typographic. A lone player in a two-column grid
+  left half a row empty, so players and cards share one grid.
+- **Next:** In this book (notes up to the canto) and To know them by.
+
+## 2026-11-03 · Phase 4: Look gallery and lightbox
+- **Done:** The Look panel: square frames in reading order, a caption with creator and canto, and a credits line for every picture. Opening a
+  frame shows `Lightbox.tsx` on the native `<dialog>` (no new dependency): arrows and swipe step and wrap, Esc or the backdrop closes, focus
+  returns to the frame. `entityView` drops the About picture from Look when it is borrowed from the book. Driven in Chrome over CDP on the
+  production build (open, step, wrap, Esc, focus, the map card's Open button); inspector 0 FAIL, 0 WARN on Charon.
+- **Learned:** Tailwind's preflight zeroes `margin`, so a `<dialog>` needs `margin: auto` back to centre. React's `autoFocus` runs before
+  `showModal()`, which then moves focus to the first link, so the Close button is focused by hand after opening.
+- **Next:** Watch and listen (click-to-load YouTube, rich cards for podcasts and lectures).
+
+## 2026-11-03 · Phase 4: entity route and About
+- **Done:** `/book/:slug/e/:id` (`EntityPage.tsx`), opened from the map card's new "Open" button or a double-click on a node. `?all` carries
+  "Show everything" across. The About block shows the portrait (linked to Commons), the plot-free summary, facts, a credit line and Wikipedia.
+  A figure not met yet gets a page that doesn't name it. Type labels moved to `src/lib/labels.ts`. Inspector: 0 FAIL at 1440/768/390
+  for Virgil, Florence and an unmet figure. The one WARN is the empty space the next blocks will fill.
+- **Learned:** A media item's `year` is the photo's year for a photographed artwork, so captions leave it out.
+- **Next:** Look (gallery and `<dialog>` lightbox).
+
+## 2026-11-03 · Phase 4: entity view model
+- **Done:** `src/lib/entityView.ts`, the entity page as pure data built on `computeVisibility`: notes up to the reader, media grouped as
+  Look (inline pictures only) / Watch and listen / Read with book-specific items first in reading order, context with summaries, the figures a
+  context leaf belongs to, neighbours as directed sentences, and hidden counts. 8 tests, including a spoiler sweep of every entity at every
+  canto of the real Comedy. An injected leak (unfiltered notes) fails 3 of them.
+- **Learned:** An artwork without an `imageUrl` can't sit in a gallery, so it falls to Read.
+- **Next:** the `/book/:slug/e/:id` route and the About block.
+
 ## 2026-11-03 · Reading-spiral map
 - **Done:** Replaced the concentric whole-book layout with a pure, tested reading spiral (`constellation.ts`, D-015): the companions sit at the centre,
   figures spiral outward in reading order, context leaves orbit their parents. Bigger nodes, no book node. The selection lives in the URL (`?e=`),

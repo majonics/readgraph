@@ -92,3 +92,12 @@ and context leaves landed far from their parents.
 elliptical Archimedean spiral in reading order, so the map grows outward as you read. Each context leaf orbits its parent. The layout is
 pure and deterministic, and tests assert no overlaps. The book node and its spokes are gone. The ego graph keeps concentric rings around its focus.
 **Consequences:** The same visible set always gets the same positions. The rail card now opens only on a choice, and the choice lives in the URL (`?e=virgil`).
+
+### D-016 · Entity page layout: a rail for figures, none for context (2026-11-03)
+**Context:** The prototype pairs a main column with a rail (notes, then the ego graph), stretched so both end level. On real data the two
+columns rarely match: a context entry has no notes, and a figure seen with "show everything" has notes across the whole poem.
+**Decision:** A depth-1 page keeps the rail as one panel as tall as the main column, its content sticky. A depth-2 page has no rail; its
+Connections close the page at full width. Section labels on the entity page name the part ("Canto XVII, Paradiso"), because labels repeat
+across canticles. Connections are also listed as sentences (the first 8, the rest folded) because the canvas is invisible to screen readers.
+**Consequences:** Pages inspect clean at the reader's position. With "show everything", a figure like Dante has a rail longer than its main
+column, and the inspector warns about it (ragged-row). That length is real content, so the warning stays.

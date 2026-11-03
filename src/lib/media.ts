@@ -26,3 +26,19 @@ export function pictureOf(entity: Entity | undefined, node?: Pick<BookNode, 'med
   if (entity?.image?.imageUrl) return entity.image;
   return node?.media.find((m) => m.imageUrl);
 }
+
+/**
+ * The player URL for an embeddable item, or undefined when it should be a link card instead. YouTube plays from
+ * youtube-nocookie.com and Vimeo with do-not-track (SOURCES.md). Both autoplay, because they load only on the reader's click.
+ */
+export function embedSrc(m: Pick<MediaItem, 'embed'>): string | undefined {
+  const id = m.embed ? encodeURIComponent(m.embed.id) : '';
+  switch (m.embed?.type) {
+    case 'youtube': return `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+    case 'vimeo': return `https://player.vimeo.com/video/${id}?autoplay=1&dnt=1`;
+    default: return undefined;
+  }
+}
+
+/** Where an embed plays from, for "plays from YouTube" on the poster. */
+export const EMBED_HOST: Partial<Record<NonNullable<MediaItem['embed']>['type'], string>> = { youtube: 'YouTube', vimeo: 'Vimeo' };

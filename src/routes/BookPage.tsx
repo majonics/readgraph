@@ -1,6 +1,6 @@
 // /book/:slug, the whole-book map. The map takes the full width; the chosen figure's card floats over its right side.
 import { useEffect, useMemo, useState } from 'react';
-import { useParams, useSearchParams } from 'react-router';
+import { useNavigate, useParams, useSearchParams } from 'react-router';
 import type { BookBundle } from '../schema/index.ts';
 import { fetchBook, putProgress } from '../client/api.ts';
 import { computeVisibility } from '../lib/visibility.ts';
@@ -33,6 +33,7 @@ function BookPage({ slug }: { slug: string }) {
   const selected = params.get('e') ?? undefined;
   const setSelected = (id: string | undefined) => setParams((p) => { const n = new URLSearchParams(p); if (id) n.set('e', id); else n.delete('e'); return n; }, { replace: true });
   const [query, setQuery] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     let live = true;
@@ -91,6 +92,7 @@ function BookPage({ slug }: { slug: string }) {
     return nextSet;
   });
   const CARD = 380;
+  const pageOf = (id: string) => `/book/${book.slug}/e/${id}${showAll ? '?all' : ''}`;
 
   return (
     <Shell
@@ -166,13 +168,14 @@ function BookPage({ slug }: { slug: string }) {
           selected={current}
           hits={hits}
           onSelect={setSelected}
+          onOpen={(id) => navigate(pageOf(id))}
           reserveRight={pickNode ? CARD + 16 : 0}
           label={`Map of the ${plural(visible.nodes.length, 'figure')} and ${visible.context.length} context entries met so far, in reading order`}
         >
           {pickNode && (
             <aside className="panel pick map-card" aria-label="Chosen on the map" style={{ width: CARD }}>
               <button type="button" className="card-close" aria-label="Close" onClick={() => setSelected(undefined)}>×</button>
-              <EntityPreview bundle={bundle} node={pickNode} sectionLabel={sectionLabel} edges={visible.edges} onPick={setSelected} />
+              <EntityPreview bundle={bundle} node={pickNode} sectionLabel={sectionLabel} edges={visible.edges} onPick={setSelected} pageUrl={pageOf(pickNode.entity)} />
             </aside>
           )}
         </GraphCanvas>

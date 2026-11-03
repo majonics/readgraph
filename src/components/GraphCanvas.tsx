@@ -49,6 +49,8 @@ interface Props {
   /** Search matches: marked, and everything else dimmed. Empty or undefined: no search. */
   hits?: ReadonlySet<string>;
   onSelect?: (id: string | undefined) => void;
+  /** Double-click (or double-tap) on a node: open its page. */
+  onOpen?: (id: string) => void;
   label: string;
   className?: string;
   /** Width covered by a floating card on the right; a selected node is panned clear of it. */
@@ -56,12 +58,13 @@ interface Props {
   children?: React.ReactNode;
 }
 
-export function GraphCanvas({ elements, anchors, selected, hits, onSelect, label, className = 'cy', reserveRight = 0, children }: Props) {
+export function GraphCanvas({ elements, anchors, selected, hits, onSelect, onOpen, label, className = 'cy', reserveRight = 0, children }: Props) {
   const box = useRef<HTMLDivElement>(null);
   const cy = useRef<Core>(null);
   const select = useRef(onSelect);
+  const open = useRef(onOpen);
   const anchorIds = useRef(anchors);
-  useEffect(() => { select.current = onSelect; anchorIds.current = anchors; }, [onSelect, anchors]);
+  useEffect(() => { select.current = onSelect; open.current = onOpen; anchorIds.current = anchors; }, [onSelect, onOpen, anchors]);
 
   useEffect(() => {
     if (!box.current) return;
@@ -81,6 +84,7 @@ export function GraphCanvas({ elements, anchors, selected, hits, onSelect, label
       sel.connectedEdges().addClass('lit');
     });
     core.on('tap', 'node', (e) => select.current?.(e.target.id()));
+    core.on('dbltap', 'node', (e) => open.current?.(e.target.id()));
     core.on('tap', (e) => { if (e.target === core) select.current?.(undefined); });
     cy.current = core;
     return () => { core.destroy(); cy.current = null; };

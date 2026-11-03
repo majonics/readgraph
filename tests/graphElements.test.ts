@@ -37,7 +37,8 @@ describe('graphElements', () => {
   it('builds an ego graph without positions (laid out around its focus)', () => {
     const els = graphElements(b, computeVisibility(b, 's-05'), { focus: 'b' });
     expect(nodeIds(els).sort()).toEqual(['a', 'b', 'c']);
-    expect(node(els, 'b')?.data).toMatchObject({ level: 4, w: 96 });
+    expect(node(els, 'b')?.data).toMatchObject({ level: 2, w: 96 });
+    expect(els.flatMap((e) => (e.group === 'nodes' && e.data.id !== 'b' ? [e.data.level] : []))).toEqual([1, 1]);
     expect(els.some((e) => e.group === 'nodes' && e.position)).toBe(false);
   });
 });
