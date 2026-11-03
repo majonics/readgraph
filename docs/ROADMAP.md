@@ -2,7 +2,7 @@
 
 Tick tasks as they are completed and log them in DEVLOG.md. The first unchecked task in the current phase is "next".
 
-**Current phase: 4.5, Browser smoke tests.** Phase 4 is done (2026-11-03). Phase 2 research is paused at 19 of 59 entities by the owner's choice (finish the app first); see Phase 2b below.
+**Current phase: 5, Library and cross-book.** Phases 4 and 4.5 are done (2026-11-03). Phase 2b can run any time before it. Phase 2 research is paused at 19 of 59 entities by the owner's choice (finish the app first); see Phase 2b below.
 
 ## Phase 0: Framework ✅
 - [x] Clarify intent with the owner (AI engine, app form, spoilers, language)
@@ -69,13 +69,13 @@ and 35 linked sources without embeds (Yale pages, BBC *In Our Time*, Gutenberg, 
 - **Done when:** every one of the 19 figures and 17 context entries has a page that inspects at 0 FAIL, and every picture shows its credit.
 - **Size:** one long session. No research tokens.
 
-## Phase 4.5: Browser smoke tests
+## Phase 4.5: Browser smoke tests ✅
 **Goal:** what the screenshots cannot show is tested: clicks, keys, saving.
-- [ ] Playwright (`@playwright/test`, using the installed Chrome channel, no browser download) against `vite preview`.
-- [ ] Scenarios: the strip moves on arrow keys and the position survives a reload; a figure ahead of the reader is never in the DOM or on the map;
+- [x] Playwright (`@playwright/test`, using the installed Chrome channel, no browser download) against `vite preview`.
+- [x] Scenarios: the strip moves on arrow keys and the position survives a reload; a figure ahead of the reader is never in the DOM or on the map;
       "Show everything" reveals it without moving `progress.json`; search with Enter selects; the legend filter hides a kind;
       a node click fills the rail; the entity page opens and the lightbox works from the keyboard.
-- [ ] The tests run against a copy of `library/` in a temp folder, so they never change the owner's reading position.
+- [x] The tests run against a copy of `library/` in a temp folder, so they never change the owner's reading position.
 - **Size:** half a session.
 
 ## Phase 2b: Finish researching the Comedy (paused, can run any time)

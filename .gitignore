@@ -13,3 +13,7 @@ dist/
 
 # generation drafts (/build-graph working files)
 .work/
+
+# Playwright output (npm run e2e)
+test-results/
+playwright-report/

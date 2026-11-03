@@ -101,3 +101,11 @@ Connections close the page at full width. Section labels on the entity page name
 across canticles. Connections are also listed as sentences (the first 8, the rest folded) because the canvas is invisible to screen readers.
 **Consequences:** Pages inspect clean at the reader's position. With "show everything", a figure like Dante has a rail longer than its main
 column, and the inspector warns about it (ragged-row). That length is real content, so the warning stays.
+
+### D-017 · Browser tests: Playwright on the installed Chrome, against a copy of the library (2026-11-03)
+**Decision:** `npm run e2e` runs `@playwright/test` with `channel: 'chrome'` (no browser download) against the production build.
+`scripts/e2e-server.ts` copies `library/` to one fixed temp folder (cleared at each start) and serves it through `READGRAPH_LIBRARY`,
+which `src/server/library.ts` honours. One worker, and every test resets the position to Inferno I through the API.
+The tests read the map through Cytoscape's own `_cyreg` property on its container, rather than adding a test hook to the app.
+**Consequences:** The owner's reading position is never touched (checked by hashing `progress.json` around a run). `_cyreg` is
+undocumented, so a Cytoscape upgrade may break the map tests. Fix them there, not in the app.

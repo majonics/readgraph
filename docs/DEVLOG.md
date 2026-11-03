@@ -4,6 +4,16 @@ Newest entry first. Each entry: what was done, what was learned, what's next. Ke
 
 ---
 
+## 2026-11-03 · Phase 4.5: browser smoke tests
+- **Done:** `npm run e2e` (D-017): 9 Playwright tests in the installed Chrome against the production build and a copy of the library.
+  The strip on arrow keys and across a reload, nothing ahead of the reader in the DOM, the map or the strip tooltips, "Show everything"
+  without moving progress, search with Enter, the legend filter, node click and double-click, the not-met page, the lightbox from the
+  keyboard, and no request to YouTube before play. The real `progress.json` was unchanged across runs.
+- **Learned:** The first spoiler test passed with a planted leak, because it read the page once after hovering every canto, and the
+  tooltip shows one canto at a time. It now reads each tooltip as it hovers, and fails on the leak. Playwright can stop the web server
+  before its exit handlers run, so the library copy lives in one fixed folder that is cleared at each start.
+- **Next:** Phase 5 (library home and a second book), or Phase 2b research. Both need the owner's choices (ROADMAP > Decisions waiting).
+
 ## 2026-11-03 · Phase 4 done: In this book, To know them by, Connections
 - **Done:** The rail (notes up to the reader, the current canto in gilt, hidden notes and sources as counts), context cards with their own
   credits line, and the ego graph with its connections as sentences (first 8, the rest folded). The ego layout now puts the focus in the

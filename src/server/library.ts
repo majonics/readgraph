@@ -5,7 +5,8 @@ import type { z } from 'zod';
 import { Book, BookBundle, Entity, Graph, Progress } from '../schema/index.ts';
 import { checkBook, type Issue } from '../lib/rules.ts';
 
-export const LIBRARY = join(import.meta.dirname, '..', '..', 'library');
+/** The library folder. READGRAPH_LIBRARY points it elsewhere, e.g. the browser tests' throwaway copy (scripts/e2e-server.ts). */
+export const LIBRARY = process.env.READGRAPH_LIBRARY ?? join(import.meta.dirname, '..', '..', 'library');
 
 async function readParsed<T extends z.ZodType>(root: string, rel: string, schema: T, issues: Issue[]): Promise<z.infer<T> | undefined> {
   const file = join(root, rel);

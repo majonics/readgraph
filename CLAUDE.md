@@ -56,13 +56,14 @@ npm run build && npm run preview     # production build, served with the same AP
 npm run validate     # every book and entity in library/: schema, graph rules, spoiler consistency
 npm run validate -- divine-comedy   # one book
 npm test             # vitest: visibility (spoiler) logic, graph rules, the real library on disk
+npm run e2e          # Playwright in the installed Chrome: builds, serves a throwaway copy of library/, clicks through the app
 npm run typecheck && npm run lint && npm run build
 npm run check-links [-- <slug>]     # fetch every URL; dead links fail, bot walls are listed as blocked
 npm run wikidata -- search "Virgil" | get Q1398   # facts, dates, coordinates, P18 image, Wikipedia link
 npm run commons -- "File:…"          # a MediaItem draft with real image URL, creator and license
 ```
 
-Before finishing any change: `npm run validate && npm test && npm run typecheck && npm run lint`.
+Before finishing any change: `npm run validate && npm test && npm run typecheck && npm run lint`. For UI changes, also `npm run e2e`.
 Stack pins: TypeScript stays on 6.0.x until typescript-eslint supports 7 (D-013).
 
 Claude Code skills (`.claude/skills/`):

@@ -15,6 +15,7 @@
     "validate": "tsx scripts/validate.ts",
     "test": "vitest run",
     "test:watch": "vitest",
+    "e2e": "playwright test",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "wikidata": "tsx scripts/wikidata.ts",
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.64.1",
     "@tailwindcss/vite": "^4.3.4",
     "@types/cytoscape": "^3.31.0",
     "@types/node": "^26.6.6",
