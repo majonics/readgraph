@@ -18,13 +18,13 @@
     "year": "2014",
     "publisher": "Wikimedia Commons",
     "url": "https://commons.wikimedia.org/wiki/File:Virgil_mosaic_in_the_Bardo_National_Museum_(Tunis)_(12241228546).jpg",
-    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Virgil_mosaic_in_the_Bardo_National_Museum_%28Tunis%29_%2812241228546%29.jpg/1920px-Virgil_mosaic_in_the_Bardo_National_Museum_%28Tunis%29_%2812241228546%29.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Virgil_mosaic_in_the_Bardo_National_Museum_%28Tunis%29_%2812241228546%29.jpg/1280px-Virgil_mosaic_in_the_Bardo_National_Museum_%28Tunis%29_%2812241228546%29.jpg",
     "license": "Public domain",
     "attribution": "Boyd Dwyer (photograph of a 3rd-century mosaic), public domain, via Wikimedia Commons",
     "language": "en",
     "tier": 1,
     "why": "The only ancient portrait of Virgil, holding a scroll of the Aeneid",
-    "verifiedAt": "2026-11-02"
+    "verifiedAt": "2026-11-03"
   },
   "summary": {
     "en": "Roman poet of the age of Augustus, born near Mantua. He wrote the Eclogues, the Georgics and the Aeneid, the epic of Rome's founding. The Middle Ages read him as a sage, almost a prophet."
@@ -33,6 +33,7 @@
     "en": [
       "Born at Andes, near Mantua, in 70 BC",
       "Died at Brundisium in 19 BC",
+      "Buried at Naples",
       "Wrote the Eclogues, the Georgics and the Aeneid"
     ]
   },
@@ -47,7 +48,7 @@
       "language": "en",
       "tier": 1,
       "why": "Virgil's own epic, and why Augustan Rome needed it",
-      "verifiedAt": "2026-11-02"
+      "verifiedAt": "2026-11-03"
     },
     {
       "kind": "book",
@@ -57,7 +58,7 @@
       "language": "en",
       "tier": 1,
       "why": "Book VI is the descent to the underworld that Dante builds on",
-      "verifiedAt": "2026-11-02"
+      "verifiedAt": "2026-11-03"
     }
   ],
   "links": {

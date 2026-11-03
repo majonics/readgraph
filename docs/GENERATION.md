@@ -38,6 +38,10 @@ Split the cast into batches and research them with subagents. For each entity:
   book* (Dante → Florence, Guelphs and Ghibellines, Beatrice). Each needs a `why`. Context entities are leaves.
 - Edges to other cast members, with `section` when the relationship is revealed in the story.
 
+**Spoiler-safe lines.** A node's `role` is shown from its `firstSection`, and a context entry's `why` from its earliest parent's
+`firstSection`. Write both as of that moment. Not "Dante's guide through Hell and Purgatory" but "Dante's guide, sent to lead him
+out of the dark wood". Everything that happens later goes into section-tagged `inBook` notes.
+
 ### 4. Find sources (the part that makes the tool special)
 For each depth-1 entity, aim for **2–5 media items**. For depth-2 entities, **1–2**. For the book itself, **4–8**.
 - Follow the tiers and preferred sources in [SOURCES.md](SOURCES.md). Prefer variety: one artwork, one
@@ -66,7 +70,7 @@ For each depth-1 entity, aim for **2–5 media items**. For depth-2 entities, **
 - [ ] Each central (importance 3) entity has at least one non-text medium (artwork/video/lecture/podcast).
 - [ ] The content language matches `book.language`.
 
-## Helper scripts *(planned, Phase 2)*
+## Helper scripts
 
 - `npm run wikidata -- search "Virgil"` / `-- get Q1398`: canonical facts, dates, coordinates, P18 image.
 - `npm run commons -- "File:Gustave Dore Inferno1.jpg"`: image URL, thumbnail, author, license.

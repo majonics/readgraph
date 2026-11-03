@@ -9,37 +9,124 @@
       "inBook": [
         {
           "section": "inf-01",
-          "text": "Midway through life, lost in a dark wood, he is driven back from a sunlit hill by three beasts."
+          "text": "Midway through life, lost in a dark wood, he is driven back from a sunlit hill by three beasts until Virgil appears."
         },
         {
           "section": "inf-02",
-          "text": "Doubts he is worthy of the journey until Virgil tells him who sent him."
+          "text": "Doubts he is worthy of the journey ('I not Aeneas am, I am not Paul') until Virgil tells him who sent him."
+        },
+        {
+          "section": "inf-03",
+          "text": "Reads the inscription over the gate, weeps at the cries of the vestibule, and falls senseless when the ground shakes."
+        },
+        {
+          "section": "inf-04",
+          "text": "In Limbo the great poets of antiquity make him sixth in their company."
         },
         {
           "section": "inf-05",
           "text": "Faints from pity after hearing Francesca's story."
+        },
+        {
+          "section": "inf-10",
+          "text": "Farinata foretells that he will soon learn how hard the art of returning from exile is."
+        },
+        {
+          "section": "inf-15",
+          "text": "Meets his old teacher Brunetto Latini, who predicts that Florence will turn against him."
+        },
+        {
+          "section": "inf-34",
+          "text": "Climbs down Lucifer's body with Virgil and comes out on the other side of the earth, under the stars."
+        },
+        {
+          "section": "purg-01",
+          "text": "Virgil washes the grime of Hell from his face with dew and girds him with a rush, as Cato instructs."
+        },
+        {
+          "section": "purg-09",
+          "text": "Carried up the mountain in his sleep by Lucia; the angel at Purgatory's gate cuts seven P's on his forehead."
+        },
+        {
+          "section": "purg-27",
+          "text": "Passes through the wall of fire only when Virgil says Beatrice lies beyond it; Virgil then crowns and mitres him over himself."
+        },
+        {
+          "section": "purg-30",
+          "text": "Turns to Virgil and finds him gone. Beatrice calls him by name, 'Dante', the only time his name appears in the poem."
+        },
+        {
+          "section": "purg-31",
+          "text": "Confesses under Beatrice's reproach, faints, and is drawn through the river Lethe."
+        },
+        {
+          "section": "par-01",
+          "text": "Rises from the Earthly Paradise into the heavens, gazing at Beatrice."
+        },
+        {
+          "section": "par-17",
+          "text": "His ancestor Cacciaguida foretells his exile: how salt the bread of others tastes, and how hard another's stairs are to climb."
+        },
+        {
+          "section": "par-31",
+          "text": "Beatrice returns to her seat in the rose; he prays to her, and Bernard takes her place as his guide."
+        },
+        {
+          "section": "par-33",
+          "text": "After Bernard's prayer to the Virgin, he looks into the light of God, and the poem ends."
         }
       ],
-      "media": []
+      "media": [
+        {
+          "kind": "artwork",
+          "title": "I found myself within a forest dark (Inferno, plate 1)",
+          "creator": "Gustave Doré",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_1_(I_found_myself_within_a_forest_dark...).jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_1_%28I_found_myself_within_a_forest_dark...%29.jpg/1280px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_1_%28I_found_myself_within_a_forest_dark...%29.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "The poem's first image: the pilgrim alone and lost among Doré's black trees",
+          "section": "inf-01",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "artwork",
+          "title": "Dante and the River of Lethe",
+          "creator": "Gustave Doré",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Gustove_Dore,_The_Divine_Comedy,_Paradise,_plate_115,_Dante_and_the_River_of_Lethe.jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Gustove_Dore%2C_The_Divine_Comedy%2C_Paradise%2C_plate_115%2C_Dante_and_the_River_of_Lethe.jpg/1280px-Gustove_Dore%2C_The_Divine_Comedy%2C_Paradise%2C_plate_115%2C_Dante_and_the_River_of_Lethe.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Doré's Lethe, the river of forgetting at the top of the mountain",
+          "section": "purg-31",
+          "verifiedAt": "2026-11-03"
+        }
+      ]
     },
     {
       "entity": "virgil",
       "depth": 1,
       "importance": 3,
-      "role": "Dante's guide through Hell",
+      "role": "Dante's guide, sent to lead him out of the dark wood",
       "firstSection": "inf-01",
       "inBook": [
         {
           "section": "inf-01",
-          "text": "Appears in the dark wood and offers to lead Dante by another road."
+          "text": "Appears in the dark wood, names himself a Mantuan poet who sang of Aeneas, and offers to lead Dante by another road."
         },
         {
           "section": "inf-02",
-          "text": "Explains that Beatrice came down from Heaven to ask for his help."
+          "text": "Explains that Beatrice came down from Heaven to Limbo to ask for his help."
         },
         {
           "section": "inf-03",
-          "text": "Silences Charon: the journey is willed where will is power."
+          "text": "Leads Dante through the gate and silences Charon: the journey is willed where will is power."
         },
         {
           "section": "inf-04",
@@ -48,40 +135,251 @@
         {
           "section": "inf-05",
           "text": "Names the famous lovers in the storm for Dante, beginning with Semiramis and Dido."
+        },
+        {
+          "section": "inf-08",
+          "text": "The fallen angels shut the gates of Dis in his face; he tells Dante that help is already coming."
+        },
+        {
+          "section": "inf-09",
+          "text": "Reveals that he has been down to the lowest circle once before, conjured by the witch Erichtho."
+        },
+        {
+          "section": "inf-11",
+          "text": "Explains the order of Hell while they wait by a tomb."
+        },
+        {
+          "section": "inf-20",
+          "text": "Tells how his own city, Mantua, was founded on the spot where the soothsayer Manto settled."
+        },
+        {
+          "section": "inf-34",
+          "text": "Carries Dante down Lucifer's body and through the centre of the earth."
+        },
+        {
+          "section": "purg-01",
+          "text": "Wins Cato's leave for them to climb the mountain, then washes Dante's face and girds him with a rush."
+        },
+        {
+          "section": "purg-03",
+          "text": "Says his body lies at Naples, brought there from Brundisium, and warns that human reason cannot fathom God's ways."
+        },
+        {
+          "section": "purg-06",
+          "text": "Sordello embraces him as a fellow Mantuan before knowing who he is."
+        },
+        {
+          "section": "purg-21",
+          "text": "Statius, not knowing who he is, says the Aeneid was mother and nurse to his poetry, then kneels when he learns the truth."
+        },
+        {
+          "section": "purg-22",
+          "text": "Statius tells him that through him he became a poet, and through him a Christian."
+        },
+        {
+          "section": "purg-27",
+          "text": "Gets Dante through the wall of fire by naming Beatrice, then speaks his last words: 'I crown and mitre thee over thyself.'"
+        },
+        {
+          "section": "purg-30",
+          "text": "When Beatrice appears, Dante turns to Virgil and finds he has gone."
         }
       ],
       "media": [
         {
           "kind": "artwork",
-          "title": "Dante meets Virgil",
+          "title": "Dante meets Virgil (Inferno, plate 4)",
           "creator": "Gustave Doré",
-          "year": "1857",
           "publisher": "Wikimedia Commons",
           "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_4_(Dante_meets_Virgil).jpg",
-          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_4_%28Dante_meets_Virgil%29.jpg/1920px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_4_%28Dante_meets_Virgil%29.jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_4_%28Dante_meets_Virgil%29.jpg/1280px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_4_%28Dante_meets_Virgil%29.jpg",
           "license": "Public domain",
           "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
           "language": "en",
           "tier": 1,
           "why": "Doré's dark wood, at the moment the guide appears",
           "section": "inf-01",
-          "verifiedAt": "2026-11-02"
+          "verifiedAt": "2026-11-03"
         },
         {
           "kind": "artwork",
-          "title": "Virgil and Beatrice",
+          "title": "Beatrice (Inferno, plate 7)",
           "creator": "Gustave Doré",
-          "year": "1857",
           "publisher": "Wikimedia Commons",
           "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_7_(Beatrice).jpg",
-          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_7_%28Beatrice%29.jpg/1920px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_7_%28Beatrice%29.jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_7_%28Beatrice%29.jpg/1280px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_7_%28Beatrice%29.jpg",
           "license": "Public domain",
           "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
           "language": "en",
           "tier": 1,
           "why": "Beatrice in Limbo, sending Virgil to Dante",
           "section": "inf-02",
-          "verifiedAt": "2026-11-02"
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "lecture",
+          "title": "Lecture 13: Purgatory XIX, XXI, XXII",
+          "creator": "Giuseppe Mazzotta (Dante in Translation, ITAL 310)",
+          "publisher": "Open Yale Courses",
+          "url": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-13",
+          "embed": {
+            "type": "youtube",
+            "id": "xSboCeLsGWc"
+          },
+          "durationMin": 79,
+          "language": "en",
+          "tier": 1,
+          "why": "Mazzotta on Statius meeting Virgil, and poetry as a means of conversion",
+          "section": "purg-22",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "website",
+          "title": "Addio Virgilio (Purgatorio 28–30)",
+          "creator": "Guy P. Raffa",
+          "publisher": "Danteworlds, University of Texas at Austin",
+          "url": "https://danteworlds.laits.utexas.edu/purgatory/10terrestrialparadise.html#addio",
+          "language": "en",
+          "tier": 1,
+          "why": "Raffa on how Dante makes Virgil fade from view, physically and textually",
+          "section": "purg-30",
+          "verifiedAt": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "entity": "three-beasts",
+      "depth": 1,
+      "importance": 2,
+      "role": "Leopard, lion and she-wolf blocking the climb",
+      "firstSection": "inf-01",
+      "inBook": [
+        {
+          "section": "inf-01",
+          "text": "A spotted panther, a lion and a she-wolf drive Dante back from the sunlit hill; Virgil says the she-wolf kills all who cross her until the Greyhound comes."
+        },
+        {
+          "section": "inf-02",
+          "text": "Virgil reminds Dante that he has saved him from the beast that barred the short way up the mountain."
+        },
+        {
+          "section": "inf-16",
+          "text": "Dante hands Virgil the cord he wore, with which he had once hoped to catch the panther, and Virgil throws it into the abyss."
+        },
+        {
+          "section": "purg-20",
+          "text": "Dante curses the 'old she-wolf' of greed and asks when the one will come who will drive her out."
+        }
+      ],
+      "media": [
+        {
+          "kind": "artwork",
+          "title": "The panther (Inferno, plate 2)",
+          "creator": "Gustave Doré",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_2_(the_panther).jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_2_%28the_panther%29.jpg/1280px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_2_%28the_panther%29.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "The first beast, the spotted 'panther' of Longfellow's translation, barring the slope",
+          "section": "inf-01",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "artwork",
+          "title": "The lion (Inferno, plate 3)",
+          "creator": "Gustave Doré",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_3_(The_lion).jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_3_%28The_lion%29.jpg/1280px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_3_%28The_lion%29.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "The lion 'with head uplifted', the second of the three beasts",
+          "section": "inf-01",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "artwork",
+          "title": "Dante running from the three beasts",
+          "creator": "William Blake",
+          "year": "1824–1827",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:William_Blake_-_Dante_running_from_the_three_beasts_-_Google_Art_Project.jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/William_Blake_-_Dante_running_from_the_three_beasts_-_Google_Art_Project.jpg/1280px-William_Blake_-_Dante_running_from_the_three_beasts_-_Google_Art_Project.jpg",
+          "license": "Public domain",
+          "attribution": "William Blake, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Blake's watercolour puts all three beasts and Virgil's arrival in one frame",
+          "section": "inf-01",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "website",
+          "title": "The Three Beasts (Inferno 1–2)",
+          "creator": "Guy P. Raffa",
+          "publisher": "Danteworlds, University of Texas at Austin",
+          "url": "https://danteworlds.laits.utexas.edu/prologue.html#threebeasts",
+          "language": "en",
+          "tier": 1,
+          "why": "Raffa sets out the competing readings of the leopard, lion and she-wolf, and their source in Jeremiah 5:6",
+          "section": "inf-01",
+          "verifiedAt": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "entity": "greyhound",
+      "depth": 1,
+      "importance": 1,
+      "role": "The riddling prophecy of the Veltro",
+      "firstSection": "inf-01",
+      "inBook": [
+        {
+          "section": "inf-01",
+          "text": "Virgil prophesies a Greyhound who will feed on wisdom, love and virtue, not land or money, will be born 'twixt Feltro and Feltro', and will hunt the she-wolf back to Hell."
+        },
+        {
+          "section": "purg-20",
+          "text": "Dante asks the heavens when the one will come who will drive out the she-wolf."
+        },
+        {
+          "section": "purg-33",
+          "text": "Beatrice foretells a 'Five-hundred, Ten, and Five', one sent from God; commentators often connect this riddle with the Greyhound."
+        },
+        {
+          "section": "par-17",
+          "text": "Cacciaguida praises a young Scaliger lord of Verona, traditionally identified as Cangrande della Scala, whom many readers have linked with the Greyhound."
+        }
+      ],
+      "media": [
+        {
+          "kind": "website",
+          "title": "The Greyhound (Inferno 1)",
+          "creator": "Guy P. Raffa",
+          "publisher": "Danteworlds, University of Texas at Austin",
+          "url": "https://danteworlds.laits.utexas.edu/prologue.html#greyhound",
+          "language": "en",
+          "tier": 1,
+          "why": "A short, careful note on the veltro prophecy and the Cangrande hypothesis",
+          "section": "inf-01",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "website",
+          "title": "Five Hundred and Ten and Five (Purgatorio 33)",
+          "creator": "Guy P. Raffa",
+          "publisher": "Danteworlds, University of Texas at Austin",
+          "url": "https://danteworlds.laits.utexas.edu/purgatory/10terrestrialparadise.html#tenfive",
+          "language": "en",
+          "tier": 1,
+          "why": "Raffa decodes the DXV riddle and links it back to the greyhound and Cangrande",
+          "section": "purg-33",
+          "verifiedAt": "2026-11-03"
         }
       ]
     },
@@ -89,15 +387,210 @@
       "entity": "beatrice-portinari",
       "depth": 1,
       "importance": 3,
-      "role": "The woman who sends Virgil to rescue Dante",
+      "role": "The woman who sets the journey in motion",
       "firstSection": "inf-02",
       "inBook": [
         {
           "section": "inf-02",
-          "text": "Comes down from Heaven to Limbo and, in tears, asks Virgil to help Dante."
+          "text": "Comes down from Heaven to Limbo and, in tears, asks Virgil to help Dante, sent by Lucia at the prompting of a lady in Heaven."
+        },
+        {
+          "section": "purg-06",
+          "text": "Virgil tells Dante that Beatrice will resolve his doubts and that he will see her at the mountain's top."
+        },
+        {
+          "section": "purg-27",
+          "text": "Virgil gets Dante into the fire by telling him that only this wall stands between him and Beatrice."
+        },
+        {
+          "section": "purg-30",
+          "text": "Appears veiled on a chariot in the Earthly Paradise, calls Dante by name, and reproaches him."
+        },
+        {
+          "section": "purg-31",
+          "text": "Makes Dante confess how he strayed after her death, then unveils her face."
+        },
+        {
+          "section": "purg-33",
+          "text": "Prophesies the 'Five-hundred, Ten, and Five' and sends Dante with Matelda to drink of Eunoe."
+        },
+        {
+          "section": "par-01",
+          "text": "Fixes her eyes on the sun and rises with Dante into the heavens."
+        },
+        {
+          "section": "par-02",
+          "text": "Explains the dark spots on the Moon."
+        },
+        {
+          "section": "par-30",
+          "text": "In the Empyrean her beauty passes beyond what Dante can describe."
+        },
+        {
+          "section": "par-31",
+          "text": "Returns to her place in the rose; after Dante's prayer of thanks she smiles at him and turns back to the eternal fountain."
         }
       ],
-      "media": []
+      "media": [
+        {
+          "kind": "artwork",
+          "title": "Beatrice Addressing Dante from the Car",
+          "creator": "William Blake",
+          "year": "1824",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Beatrice_Addressing_Dante_(by_William_Blake).jpg",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Beatrice_Addressing_Dante_%28by_William_Blake%29.jpg",
+          "license": "Public domain",
+          "attribution": "William Blake, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Blake's Beatrice on the triumphal chariot, the moment she speaks to Dante again",
+          "section": "purg-30",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "website",
+          "title": "Beatrice in the Earthly Paradise (Purgatorio 30–31)",
+          "creator": "Guy P. Raffa",
+          "publisher": "Danteworlds, University of Texas at Austin",
+          "url": "https://danteworlds.laits.utexas.edu/purgatory/10terrestrialparadise.html#beatrice",
+          "language": "en",
+          "tier": 1,
+          "why": "The return of Beatrice, read closely canto by canto",
+          "section": "purg-31",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "lecture",
+          "title": "Lecture 15: Purgatory XXX, XXXI, XXXIII",
+          "creator": "Giuseppe Mazzotta (Dante in Translation, ITAL 310)",
+          "publisher": "Open Yale Courses",
+          "url": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-15",
+          "embed": {
+            "type": "youtube",
+            "id": "-YHNglNw7BE"
+          },
+          "durationMin": 69,
+          "language": "en",
+          "tier": 1,
+          "why": "Mazzotta on the Earthly Paradise: Virgil's farewell and Beatrice's harsh arrival",
+          "section": "purg-33",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "artwork",
+          "title": "The Celestial Rose (Paradiso, Canto XXXI)",
+          "creator": "Gustave Doré",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Paradiso_Canto_31.jpg",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Paradiso_Canto_31.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Doré's most famous Paradiso plate: Dante and Beatrice before the rose of the blessed",
+          "section": "par-31",
+          "verifiedAt": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "entity": "virgin-mary",
+      "depth": 1,
+      "importance": 1,
+      "role": "The first mover of the rescue",
+      "firstSection": "inf-02",
+      "inBook": [
+        {
+          "section": "inf-02",
+          "text": "An unnamed 'gentle Lady' in Heaven, traditionally understood as Mary, pities Dante and sends Lucia to Beatrice."
+        },
+        {
+          "section": "purg-05",
+          "text": "Buonconte da Montefeltro dies with the name of Mary on his lips, and is saved."
+        },
+        {
+          "section": "purg-08",
+          "text": "Two angels 'from Mary's bosom' guard the valley of the rulers against the serpent."
+        },
+        {
+          "section": "purg-10",
+          "text": "The Annunciation, carved in the marble of the first terrace, is the first example of humility."
+        },
+        {
+          "section": "par-23",
+          "text": "Dante sees her crowned by a circling light as the blessed sing her name."
+        },
+        {
+          "section": "par-31",
+          "text": "Bernard shows Dante the Queen of Heaven enthroned at the top of the rose."
+        },
+        {
+          "section": "par-33",
+          "text": "Bernard's prayer to her ('Thou Virgin Mother, daughter of thy Son') opens the final canto."
+        }
+      ],
+      "media": [
+        {
+          "kind": "website",
+          "title": "Three Blessed Women (Inferno 2)",
+          "creator": "Guy P. Raffa",
+          "publisher": "Danteworlds, University of Texas at Austin",
+          "url": "https://danteworlds.laits.utexas.edu/prologue.html#threeblessed",
+          "language": "en",
+          "tier": 1,
+          "why": "How Mary, Lucia and Beatrice set the rescue in motion before the poem begins",
+          "section": "inf-02",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "artwork",
+          "title": "The Queen of Heaven in Glory",
+          "creator": "William Blake",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Illustrations_to_Dante%27s_Divine_Comedy_object_102_Butlin_812-99_The_Queen_of_Heaven_in_Glory.jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Illustrations_to_Dante%27s_Divine_Comedy_object_102_Butlin_812-99_The_Queen_of_Heaven_in_Glory.jpg/1280px-Illustrations_to_Dante%27s_Divine_Comedy_object_102_Butlin_812-99_The_Queen_of_Heaven_in_Glory.jpg",
+          "license": "Public domain",
+          "attribution": "William Blake, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "One of Blake's last Dante watercolours: Mary enthroned among the blessed",
+          "section": "par-31",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "artwork",
+          "title": "The Queen of Heaven in the Rose (Paradiso, Canto XXXI)",
+          "creator": "Gustave Doré",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Paradiso_Canto_31_-_Madonna_(148200440).jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Paradiso_Canto_31_-_Madonna_%28148200440%29.jpg/1280px-Paradiso_Canto_31_-_Madonna_%28148200440%29.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Doré's vision of Mary at the summit of the rose, ringed by angels",
+          "section": "par-31",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "lecture",
+          "title": "Lecture 23: Paradise XXX, XXXI, XXXII, XXXIII",
+          "creator": "Giuseppe Mazzotta (Dante in Translation, ITAL 310)",
+          "publisher": "Open Yale Courses",
+          "url": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-23",
+          "embed": {
+            "type": "youtube",
+            "id": "MsZOpyUMbMA"
+          },
+          "durationMin": 68,
+          "language": "en",
+          "tier": 1,
+          "why": "Mazzotta on the Empyrean, the celestial rose and the poem's final prayer and vision",
+          "section": "par-33",
+          "verifiedAt": "2026-11-03"
+        }
+      ]
     },
     {
       "entity": "charon",
@@ -108,25 +601,172 @@
       "inBook": [
         {
           "section": "inf-03",
-          "text": "Refuses to carry a living man across until Virgil silences him."
+          "text": "Warns the souls to give up hope of Heaven and refuses to carry a living man, saying a lighter boat must take him, until Virgil silences him."
         }
       ],
       "media": [
         {
           "kind": "artwork",
-          "title": "Charon",
+          "title": "Charon (Inferno, plate 9)",
           "creator": "Gustave Doré",
-          "year": "1857",
           "publisher": "Wikimedia Commons",
           "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_9_(Canto_III_-_Charon).jpg",
-          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_9_%28Canto_III_-_Charon%29.jpg/1920px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_9_%28Canto_III_-_Charon%29.jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_9_%28Canto_III_-_Charon%29.jpg/1280px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_9_%28Canto_III_-_Charon%29.jpg",
           "license": "Public domain",
           "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
           "language": "en",
           "tier": 1,
-          "why": "The ferryman driving the souls into his boat",
+          "why": "The ferryman calling the souls across the Acheron",
           "section": "inf-03",
-          "verifiedAt": "2026-11-02"
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "artwork",
+          "title": "Charon herds the sinners onto his boat (Inferno, plate 10)",
+          "creator": "Gustave Doré",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_10_(Canto_III_-_Charon_herds_the_sinners_onto_his_boat).jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_10_%28Canto_III_-_Charon_herds_the_sinners_onto_his_boat%29.jpg/1280px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_10_%28Canto_III_-_Charon_herds_the_sinners_onto_his_boat%29.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "The oar raised over the laggards: 'beats with his oar whoever lags behind'",
+          "section": "inf-03",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "artwork",
+          "title": "Charon and the Condemned Souls",
+          "creator": "William Blake",
+          "year": "1824–1827",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Charon_and_the_Condemned_Souls_Blake.jpg",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Charon_and_the_Condemned_Souls_Blake.jpg",
+          "license": "Public domain",
+          "attribution": "William Blake, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Blake's Charon, a muscular old man looming over the souls in his boat",
+          "section": "inf-03",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "website",
+          "title": "Charon (Inferno 3)",
+          "creator": "Guy P. Raffa",
+          "publisher": "Danteworlds, University of Texas at Austin",
+          "url": "https://danteworlds.laits.utexas.edu/gate.html#charon",
+          "language": "en",
+          "tier": 1,
+          "why": "How Dante adapts Virgil's ferryman from Aeneid VI",
+          "section": "inf-03",
+          "verifiedAt": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "entity": "gate-of-hell",
+      "depth": 1,
+      "importance": 2,
+      "role": "The gate whose inscription ends \"All hope abandon\"",
+      "firstSection": "inf-03",
+      "inBook": [
+        {
+          "section": "inf-03",
+          "text": "Dante reads the gate's inscription, 'All hope abandon, ye who enter in!', and Virgil takes his hand and leads him through."
+        },
+        {
+          "section": "inf-08",
+          "text": "Virgil recalls that the devils once resisted at this outer gate too, which still stands without a bolt."
+        }
+      ],
+      "media": [
+        {
+          "kind": "artwork",
+          "title": "Abandon all hope, ye who enter here (Inferno, plate 8)",
+          "creator": "Gustave Doré",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_8_(Canto_III_-_Abandon_all_hope_ye_who_enter_here).jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_8_%28Canto_III_-_Abandon_all_hope_ye_who_enter_here%29.jpg/1280px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_8_%28Canto_III_-_Abandon_all_hope_ye_who_enter_here%29.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Doré's gate cut into the rock, the two poets small before the inscription",
+          "section": "inf-03",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "artwork",
+          "title": "The Inscription over Hell-Gate",
+          "creator": "William Blake",
+          "year": "1824–1827",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:The_Inscription_over_Hell-Gate_Blake.jpg",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/The_Inscription_over_Hell-Gate_Blake.jpg",
+          "license": "Public domain",
+          "attribution": "William Blake, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Blake writes Dante's lines into the arch itself, with flames and a dark road beyond",
+          "section": "inf-03",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "website",
+          "title": "Gate of Hell (Inferno 3)",
+          "creator": "Guy P. Raffa",
+          "publisher": "Danteworlds, University of Texas at Austin",
+          "url": "https://danteworlds.laits.utexas.edu/gate.html#gate",
+          "language": "en",
+          "tier": 1,
+          "why": "Raffa on the inscription over the gate and the vestibule beyond it",
+          "section": "inf-03",
+          "verifiedAt": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "entity": "neutrals",
+      "depth": 1,
+      "importance": 1,
+      "role": "Souls rejected by Heaven and Hell alike",
+      "firstSection": "inf-03",
+      "inBook": [
+        {
+          "section": "inf-03",
+          "text": "Inside the gate, the souls who lived 'withouten infamy or praise' chase a whirling banner, stung by wasps and hornets; among them Dante sees 'him who made through cowardice the great refusal'."
+        }
+      ],
+      "media": [
+        {
+          "kind": "artwork",
+          "title": "The Vestibule of Hell and Souls Mustering to Cross the Acheron",
+          "creator": "William Blake",
+          "year": "1824–1827",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:The_Vestibule_of_Hell_and_Souls_Mustering_to_Cross_the_Acheron_Blake.jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/The_Vestibule_of_Hell_and_Souls_Mustering_to_Cross_the_Acheron_Blake.jpg/1280px-The_Vestibule_of_Hell_and_Souls_Mustering_to_Cross_the_Acheron_Blake.jpg",
+          "license": "Public domain",
+          "attribution": "William Blake, public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Blake's vestibule: the crowd of souls between the gate and the river",
+          "section": "inf-03",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "website",
+          "title": "Cowardly Neutrality (Inferno 3)",
+          "creator": "Guy P. Raffa",
+          "publisher": "Danteworlds, University of Texas at Austin",
+          "url": "https://danteworlds.laits.utexas.edu/gate.html#cowards",
+          "language": "en",
+          "tier": 1,
+          "why": "Why the neutrals are Dante's own invention, and who the 'great refusal' might be",
+          "section": "inf-03",
+          "verifiedAt": "2026-11-03"
         }
       ]
     },
@@ -139,25 +779,41 @@
       "inBook": [
         {
           "section": "inf-04",
-          "text": "Dante sees the great souls of antiquity, poets, heroes and philosophers, living in a castle of light without hope."
+          "text": "The first circle, where the unbaptised and the virtuous pagans sigh without torment, living in desire without hope. Virgil, who belongs here, recalls how a Mighty One came and led out Adam, Abel, Noah, Moses and the patriarchs; Dante sees poets, heroes and philosophers in a noble castle of light."
+        },
+        {
+          "section": "purg-01",
+          "text": "Virgil appeals to Cato in the name of his wife Marcia, who is with Virgil in Limbo."
+        },
+        {
+          "section": "purg-07",
+          "text": "Virgil describes his home to Sordello: a place below 'not sad with torments, but darkness only', shared with unbaptised infants and those who lacked the three holy virtues."
+        },
+        {
+          "section": "purg-22",
+          "text": "Virgil tells Statius that Homer, Euripides and many Greek poets, and women from Statius's own Thebaid, are with him in 'the first circle of the prison blind'."
+        },
+        {
+          "section": "par-32",
+          "text": "In the heavenly Rose, Bernard explains that since Christ came, unbaptised infants have been held 'below': Limbo seen from the top of the universe."
         }
       ],
       "media": [
         {
           "kind": "artwork",
-          "title": "Limbo: Dante among the poets",
+          "title": "Limbo: Dante among the poets (Inferno, Plate 12)",
           "creator": "Gustave Doré",
           "year": "1857",
           "publisher": "Wikimedia Commons",
           "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_12_(Canto_IV_-_Limbo,_Dante_is_accepted_as_an_equal_by_the_great_Greek_and_Roman_poets).jpg",
-          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_12_%28Canto_IV_-_Limbo%2C_Dante_is_accepted_as_an_equal_by_the_great_Greek_and_Roman_poets%29.jpg/1920px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_12_%28Canto_IV_-_Limbo%2C_Dante_is_accepted_as_an_equal_by_the_great_Greek_and_Roman_poets%29.jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_12_%28Canto_IV_-_Limbo%2C_Dante_is_accepted_as_an_equal_by_the_great_Greek_and_Roman_poets%29.jpg/1280px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_12_%28Canto_IV_-_Limbo%2C_Dante_is_accepted_as_an_equal_by_the_great_Greek_and_Roman_poets%29.jpg",
           "license": "Public domain",
-          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "attribution": "Gustave Doré, Public domain, via Wikimedia Commons",
           "language": "en",
           "tier": 1,
-          "why": "The four poets receiving Dante as one of their own",
+          "why": "The four poets receiving Dante as one of their own in the half-light of Limbo",
           "section": "inf-04",
-          "verifiedAt": "2026-11-02"
+          "verifiedAt": "2026-11-03"
         }
       ]
     },
@@ -165,26 +821,63 @@
       "entity": "homer",
       "depth": 1,
       "importance": 2,
-      "role": "Leads the poets of antiquity who greet Virgil",
+      "role": "\"Poet sovereign\", first of the ancient poets in Limbo",
       "firstSection": "inf-04",
       "inBook": [
         {
           "section": "inf-04",
-          "text": "Walks out with Horace, Ovid and Lucan to greet Virgil, and they make Dante sixth in their company."
+          "text": "Virgil points him out, sword in hand, leading Horace, Ovid and Lucan; the four greet Virgil and make Dante the sixth of their company."
+        },
+        {
+          "section": "purg-22",
+          "text": "Virgil calls him 'that Grecian whom more than all the rest the Muses suckled', still with him in Limbo."
         }
       ],
-      "media": []
+      "media": [
+        {
+          "kind": "artwork",
+          "title": "Homer Bearing the Sword and His Companions",
+          "creator": "William Blake",
+          "year": "1824–1827",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Homer_Bearing_the_Sword_and_His_Companions_Blake.jpg",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Homer_Bearing_the_Sword_and_His_Companions_Blake.jpg",
+          "license": "Public domain",
+          "attribution": "William Blake, Public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Blake's watercolour of Homer advancing sword in hand at the head of Horace, Ovid and Lucan, exactly as Virgil points him out",
+          "section": "inf-04",
+          "verifiedAt": "2026-11-03"
+        }
+      ]
     },
     {
       "entity": "aristotle",
       "depth": 1,
       "importance": 2,
-      "role": "\"The master of those who know\", seated among the philosophers",
+      "role": "\"The master of those who know\", among the philosophers in Limbo",
       "firstSection": "inf-04",
       "inBook": [
         {
           "section": "inf-04",
-          "text": "Seen in Limbo surrounded by the philosophers, all of whom look up to him."
+          "text": "Seen in Limbo as 'the Master of those who know', seated among his philosophic family; all honour him, with Socrates and Plato nearest."
+        },
+        {
+          "section": "inf-11",
+          "text": "Virgil explains the plan of Hell from 'thine Ethics', its three dispositions Heaven rejects (incontinence, malice and bestiality), and cites 'thy Physics' on art following nature."
+        },
+        {
+          "section": "purg-03",
+          "text": "Virgil names Aristotle and Plato among those whose desire for knowledge is never satisfied, then bows his head and falls silent."
+        },
+        {
+          "section": "par-08",
+          "text": "Charles Martel proves that people must live as citizens with different offices, 'if your master writeth well for you', meaning Aristotle's Politics."
+        },
+        {
+          "section": "par-26",
+          "text": "Examined on love, Dante says the truth of God as the first love is shown by 'him who demonstrates the primal love of all the sempiternal substances', usually read as Aristotle."
         }
       ],
       "media": []
@@ -198,25 +891,61 @@
       "inBook": [
         {
           "section": "inf-05",
-          "text": "Wraps his tail around himself once for each circle a soul must fall, and warns Dante to watch whom he trusts."
+          "text": "Snarling at the entrance of the second circle, he hears each soul's confession and wraps his tail around himself once for each circle it must fall. He warns Dante to beware whom he trusts until Virgil silences him."
+        },
+        {
+          "section": "inf-13",
+          "text": "Pier delle Vigne explains that Minos sends the soul of a suicide down to the seventh circle."
+        },
+        {
+          "section": "inf-20",
+          "text": "The seer Amphiaraus is said to have plunged down 'as far as Minos, who lays hold on all'."
+        },
+        {
+          "section": "inf-27",
+          "text": "Guido da Montefeltro tells how he was carried to Minos, who coiled his tail eight times around himself and bit it in rage."
+        },
+        {
+          "section": "inf-29",
+          "text": "Griffolino says 'Minos, who cannot err' condemned him to the last ditch of Malebolge."
+        },
+        {
+          "section": "purg-01",
+          "text": "Virgil tells Cato that Minos has no power over him."
         }
       ],
       "media": [
         {
           "kind": "artwork",
-          "title": "Minos",
+          "title": "Minos (Inferno, Plate 13)",
           "creator": "Gustave Doré",
           "year": "1857",
           "publisher": "Wikimedia Commons",
           "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_13_(Canto_V_-_Minos).jpg",
-          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_13_%28Canto_V_-_Minos%29.jpg/1920px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_13_%28Canto_V_-_Minos%29.jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_13_%28Canto_V_-_Minos%29.jpg/1280px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_13_%28Canto_V_-_Minos%29.jpg",
           "license": "Public domain",
-          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "attribution": "Gustave Doré, Public domain, via Wikimedia Commons",
           "language": "en",
           "tier": 1,
           "why": "The judge on his rock, the damned confessing before him",
           "section": "inf-05",
-          "verifiedAt": "2026-11-02"
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "artwork",
+          "title": "Minos",
+          "creator": "William Blake",
+          "year": "1824–1827",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Illustrations_to_Dante%27s_Divine_Comedy_object_9_Butlin_812-9Minos.jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Illustrations_to_Dante%27s_Divine_Comedy_object_9_Butlin_812-9Minos.jpg/1280px-Illustrations_to_Dante%27s_Divine_Comedy_object_9_Butlin_812-9Minos.jpg",
+          "license": "Public domain",
+          "attribution": "William Blake, Public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Blake's watercolour of the judge at the threshold of the second circle, to set beside Doré's",
+          "section": "inf-05",
+          "verifiedAt": "2026-11-03"
         }
       ]
     },
@@ -224,12 +953,16 @@
       "entity": "francesca-da-rimini",
       "depth": 1,
       "importance": 3,
-      "role": "Tells Dante how a book led to the first kiss",
+      "role": "The lover who tells Dante how a book led to a kiss",
       "firstSection": "inf-05",
       "inBook": [
         {
           "section": "inf-05",
-          "text": "Tells how reading of Lancelot and Guinevere led her and Paolo to their first kiss."
+          "text": "Called out of the storm of the lustful, she speaks for herself and Paolo: Love brought them to one death, and Caina awaits the one who killed them. She tells how reading of Lancelot led to their first kiss ('Galeotto was the book'), and Dante faints from pity."
+        },
+        {
+          "section": "inf-32",
+          "text": "Dante reaches Caina, the zone of the ice for traitors to their kin that Francesca said was waiting for her killer."
         }
       ],
       "media": [
@@ -240,14 +973,82 @@
           "year": "1863",
           "publisher": "Wikimedia Commons",
           "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Paolo_and_Francesca_da_Rimini.jpg",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/Gustave_Dor%C3%A9_-_Paolo_and_Francesca_da_Rimini.jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Gustave_Dor%C3%A9_-_Paolo_and_Francesca_da_Rimini.jpg/1280px-Gustave_Dor%C3%A9_-_Paolo_and_Francesca_da_Rimini.jpg",
           "license": "Public domain",
-          "attribution": "Gustave Doré, public domain, via Wikimedia Commons",
+          "attribution": "Gustave Doré, Public domain, via Wikimedia Commons",
           "language": "en",
           "tier": 1,
-          "why": "The lovers held together in the whirlwind",
+          "why": "Doré's oil painting of the lovers held together in the whirlwind",
           "section": "inf-05",
-          "verifiedAt": "2026-11-02"
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "artwork",
+          "title": "The Ghosts of Paolo and Francesca Appear to Dante and Virgil",
+          "creator": "Ary Scheffer",
+          "year": "1855",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:1855_Ary_Scheffer_-_The_Ghosts_of_Paolo_and_Francesca_Appear_to_Dante_and_Virgil.jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/1855_Ary_Scheffer_-_The_Ghosts_of_Paolo_and_Francesca_Appear_to_Dante_and_Virgil.jpg/1280px-1855_Ary_Scheffer_-_The_Ghosts_of_Paolo_and_Francesca_Appear_to_Dante_and_Virgil.jpg",
+          "license": "Public domain",
+          "attribution": "Ary Scheffer, Public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "The Romantic era's defining image of the pair, drifting past the watching poets",
+          "section": "inf-05",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "artwork",
+          "title": "The Circle of the Lustful: Francesca da Rimini",
+          "creator": "William Blake",
+          "year": "1824–1827",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Illustrations_to_Dante%27s_Divine_Comedy_object_10_Butlin_812-10_The_Circle_of_the_Lustful_Francesca_Da_Rimini.jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Illustrations_to_Dante%27s_Divine_Comedy_object_10_Butlin_812-10_The_Circle_of_the_Lustful_Francesca_Da_Rimini.jpg/1280px-Illustrations_to_Dante%27s_Divine_Comedy_object_10_Butlin_812-10_The_Circle_of_the_Lustful_Francesca_Da_Rimini.jpg",
+          "license": "Public domain",
+          "attribution": "William Blake, Public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Blake's great whirlwind of souls sweeping past Virgil and the fainting Dante",
+          "section": "inf-05",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "lecture",
+          "title": "Lecture 4: Inferno V, VI, VII",
+          "creator": "Giuseppe Mazzotta",
+          "year": "2008",
+          "publisher": "Open Yale Courses",
+          "url": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-4",
+          "embed": {
+            "type": "youtube",
+            "id": "5z2umV9UvIw"
+          },
+          "durationMin": 71,
+          "language": "en",
+          "tier": 1,
+          "why": "Mazzotta reads Francesca as a reader who cannot tell romance from reality, and asks what that means for Dante's own book",
+          "section": "inf-05",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "video",
+          "title": "Tchaikovsky: Francesca da Rimini",
+          "creator": "Philharmonia Orchestra, cond. Santtu-Matias Rouvali",
+          "year": "2022",
+          "publisher": "Philharmonia Orchestra (YouTube)",
+          "url": "https://www.youtube.com/watch?v=3AhZDsY44pc",
+          "embed": {
+            "type": "youtube",
+            "id": "3AhZDsY44pc"
+          },
+          "durationMin": 29,
+          "language": "en",
+          "tier": 1,
+          "why": "Tchaikovsky's symphonic fantasy on Canto V, the whirlwind and the love story in sound; Santtu-Matias Rouvali conducts, live at the Royal Festival Hall",
+          "section": "inf-05",
+          "verifiedAt": "2026-11-03"
         }
       ]
     },
@@ -255,21 +1056,270 @@
       "entity": "paolo-malatesta",
       "depth": 1,
       "importance": 2,
-      "role": "Weeps beside Francesca as she speaks",
+      "role": "Her silent companion, who weeps as she speaks",
       "firstSection": "inf-05",
       "inBook": [
         {
           "section": "inf-05",
-          "text": "Weeps in silence while Francesca tells their story."
+          "text": "Never speaks; he weeps while Francesca tells their story, and in her account it is he who kisses her, trembling, over the book."
+        }
+      ],
+      "media": [
+        {
+          "kind": "artwork",
+          "title": "Paolo and Francesca da Rimini",
+          "creator": "Dante Gabriel Rossetti",
+          "year": "1855",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Dante_Gabriel_Rossetti_-_Paolo_and_Francesca_da_Rimini_(1855).jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Dante_Gabriel_Rossetti_-_Paolo_and_Francesca_da_Rimini_%281855%29.jpg/1280px-Dante_Gabriel_Rossetti_-_Paolo_and_Francesca_da_Rimini_%281855%29.jpg",
+          "license": "Public domain",
+          "attribution": "Dante Gabriel Rossetti, Public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Rossetti's triptych: the kiss over the book, the two poets watching, and the lovers adrift in Hell",
+          "section": "inf-05",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "artwork",
+          "title": "Francesca da Rimini and her brother-in-law (Inferno, Plate 17)",
+          "creator": "Gustave Doré",
+          "year": "1857",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_17_(Canto_V_-_Francesca_di_Rimini_and_her_brother_in_law).jpg",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_17_%28Canto_V_-_Francesca_di_Rimini_and_her_brother_in_law%29.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, Public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Doré's engraving of the moment over the book that Francesca describes",
+          "section": "inf-05",
+          "verifiedAt": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "entity": "dido",
+      "depth": 1,
+      "importance": 1,
+      "role": "Queen of Carthage, among the lovers in the storm",
+      "firstSection": "inf-05",
+      "inBook": [
+        {
+          "section": "inf-05",
+          "text": "Virgil names her as 'she who killed herself for love, and broke faith with the ashes of Sichaeus'; Paolo and Francesca come out of 'the band where Dido is'."
+        },
+        {
+          "section": "par-08",
+          "text": "In the heaven of Venus Dante recalls how the ancients believed Cupid once sat in Dido's lap."
+        },
+        {
+          "section": "par-09",
+          "text": "The troubadour Folco says that in youth he burned more than 'the daughter of Belus', who wronged both Sichaeus and Creusa."
+        }
+      ],
+      "media": [
+        {
+          "kind": "artwork",
+          "title": "The hurricane of souls (Inferno, Plate 14)",
+          "creator": "Gustave Doré",
+          "year": "1857",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_14_(Canto_V_-_The_hurricane_of_souls).jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_14_%28Canto_V_-_The_hurricane_of_souls%29.jpg/1280px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_14_%28Canto_V_-_The_hurricane_of_souls%29.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, Public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "The endless storm of the lustful, the 'band where Dido is'",
+          "section": "inf-05",
+          "verifiedAt": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "entity": "lancelot",
+      "depth": 1,
+      "importance": 1,
+      "role": "The romance Paolo and Francesca were reading",
+      "firstSection": "inf-05",
+      "inBook": [
+        {
+          "section": "inf-05",
+          "text": "Francesca says they were reading for pleasure of Lancelot, how love held him; when they read of the longed-for smile being kissed, Paolo kissed her. 'Galeotto was the book and he who wrote it': Galehaut is the go-between of the romance."
+        },
+        {
+          "section": "par-16",
+          "text": "Beatrice's smile at Dante's formal 'You' is compared to the cough of the lady who witnessed 'the first failing writ of Guenever', a scene from the same romance."
         }
       ],
       "media": []
     },
     {
+      "entity": "ciacco",
+      "depth": 1,
+      "importance": 2,
+      "role": "A Florentine glutton who prophesies the city's strife",
+      "firstSection": "inf-06",
+      "inBook": [
+        {
+          "section": "inf-06",
+          "text": "Rising from the mud in the rain of the third circle, he names himself and his sin. Asked about 'the divided city', he foretells bloodshed, the expulsion of one party and its return with the help of one 'now on the coast'; only two men are just, and envy, pride and avarice inflame all hearts."
+        },
+        {
+          "section": "inf-10",
+          "text": "Dante meets Farinata, one of the worthy Florentines Ciacco said were 'among the blacker souls' further down."
+        },
+        {
+          "section": "inf-16",
+          "text": "Tegghiaio Aldobrandi and Jacopo Rusticucci, two more of the men Dante asked Ciacco about, appear among the violent against nature."
+        },
+        {
+          "section": "inf-28",
+          "text": "Mosca, the last of those names, appears among the sowers of discord."
+        }
+      ],
+      "media": [
+        {
+          "kind": "artwork",
+          "title": "Inferno, Canto VI",
+          "creator": "Stradanus",
+          "year": "1587",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Stradano_Inferno_Canto_06.jpg",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Stradano_Inferno_Canto_06.jpg",
+          "license": "Public domain",
+          "attribution": "Stradanus, Public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "A 16th-century Florentine artist's drawing of the gluttons' circle, the setting of Ciacco's prophecy",
+          "section": "inf-06",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "artwork",
+          "title": "The Circle of the Gluttons, with Cerberus",
+          "creator": "William Blake",
+          "year": "1824–1827",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Illustrations_to_Dante%27s_Divine_Comedy_object_11_Butlin_812-11_recto)_The_Circle_of_the_Gluttons_with_Cerberus.jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Illustrations_to_Dante%27s_Divine_Comedy_object_11_Butlin_812-11_recto%29_The_Circle_of_the_Gluttons_with_Cerberus.jpg/1280px-Illustrations_to_Dante%27s_Divine_Comedy_object_11_Butlin_812-11_recto%29_The_Circle_of_the_Gluttons_with_Cerberus.jpg",
+          "license": "Public domain",
+          "attribution": "William Blake, Public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Blake's cold, rain-lashed third circle where Ciacco lies",
+          "section": "inf-06",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "lecture",
+          "title": "Lecture 4: Inferno V, VI, VII",
+          "creator": "Giuseppe Mazzotta",
+          "year": "2008",
+          "publisher": "Open Yale Courses",
+          "url": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-4",
+          "embed": {
+            "type": "youtube",
+            "id": "5z2umV9UvIw"
+          },
+          "durationMin": 71,
+          "language": "en",
+          "tier": 1,
+          "why": "Mazzotta reads Ciacco and Florence through the image of the 'body politic' devoured by its own appetites",
+          "section": "inf-06",
+          "verifiedAt": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "entity": "fortune",
+      "depth": 1,
+      "importance": 2,
+      "role": "Virgil's lesson on how Providence moves wealth",
+      "firstSection": "inf-07",
+      "inBook": [
+        {
+          "section": "inf-07",
+          "text": "Among the hoarders and wasters, Virgil explains that God appointed Fortune as a ministress over worldly splendours, as He set intelligences to move the heavens. She shifts wealth from people to people beyond human control, and, blessed among the first creatures, turns her sphere without hearing the blame cast on her."
+        },
+        {
+          "section": "inf-15",
+          "text": "Dante tells Brunetto Latini he is ready for whatever Fortune brings: 'let Fortune turn her wheel around as she likes'."
+        },
+        {
+          "section": "inf-30",
+          "text": "The canto opens recalling how Fortune hurled down the pride of Troy."
+        },
+        {
+          "section": "par-16",
+          "text": "Cacciaguida tells Dante that as the moon's heaven covers and bares the shore, so Fortune does with Florence and its old families."
+        },
+        {
+          "section": "par-17",
+          "text": "Dante asks Cacciaguida to tell him what fortune is coming to him."
+        }
+      ],
+      "media": [
+        {
+          "kind": "artwork",
+          "title": "The Goddess of Fortune",
+          "creator": "William Blake",
+          "year": "1824–1827",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Illustrations_to_Dante%27s_Divine_Comedy_object_15_Butlin_812-16_The_Goddess_of_Fortune.jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Illustrations_to_Dante%27s_Divine_Comedy_object_15_Butlin_812-16_The_Goddess_of_Fortune.jpg/1280px-Illustrations_to_Dante%27s_Divine_Comedy_object_15_Butlin_812-16_The_Goddess_of_Fortune.jpg",
+          "license": "Public domain",
+          "attribution": "William Blake, Public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "Blake's design for Virgil's lesson on Fortune in Canto VII, one of the few artworks that pictures the speech itself",
+          "section": "inf-07",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "artwork",
+          "title": "Hoarders and Wasters (Inferno, Plate 22)",
+          "creator": "Gustave Doré",
+          "year": "1857",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_22_(Canto_VII_-_Hoarders_and_Wasters).jpg",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_22_%28Canto_VII_-_Hoarders_and_Wasters%29.jpg/1280px-Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_22_%28Canto_VII_-_Hoarders_and_Wasters%29.jpg",
+          "license": "Public domain",
+          "attribution": "Gustave Doré, Public domain, via Wikimedia Commons",
+          "language": "en",
+          "tier": 1,
+          "why": "The misers and spendthrifts rolling weights against each other: the sight that prompts the question about Fortune",
+          "section": "inf-07",
+          "verifiedAt": "2026-11-03"
+        },
+        {
+          "kind": "lecture",
+          "title": "Lecture 4: Inferno V, VI, VII",
+          "creator": "Giuseppe Mazzotta",
+          "year": "2008",
+          "publisher": "Open Yale Courses",
+          "url": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-4",
+          "embed": {
+            "type": "youtube",
+            "id": "5z2umV9UvIw"
+          },
+          "durationMin": 71,
+          "language": "en",
+          "tier": 1,
+          "why": "The lecture ends with Virgil's discourse on Fortune, set within the Christian world of providence",
+          "section": "inf-07",
+          "verifiedAt": "2026-11-03"
+        }
+      ]
+    },
+    {
       "entity": "florence",
       "depth": 2,
       "via": [
-        "dante-alighieri"
+        "dante-alighieri",
+        "ciacco"
       ],
       "why": "Dante's city: its feuds explain whom he places in Hell"
     },
@@ -302,7 +1352,9 @@
       "entity": "aeneid",
       "depth": 2,
       "via": [
-        "virgil"
+        "virgil",
+        "dido",
+        "minos"
       ],
       "why": "His guide's own epic, which Dante knew by heart"
     },
@@ -310,7 +1362,8 @@
       "entity": "vita-nuova",
       "depth": 2,
       "via": [
-        "beatrice-portinari"
+        "beatrice-portinari",
+        "dante-alighieri"
       ],
       "why": "Dante's early book of his love for her"
     },
@@ -322,6 +1375,86 @@
         "paolo-malatesta"
       ],
       "why": "Seat of the Malatesta family she married into"
+    },
+    {
+      "entity": "can-grande-della-scala",
+      "depth": 2,
+      "via": [
+        "greyhound"
+      ],
+      "why": "Dante's patron, 'the big dog', the candidate most often proposed for the Greyhound"
+    },
+    {
+      "entity": "saint-lucy",
+      "depth": 2,
+      "via": [
+        "virgin-mary"
+      ],
+      "why": "The saint of light whom the lady in Heaven sends to Beatrice: the middle link of the rescue"
+    },
+    {
+      "entity": "pope-celestine-v",
+      "depth": 2,
+      "via": [
+        "neutrals"
+      ],
+      "why": "The pope most often identified with the soul who 'made the great refusal'"
+    },
+    {
+      "entity": "acheron",
+      "depth": 2,
+      "via": [
+        "charon"
+      ],
+      "why": "The river of woe Charon crosses, a real Greek river turned into the border of Hell"
+    },
+    {
+      "entity": "iliad",
+      "depth": 2,
+      "via": [
+        "homer"
+      ],
+      "why": "The epic behind Homer's title of 'Poet sovereign', a poem Dante knew only by fame"
+    },
+    {
+      "entity": "nicomachean-ethics",
+      "depth": 2,
+      "via": [
+        "aristotle"
+      ],
+      "why": "Aristotle's book on the virtues and vices, which medieval readers used to tell weakness from malice"
+    },
+    {
+      "entity": "carthage",
+      "depth": 2,
+      "via": [
+        "dido"
+      ],
+      "why": "The city she founded and ruled"
+    },
+    {
+      "entity": "guinevere",
+      "depth": 2,
+      "via": [
+        "lancelot"
+      ],
+      "why": "The queen whose love for Lancelot is the story Francesca and Paolo were reading"
+    },
+    {
+      "entity": "black-and-white-guelphs",
+      "depth": 2,
+      "via": [
+        "ciacco"
+      ],
+      "why": "The Whites ('the rustic party') and Blacks whose struggle Ciacco prophesies, and which ended in Dante's exile"
+    },
+    {
+      "entity": "consolation-of-philosophy",
+      "depth": 2,
+      "via": [
+        "fortune"
+      ],
+      "why": "Boethius's portrait of Fortune and her wheel, which Virgil's lesson answers and transforms"
     }
   ],
   "edges": [
@@ -462,6 +1595,238 @@
       "target": "rimini",
       "type": "family-seat",
       "label": "family seat"
+    },
+    {
+      "source": "three-beasts",
+      "target": "dante-alighieri",
+      "type": "drive-back",
+      "label": "drive back",
+      "section": "inf-01"
+    },
+    {
+      "source": "virgil",
+      "target": "greyhound",
+      "type": "prophesies",
+      "label": "prophesies",
+      "section": "inf-01"
+    },
+    {
+      "source": "greyhound",
+      "target": "three-beasts",
+      "type": "will-hunt",
+      "label": "will hunt the she-wolf",
+      "section": "inf-01"
+    },
+    {
+      "source": "virgin-mary",
+      "target": "dante-alighieri",
+      "type": "takes-pity-on",
+      "label": "takes pity on",
+      "section": "inf-02"
+    },
+    {
+      "source": "dante-alighieri",
+      "target": "gate-of-hell",
+      "type": "passes-through",
+      "label": "passes through",
+      "section": "inf-03"
+    },
+    {
+      "source": "neutrals",
+      "target": "gate-of-hell",
+      "type": "located-in",
+      "label": "just inside",
+      "section": "inf-03"
+    },
+    {
+      "source": "virgil",
+      "target": "neutrals",
+      "type": "dismisses",
+      "label": "\"look, and pass\"",
+      "section": "inf-03"
+    },
+    {
+      "source": "charon",
+      "target": "dante-alighieri",
+      "type": "refuses",
+      "label": "refuses passage to",
+      "section": "inf-03"
+    },
+    {
+      "source": "dante-alighieri",
+      "target": "beatrice-portinari",
+      "type": "guided-by",
+      "label": "guided by",
+      "section": "purg-30"
+    },
+    {
+      "source": "dante-alighieri",
+      "target": "homer",
+      "type": "joins",
+      "label": "made sixth among the poets with",
+      "section": "inf-04"
+    },
+    {
+      "source": "virgil",
+      "target": "dido",
+      "type": "points-out",
+      "label": "points out",
+      "section": "inf-05"
+    },
+    {
+      "source": "ciacco",
+      "target": "dante-alighieri",
+      "type": "prophesies-to",
+      "label": "foretells Florence's strife to",
+      "section": "inf-06"
+    },
+    {
+      "source": "virgil",
+      "target": "fortune",
+      "type": "explains",
+      "label": "explains",
+      "section": "inf-07"
+    },
+    {
+      "source": "dante-alighieri",
+      "target": "vita-nuova",
+      "type": "wrote",
+      "label": "wrote"
+    },
+    {
+      "source": "greyhound",
+      "target": "can-grande-della-scala",
+      "type": "often-identified-with",
+      "label": "often identified with"
+    },
+    {
+      "source": "virgin-mary",
+      "target": "saint-lucy",
+      "type": "sends",
+      "label": "sends",
+      "section": "inf-02"
+    },
+    {
+      "source": "saint-lucy",
+      "target": "beatrice-portinari",
+      "type": "rouses",
+      "label": "rouses",
+      "section": "inf-02"
+    },
+    {
+      "source": "neutrals",
+      "target": "pope-celestine-v",
+      "type": "traditionally-includes",
+      "label": "traditionally said to include"
+    },
+    {
+      "source": "charon",
+      "target": "acheron",
+      "type": "ferries-across",
+      "label": "ferries souls across"
+    },
+    {
+      "source": "beatrice-portinari",
+      "target": "limbo",
+      "type": "descends-to",
+      "label": "came down to find Virgil in",
+      "section": "inf-04"
+    },
+    {
+      "source": "virgil",
+      "target": "aristotle",
+      "type": "cites",
+      "label": "cites the Ethics of",
+      "section": "inf-11"
+    },
+    {
+      "source": "francesca-da-rimini",
+      "target": "lancelot",
+      "type": "reads",
+      "label": "was reading",
+      "section": "inf-05"
+    },
+    {
+      "source": "paolo-malatesta",
+      "target": "lancelot",
+      "type": "reads",
+      "label": "was reading",
+      "section": "inf-05"
+    },
+    {
+      "source": "francesca-da-rimini",
+      "target": "dido",
+      "type": "same-band-as",
+      "label": "comes from the band of",
+      "section": "inf-05"
+    },
+    {
+      "source": "beatrice-portinari",
+      "target": "lancelot",
+      "type": "evokes",
+      "label": "her smile recalls a scene in",
+      "section": "par-16"
+    },
+    {
+      "source": "dante-alighieri",
+      "target": "fortune",
+      "type": "defies",
+      "label": "is ready for whatever comes from",
+      "section": "inf-15"
+    },
+    {
+      "source": "homer",
+      "target": "iliad",
+      "type": "wrote",
+      "label": "wrote"
+    },
+    {
+      "source": "aristotle",
+      "target": "nicomachean-ethics",
+      "type": "wrote",
+      "label": "wrote"
+    },
+    {
+      "source": "dido",
+      "target": "aeneid",
+      "type": "character-in",
+      "label": "character in"
+    },
+    {
+      "source": "minos",
+      "target": "aeneid",
+      "type": "judge-in",
+      "label": "judges the dead in"
+    },
+    {
+      "source": "dido",
+      "target": "carthage",
+      "type": "queen-of",
+      "label": "founded and ruled"
+    },
+    {
+      "source": "lancelot",
+      "target": "guinevere",
+      "type": "tells-of",
+      "label": "tells the love of"
+    },
+    {
+      "source": "ciacco",
+      "target": "florence",
+      "type": "citizen-of",
+      "label": "citizen of"
+    },
+    {
+      "source": "ciacco",
+      "target": "black-and-white-guelphs",
+      "type": "foretells",
+      "label": "foretells the strife of"
+    },
+    {
+      "source": "fortune",
+      "target": "consolation-of-philosophy",
+      "type": "drawn-from",
+      "label": "reworks the Fortune of"
     }
   ]
 }

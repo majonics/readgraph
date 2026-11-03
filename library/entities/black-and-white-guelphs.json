@@ -1,0 +1,33 @@
+{
+  "id": "black-and-white-guelphs",
+  "type": "group",
+  "name": {
+    "en": "Black and White Guelphs"
+  },
+  "dates": {
+    "start": "1300",
+    "label": "c. 1300"
+  },
+  "summary": {
+    "en": "The two factions into which Florence's ruling Guelph party split around 1300: the Whites, led by the Cerchi family, and the Blacks, led by the Donati. The Blacks, backed by Pope Boniface VIII and Charles of Valois, seized the city in 1301 and exiled leading Whites in 1302."
+  },
+  "media": [
+    {
+      "kind": "book",
+      "title": "The Chronicle of Dino Compagni",
+      "creator": "Dino Compagni; trans. Else C. M. Benecke and A. G. Ferrers Howell",
+      "year": "1906",
+      "publisher": "Internet Archive",
+      "url": "https://archive.org/details/chronicleofdinoc00comp",
+      "language": "en",
+      "tier": 1,
+      "why": "An eyewitness account of the White–Black struggle by a Florentine politician who lived through it, in English translation",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Guelphs_and_Ghibellines#White_and_Black_Guelphs"
+    }
+  }
+}

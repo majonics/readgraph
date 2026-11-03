@@ -10,3 +10,6 @@ dist/
 .agents/
 # taste-skill working files (screenshots, inspector reports); decisions are copied into design/
 .taste-skill/
+
+# generation drafts (/build-graph working files)
+.work/

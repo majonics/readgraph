@@ -1,0 +1,22 @@
+{
+  "id": "fortune",
+  "type": "concept",
+  "name": {
+    "en": "Fortune"
+  },
+  "summary": {
+    "en": "The power that raises and lowers human wealth and status, personified by the Romans as the goddess Fortuna. Medieval writers, following Boethius, pictured her turning a wheel and asked how her apparent blindness fits a world ruled by divine providence."
+  },
+  "facts": {
+    "en": [
+      "The 'Wheel of Fortune' was a favourite medieval image",
+      "Boethius's Consolation of Philosophy made Fortune a central problem for Christian thinkers"
+    ]
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Fortuna"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "virgin-mary",
+  "type": "figure",
+  "name": {
+    "en": "The Virgin Mary",
+    "it": "Maria Vergine"
+  },
+  "wikidataId": "Q345",
+  "image": {
+    "kind": "artwork",
+    "title": "Madonna di Crevole",
+    "creator": "Duccio di Buoninsegna",
+    "year": "1283–1284",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Duccio_The-Madonna-and-Child-128.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Duccio_The-Madonna-and-Child-128.jpg",
+    "license": "Public domain",
+    "attribution": "Duccio di Buoninsegna, public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "A Sienese Madonna painted when Dante was a young man",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "Mother of Jesus. In medieval Catholic devotion she was honoured as Mother of God and Queen of Heaven and was the first of all intercessors, the one through whom prayers reached God; Marian hymns and prayers such as the Ave Maria were part of every Christian's daily devotion in Dante's time."
+  },
+  "facts": {
+    "en": [
+      "Honoured in the Middle Ages as Queen of Heaven (Regina Coeli)"
+    ]
+  },
+  "media": [
+    {
+      "kind": "article",
+      "title": "The Blessed Virgin Mary",
+      "creator": "A. J. Maas",
+      "year": "1912",
+      "publisher": "The Catholic Encyclopedia (via New Advent)",
+      "url": "https://www.newadvent.org/cathen/15464b.htm",
+      "language": "en",
+      "tier": 2,
+      "why": "The traditional Catholic account of Mary, close to the theology Dante assumed",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Mary,_mother_of_Jesus"
+    }
+  }
+}

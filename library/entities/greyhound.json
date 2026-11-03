@@ -1,0 +1,23 @@
+{
+  "id": "greyhound",
+  "type": "concept",
+  "name": {
+    "en": "The Greyhound (Veltro)",
+    "it": "Veltro"
+  },
+  "summary": {
+    "en": "The veltro, a hunting greyhound named in a deliberately obscure prophecy near the start of the Commedia. Its identity has been debated since the 14th century: the candidates most often proposed are Dante's patron Cangrande della Scala of Verona and the emperor Henry VII, while some readers think Dante meant it to stay open."
+  },
+  "facts": {
+    "en": [
+      "Veltro is the old Italian word for a greyhound-type hunting dog",
+      "Cangrande della Scala's name means 'big dog'"
+    ]
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "it": "https://it.wikipedia.org/wiki/Veltro"
+    }
+  }
+}

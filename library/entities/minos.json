@@ -5,8 +5,29 @@
     "en": "Minos"
   },
   "wikidataId": "Q23168",
+  "image": {
+    "kind": "image",
+    "title": "Minos, detail of The Last Judgment",
+    "creator": "Michelangelo",
+    "year": "1536",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Michelangelo-minos2.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Michelangelo-minos2.jpg",
+    "license": "Public domain",
+    "attribution": "Michelangelo, Public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "Michelangelo painted Dante's Minos, serpent coiled around him, into the Sistine Chapel: proof of how far Dante's version travelled",
+    "verifiedAt": "2026-11-03"
+  },
   "summary": {
     "en": "Legendary king of Crete, son of Zeus and Europa. In classical myth he became one of the judges of the dead."
+  },
+  "facts": {
+    "en": [
+      "Husband of Pasiphaë and father of Ariadne",
+      "Homer's Odyssey and Virgil's Aeneid both show him judging the dead"
+    ]
   },
   "media": [],
   "links": {

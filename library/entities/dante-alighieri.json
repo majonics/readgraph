@@ -8,7 +8,7 @@
   "wikidataId": "Q1067",
   "dates": {
     "start": "1265",
-    "end": "1321-09-14",
+    "end": "1321-09-13",
     "label": "1265–1321"
   },
   "image": {
@@ -24,20 +24,49 @@
     "language": "en",
     "tier": 1,
     "why": "The profile, laurel and red cap that fixed Dante's image for centuries",
-    "verifiedAt": "2026-11-02"
+    "verifiedAt": "2026-11-03"
   },
   "summary": {
-    "en": "Florentine poet, philosopher and politician. A White Guelph, he was exiled from Florence in 1302 and never returned; he wrote the Commedia in exile and died in Ravenna."
+    "en": "Florentine poet, philosopher and politician. A White Guelph, he was exiled from Florence in 1302 and never returned; he wrote the Commedia in exile and died in Ravenna. Besides the poem he wrote the Vita Nuova and treatises on language, philosophy and empire."
   },
   "facts": {
     "en": [
       "Born in Florence in 1265",
       "Served as one of Florence's six priors in 1300",
       "Exiled in 1302",
+      "Also wrote the Vita Nuova, Convivio, De vulgari eloquentia and Monarchia",
       "Died in Ravenna in 1321"
     ]
   },
-  "media": [],
+  "media": [
+    {
+      "kind": "article",
+      "title": "Dante Alighieri",
+      "creator": "Jason Aleksander and Winthrop Wetherbee",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/dante/",
+      "language": "en",
+      "tier": 1,
+      "why": "Dante as a thinker: his philosophy, politics and theology, beyond the poem",
+      "verifiedAt": "2026-11-03"
+    },
+    {
+      "kind": "lecture",
+      "title": "Lecture 1: Introduction",
+      "creator": "Giuseppe Mazzotta (Dante in Translation, ITAL 310)",
+      "publisher": "Open Yale Courses",
+      "url": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-1",
+      "embed": {
+        "type": "youtube",
+        "id": "679FGDpZBew"
+      },
+      "durationMin": 19,
+      "language": "en",
+      "tier": 1,
+      "why": "Mazzotta on Dante's life, his political career and the exile that shaped the whole poem",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
   "links": {
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/Dante_Alighieri"

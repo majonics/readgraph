@@ -8,10 +8,46 @@
   "dates": {
     "label": "8th century BC (traditional)"
   },
+  "image": {
+    "kind": "image",
+    "title": "Bust of Homer, Farnese collection (Naples)",
+    "creator": "NikonZ7II",
+    "year": "2022",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Homer_bust,_Farnese_collection_(Naples).jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Homer_bust%2C_Farnese_collection_%28Naples%29.jpg/1280px-Homer_bust%2C_Farnese_collection_%28Naples%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "attribution": "NikonZ7II, CC BY-SA 4.0, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "The Hellenistic 'blind Homer' type, the face the ancient world imagined for the poet",
+    "verifiedAt": "2026-11-03"
+  },
   "summary": {
     "en": "The ancient Greek poet traditionally credited with the Iliad and the Odyssey. Medieval Italy knew him by reputation and through Latin writers rather than in Greek."
   },
-  "media": [],
+  "facts": {
+    "en": [
+      "Credited with the Iliad and the Odyssey",
+      "Ancient tradition pictured him as blind",
+      "No complete Latin translation of his epics circulated in Dante's Italy"
+    ]
+  },
+  "media": [
+    {
+      "kind": "podcast",
+      "title": "In Our Time: The Odyssey",
+      "creator": "Melvyn Bragg and guests",
+      "year": "2004",
+      "publisher": "BBC Radio 4",
+      "url": "https://www.bbc.co.uk/programmes/p004y297",
+      "durationMin": 45,
+      "language": "en",
+      "tier": 1,
+      "why": "Melvyn Bragg and guests on Homer's other epic and the questions of who 'Homer' was",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
   "links": {
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/Homer"

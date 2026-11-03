@@ -1,0 +1,57 @@
+{
+  "id": "saint-lucy",
+  "type": "person",
+  "name": {
+    "en": "Saint Lucy",
+    "it": "Santa Lucia"
+  },
+  "wikidataId": "Q183240",
+  "dates": {
+    "start": "0283",
+    "end": "0304",
+    "label": "c. 283–304"
+  },
+  "image": {
+    "kind": "artwork",
+    "title": "Saint Lucy",
+    "creator": "Francisco de Zurbarán",
+    "year": "c. 1625–1630",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Francisco_de_Zurbar%C3%A1n,_Saint_Lucy,_c._1625-1630,_NGA_12209.jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Francisco_de_Zurbar%C3%A1n%2C_Saint_Lucy%2C_c._1625-1630%2C_NGA_12209.jpg/1280px-Francisco_de_Zurbar%C3%A1n%2C_Saint_Lucy%2C_c._1625-1630%2C_NGA_12209.jpg",
+    "license": "CC0",
+    "attribution": "Francisco de Zurbarán, CC0, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "Zurbarán's Lucy holding her eyes on a dish, her traditional emblem",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "Martyr of Syracuse who died in the persecution under Diocletian. Her name means light, and she was venerated above all as a protector of sight."
+  },
+  "facts": {
+    "en": [
+      "Feast day: 13 December",
+      "Associated with eyes and sight; her name comes from lux, light"
+    ]
+  },
+  "media": [
+    {
+      "kind": "article",
+      "title": "St. Lucy",
+      "creator": "J. Bridge",
+      "year": "1910",
+      "publisher": "The Catholic Encyclopedia (via New Advent)",
+      "url": "https://www.newadvent.org/cathen/09414a.htm",
+      "language": "en",
+      "tier": 2,
+      "why": "The legend of the Sicilian martyr whose name means light",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Saint_Lucy"
+    }
+  }
+}

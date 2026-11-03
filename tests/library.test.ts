@@ -10,12 +10,15 @@ describe('library/ on disk', () => {
     }
   });
 
-  it('the Divine Comedy fixture reveals Francesca only from Canto V', async () => {
+  it('the Divine Comedy reveals Francesca only from Canto V, and Ciacco only from Canto VI', async () => {
     const { bundle } = await loadBook('divine-comedy');
-    if (!bundle) throw new Error('fixture failed to load');
+    if (!bundle) throw new Error('divine-comedy failed to load');
     const names = (at: string) => computeVisibility(bundle, at).nodes.map((n) => n.entity);
     expect(names('inf-04')).not.toContain('francesca-da-rimini');
     expect(names('inf-05')).toContain('francesca-da-rimini');
-    expect(computeVisibility(bundle, 'inf-05').newHere.map((n) => n.entity)).toEqual(['minos', 'francesca-da-rimini', 'paolo-malatesta']);
+    const newAt5 = computeVisibility(bundle, 'inf-05').newHere.map((n) => n.entity);
+    expect(newAt5).toEqual(expect.arrayContaining(['minos', 'francesca-da-rimini', 'paolo-malatesta']));
+    expect(newAt5).not.toContain('ciacco');
+    expect(names('inf-06')).toContain('ciacco');
   });
 });

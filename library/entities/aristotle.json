@@ -10,10 +10,59 @@
     "end": "-0322",
     "label": "384–322 BC"
   },
+  "image": {
+    "kind": "image",
+    "title": "Aristotle, detail of The School of Athens",
+    "creator": "Raphael",
+    "year": "1510–1511",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Aristotle_by_Raphael.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Aristotle_by_Raphael.jpg",
+    "license": "Public domain",
+    "attribution": "Raphael, Public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "Raphael's Aristotle holding his Ethics, the most familiar Renaissance image of the philosopher",
+    "verifiedAt": "2026-11-03"
+  },
   "summary": {
     "en": "Greek philosopher, pupil of Plato and tutor of Alexander the Great. To medieval scholars he was simply \"the Philosopher\", the authority on logic, nature and ethics."
   },
-  "media": [],
+  "facts": {
+    "en": [
+      "Founded the Lyceum in Athens",
+      "His works reached the Latin West largely through 12th–13th-century translations",
+      "Thomas Aquinas built much of his theology on Aristotle's philosophy"
+    ]
+  },
+  "media": [
+    {
+      "kind": "article",
+      "title": "Aristotle",
+      "creator": "Christopher Shields",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/aristotle/",
+      "language": "en",
+      "tier": 1,
+      "why": "A clear scholarly map of Aristotle's whole system, from logic to ethics",
+      "verifiedAt": "2026-11-03"
+    },
+    {
+      "kind": "artwork",
+      "title": "Aristotle with a Bust of Homer",
+      "creator": "Rembrandt",
+      "year": "1653",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Aristotle_with_a_Bust_of_Homer_MET_DP319026.jpg",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Aristotle_with_a_Bust_of_Homer_MET_DP319026.jpg/1280px-Aristotle_with_a_Bust_of_Homer_MET_DP319026.jpg",
+      "license": "CC0",
+      "attribution": "Rembrandt, CC0, via Wikimedia Commons",
+      "language": "en",
+      "tier": 1,
+      "why": "Rembrandt's meditation on the philosopher contemplating the poet; the Met's open-access image",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
   "links": {
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/Aristotle"

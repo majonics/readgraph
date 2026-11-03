@@ -12,7 +12,30 @@
   "summary": {
     "en": "Virgil's Latin epic in twelve books about Aeneas, a Trojan who flees the fall of Troy and reaches Italy, where his descendants will found Rome."
   },
-  "media": [],
+  "media": [
+    {
+      "kind": "podcast",
+      "title": "The Aeneid",
+      "creator": "In Our Time, with Edith Hall, Philip Hardie and Catharine Edwards",
+      "publisher": "BBC Radio 4",
+      "url": "https://www.bbc.co.uk/programmes/p003k9c1",
+      "durationMin": 45,
+      "language": "en",
+      "tier": 1,
+      "why": "Virgil's own epic, and why Augustan Rome needed it",
+      "verifiedAt": "2026-11-03"
+    },
+    {
+      "kind": "book",
+      "title": "The Aeneid, in Dryden's translation",
+      "publisher": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/228",
+      "language": "en",
+      "tier": 1,
+      "why": "Book VI is the descent to the underworld that Dante builds on",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
   "links": {
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/Aeneid"

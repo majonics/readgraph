@@ -5,8 +5,19 @@
     "en": "Paolo Malatesta"
   },
   "wikidataId": "Q2707233",
+  "dates": {
+    "start": "1246",
+    "end": "1285",
+    "label": "c. 1246 – c. 1285"
+  },
   "summary": {
-    "en": "Nobleman of the Malatesta family of Rimini, younger brother of Giovanni Malatesta, Francesca's husband."
+    "en": "Nobleman of the Malatesta family of Rimini, younger brother of Giovanni Malatesta, Francesca's husband. Known as 'il Bello', he was appointed Captain of the People in Florence in 1282."
+  },
+  "facts": {
+    "en": [
+      "Son of Malatesta da Verucchio, founder of the family's power in Rimini",
+      "Captain of the People in Florence, 1282"
+    ]
   },
   "media": [],
   "links": {

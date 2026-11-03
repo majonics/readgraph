@@ -1,0 +1,24 @@
+{
+  "id": "three-beasts",
+  "type": "figure",
+  "name": {
+    "en": "The three beasts",
+    "it": "Le tre fiere"
+  },
+  "summary": {
+    "en": "A leopard (Dante's lonza, Longfellow's 'panther'), a lion and a she-wolf: the three animals of the Commedia's opening scene. Commentators have read them as the main kinds of sin, as political powers, or both, and the trio echoes Jeremiah 5:6, where a lion, a wolf and a leopard fall upon the faithless."
+  },
+  "facts": {
+    "en": [
+      "Dante's word for the first beast, lonza, names a lithe, spotted cat, usually translated leopard",
+      "Common readings: concupiscence, violence and fraud; or envy, pride and avarice",
+      "Biblical source usually cited: Jeremiah 5:6"
+    ]
+  },
+  "media": [],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Lonza_(animal)"
+    }
+  }
+}

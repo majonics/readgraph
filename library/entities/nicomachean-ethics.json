@@ -1,0 +1,56 @@
+{
+  "id": "nicomachean-ethics",
+  "type": "work",
+  "name": {
+    "en": "Nicomachean Ethics"
+  },
+  "wikidataId": "Q474537",
+  "image": {
+    "kind": "image",
+    "title": "Opening page of the Nicomachean Ethics",
+    "creator": "Unknown",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Aristotle_Ethica_Nicomachea_page_1.png",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Aristotle_Ethica_Nicomachea_page_1.png",
+    "license": "Public domain",
+    "attribution": "Unknown, Public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "The first page of the Greek text",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "Aristotle's treatise on how to live well, discussing happiness, the virtues, weakness of will and friendship. Translated into Latin in the 13th century, it became a university textbook and was commented on by Thomas Aquinas."
+  },
+  "media": [
+    {
+      "kind": "article",
+      "title": "Aristotle's Ethics",
+      "creator": "Richard Kraut",
+      "publisher": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/aristotle-ethics/",
+      "language": "en",
+      "tier": 1,
+      "why": "Explains the distinction between incontinence (akrasia) and vice that Dante uses to divide Hell",
+      "verifiedAt": "2026-11-03"
+    },
+    {
+      "kind": "podcast",
+      "title": "In Our Time: Aristotle's Nicomachean Ethics",
+      "creator": "Melvyn Bragg and guests",
+      "year": "2023",
+      "publisher": "BBC Radio 4",
+      "url": "https://www.bbc.co.uk/programmes/m001rylh",
+      "durationMin": 52,
+      "language": "en",
+      "tier": 1,
+      "why": "Three scholars on Aristotle's ideas about virtue and the good life",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Nicomachean_Ethics"
+    }
+  }
+}

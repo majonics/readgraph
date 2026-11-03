@@ -1,0 +1,57 @@
+{
+  "id": "pope-celestine-v",
+  "type": "person",
+  "name": {
+    "en": "Pope Celestine V",
+    "it": "Papa Celestino V"
+  },
+  "wikidataId": "Q118081",
+  "dates": {
+    "start": "1215",
+    "end": "1296-05-19",
+    "label": "c. 1215–1296"
+  },
+  "image": {
+    "kind": "artwork",
+    "title": "San Pietro Celestino",
+    "creator": "Giulio Cesare Bedeschini (photograph by Sailko)",
+    "year": "1613",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Giulio_cesare_bedeschini,_san_pietro_celestino,_1613,_dall%27arcivescovado_dell%27aquila_(cropped).jpg",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Giulio_cesare_bedeschini%2C_san_pietro_celestino%2C_1613%2C_dall%27arcivescovado_dell%27aquila_%28cropped%29.jpg/1280px-Giulio_cesare_bedeschini%2C_san_pietro_celestino%2C_1613%2C_dall%27arcivescovado_dell%27aquila_%28cropped%29.jpg",
+    "license": "Public domain",
+    "attribution": "Giulio Cesare Bedeschini (photograph by Sailko), public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "A 1613 portrait of the hermit pope from L'Aquila",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "Pietro da Morrone, a hermit elected pope in July 1294 after a two-year deadlock. He abdicated after five months, and his successor, Boniface VIII, annulled nearly all his acts."
+  },
+  "facts": {
+    "en": [
+      "Pope from 5 July to 13 December 1294",
+      "Founded the Celestine order, a branch of the Benedictines"
+    ]
+  },
+  "media": [
+    {
+      "kind": "article",
+      "title": "Pope St. Celestine V",
+      "creator": "J. Loughlin",
+      "year": "1908",
+      "publisher": "The Catholic Encyclopedia (via New Advent)",
+      "url": "https://www.newadvent.org/cathen/03479b.htm",
+      "language": "en",
+      "tier": 2,
+      "why": "The hermit pope's five-month reign and abdication in 1294",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Pope_Celestine_V"
+    }
+  }
+}

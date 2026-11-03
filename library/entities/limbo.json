@@ -4,10 +4,31 @@
   "name": {
     "en": "Limbo"
   },
+  "wikidataId": "Q270710",
   "summary": {
-    "en": "In medieval Christian theology, the edge of Hell for those who died unbaptised but without personal sin, and for the righteous who died before Christ."
+    "en": "In medieval Christian theology, the edge of Hell for those who died unbaptised but without personal sin, and for the righteous who died before Christ. Theologians distinguished the limbo of infants from the limbo of the patriarchs, from which Christ was believed to have freed the just of the Old Testament."
   },
-  "media": [],
+  "facts": {
+    "en": [
+      "The name comes from Latin limbus, 'border' or 'hem'",
+      "Never defined as dogma by the Catholic Church",
+      "The 'limbo of the fathers' was thought emptied at Christ's Harrowing of Hell"
+    ]
+  },
+  "media": [
+    {
+      "kind": "article",
+      "title": "Limbo",
+      "creator": "Patrick J. Toner",
+      "year": "1910",
+      "publisher": "New Advent (Catholic Encyclopedia, 1910)",
+      "url": "https://www.newadvent.org/cathen/09256a.htm",
+      "language": "en",
+      "tier": 2,
+      "why": "The standard early-20th-century account of the medieval doctrine, including the limbo of infants and of the fathers that Dante draws on",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
   "links": {
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/Limbo"

@@ -12,7 +12,34 @@
   "summary": {
     "en": "Dante's early book of poems joined by prose commentary, telling the story of his love for Beatrice."
   },
-  "media": [],
+  "media": [
+    {
+      "kind": "lecture",
+      "title": "Lecture 2: Vita Nuova",
+      "creator": "Giuseppe Mazzotta (Dante in Translation, ITAL 310)",
+      "publisher": "Open Yale Courses",
+      "url": "https://oyc.yale.edu/italian-language-and-literature/ital-310/lecture-2",
+      "embed": {
+        "type": "youtube",
+        "id": "w3CX2klC4Kg"
+      },
+      "durationMin": 69,
+      "language": "en",
+      "tier": 1,
+      "why": "Mazzotta reads the Vita Nuova, the book where Beatrice first becomes Dante's subject",
+      "verifiedAt": "2026-11-03"
+    },
+    {
+      "kind": "book",
+      "title": "The New Life (La Vita Nuova), translated by Dante Gabriel Rossetti",
+      "publisher": "Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/41085",
+      "language": "en",
+      "tier": 1,
+      "why": "The free text of Dante's book about Beatrice, in Rossetti's Victorian translation",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
   "links": {
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/La_Vita_Nuova"

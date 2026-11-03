@@ -167,6 +167,8 @@ The reader is at section `S`. Sections compare by their index in `book.sections`
 | `inBook` note | `section ≤ S` |
 | media with `section` | `section ≤ S` |
 | global entity `summary`, `facts`, `media` | always, so **they must be plot-free** |
+| depth-1 `role` | from its `firstSection`, so **it may say only what is known by then** |
+| context `why` | from the earliest `firstSection` among its `via` parents, so **the same applies** |
 
 Writing rule for generation: anything that happens *in the story* goes into a section-tagged `inBook`
 note, never into `summary`. For purely fictional characters, the summary is a one-line introduction

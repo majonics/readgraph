@@ -1,0 +1,49 @@
+{
+  "id": "iliad",
+  "type": "work",
+  "name": {
+    "en": "Iliad"
+  },
+  "wikidataId": "Q8275",
+  "dates": {
+    "label": "8th century BC (traditional)"
+  },
+  "image": {
+    "kind": "image",
+    "title": "Iliad, Venetus A manuscript, folio 37v",
+    "creator": "Unknown scribe",
+    "year": "10th century",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Iliad_Venetus_A_folio_37v_Book_II_681_685.jpg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Iliad_Venetus_A_folio_37v_Book_II_681_685.jpg",
+    "license": "Public domain",
+    "attribution": "Unknown scribe, Public domain, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "A page of the oldest complete manuscript of the Iliad, the Greek text Dante himself could not read",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "Ancient Greek epic poem attributed to Homer, set during the Trojan War and centred on the wrath of Achilles. It is one of the founding works of Western literature."
+  },
+  "media": [
+    {
+      "kind": "podcast",
+      "title": "In Our Time: The Iliad",
+      "creator": "Melvyn Bragg and guests",
+      "year": "2018",
+      "publisher": "BBC Radio 4",
+      "url": "https://www.bbc.co.uk/programmes/b0bh5x1y",
+      "durationMin": 48,
+      "language": "en",
+      "tier": 1,
+      "why": "A lively hour on the poem Homer's fame rests on, and why it still matters",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Iliad"
+    }
+  }
+}
