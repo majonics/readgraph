@@ -4,6 +4,25 @@ Newest entry first. Each entry: what was done, what was learned, what's next. Ke
 
 ---
 
+## 2026-11-03 · Phase 3: book graph view
+- **Done:** Ported the prototype's book screen to React on real data. React Router 8 routes `/` and `/book/:slug`; components Shell,
+  CantoStrip (slider, keyboard, tooltips), GraphCanvas (Cytoscape behind a React boundary) and EntityPreview. Pure, tested `graphElements` (shapes,
+  gilt for new, hollow context, ego mode for Phase 4) and `thumb` (Commons serves only standard widths: 120/250/330/500/960/1280/1920).
+  Legend filters by kind, segmented depth filter, search marks matches (Enter selects), "show everything" without moving progress.
+  33 tests; taste-skill lint 0 and inspector 0 FAIL on the production build.
+- **Learned:** Inline grid columns beat a stylesheet media query; the strip passes them as a CSS variable. A map with few nodes zooms in
+  too far, so zoom is capped at 1.1. React 19 lint rules forbid setState in effects, so the book route remounts per slug instead.
+- **Next:** Phase 4, the entity page with media (Look, Listen and read, To know them by, Connections), from design/prototype/entity.html.
+
+## 2026-11-03 · Phase 2: tools, skills, first research batches
+- **Done:** Wrote the helper scripts (wikidata, commons, check-links, merge-batches) with tests, and the `/build-graph` and `/expand`
+  skills. The owner approved a 59-entity cast for the Comedy. Ran 2 of the research batches (Inferno I–VII, 19 entities) and merged
+  them: 19 + 17 nodes, 56 edges, 184 links, all live. 27 edges to cast not yet researched wait in `.work/divine-comedy/pending-edges.json`.
+- **Cost:** batch 1 used 194k tokens (9 entities, 80 tool calls, 18 min); batch 2 used 180k (10 entities, 60 calls, 13 min). About 20k per entity.
+- **Learned:** `role` and context `why` lines leak spoilers ("Dante's guide through Paradise" at Canto V). Rule added to DATA_MODEL,
+  GENERATION and the skill, and four lines fixed. Re-running a merge would undo hand fixes, so merged batches are now archived.
+- **Next:** the owner decides the depth and size of the remaining 40-entity batches.
+
 ## 2026-11-03 · Phase 1: foundation
 - **Done:** Scaffolded Vite 8 + React 19 + TS 6.0 (strict) + Tailwind 4 + Vitest 5 + ESLint. Wrote the Zod schemas, the graph rules,
   spoiler visibility, a library loader, the validator CLI, and the Vite-plugin API (list, bundle, PUT progress). Added a hand-written

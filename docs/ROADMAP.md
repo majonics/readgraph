@@ -2,7 +2,7 @@
 
 Tick tasks as they are completed and log them in DEVLOG.md. The first unchecked task in the current phase is "next".
 
-**Current phase: 2, Generation pipeline**
+**Current phase: 4, Entity focus view and media** (Phase 2 research paused at 19 of 59 entities, by owner's choice: finish the app first)
 
 ## Phase 0: Framework ✅
 - [x] Clarify intent with the owner (AI engine, app form, spoilers, language)
@@ -20,20 +20,21 @@ Tick tasks as they are completed and log them in DEVLOG.md. The first unchecked 
 - [x] Update the CLAUDE.md commands block to reality
 
 ## Phase 2: Generation pipeline
-- [ ] Helper scripts: `wikidata`, `commons`, `check-links`
-- [ ] `.claude/skills/build-graph/SKILL.md`, implementing GENERATION.md, with a cast checkpoint and parallel research subagents
+- [x] Helper scripts: `wikidata`, `commons`, `check-links` (with tests)
+- [x] `.claude/skills/build-graph/SKILL.md`, implementing GENERATION.md, with a cast checkpoint and parallel research subagents
 - [ ] Generate the full *Divine Comedy* graph (replacing the fixture) and review quality with the owner
+  - [x] Cast approved (59) · [x] batches 1–2 merged (Inferno I–VII, 19) · [ ] remaining 40
 - [ ] Refine GENERATION.md and SOURCES.md based on what went wrong
-- [ ] `/expand` skill (add or enrich one entity)
+- [x] `/expand` skill (add or enrich one entity)
 
-## Phase 3: Book graph view (port `design/prototype/book.html`)
-- [ ] GraphCanvas component (Cytoscape) with concentric layered layout, type shapes and importance sizing
-- [ ] Canto strip component (signature element) wired to `progress.json`
-- [ ] Node images (portraits or artworks) as node backgrounds. The book cover as the centre.
-- [ ] Section picker / spoiler slider wired to progress, with a "show everything" toggle
-- [ ] Filters (entity type, depth), search, hover highlighting of neighbourhoods
-- [ ] Side panel preview on click
-- [ ] Visual check against the prototype: the skill's `lint.mjs --app` and `inspect.mjs --app` at 0 FAIL
+## Phase 3: Book graph view (port `design/prototype/book.html`) ✅
+- [x] GraphCanvas component (Cytoscape) with concentric layered layout, type shapes and importance sizing
+- [x] Canto strip component (signature element) wired to `progress.json`
+- [x] Node images (portraits or artworks) as node backgrounds, as 330px Commons thumbnails. The book cover as the centre.
+- [x] Section picker / spoiler slider wired to progress, with a "show everything" toggle
+- [x] Filters (entity type via the legend, depth), search, hover highlighting of neighbourhoods
+- [x] Side panel preview on click
+- [x] Visual check against the prototype: the skill's `lint.mjs --app` and `inspect.mjs --app` at 0 FAIL (production build)
 
 ## Phase 4: Entity focus view and media
 - [ ] Focus route: ego graph (entity, its neighbours, its context halo)

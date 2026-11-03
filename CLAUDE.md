@@ -52,21 +52,24 @@ The `docs/` folder is the project's memory. Keep it current, because it is how w
 ```bash
 npm install
 npm run dev          # local app + API at http://localhost:5173
+npm run build && npm run preview     # production build, served with the same API (run UI checks here)
 npm run validate     # every book and entity in library/: schema, graph rules, spoiler consistency
 npm run validate -- divine-comedy   # one book
 npm test             # vitest: visibility (spoiler) logic, graph rules, the real library on disk
 npm run typecheck && npm run lint && npm run build
-npm run check-links  # (planned, Phase 2) verify every media/source URL still resolves
+npm run check-links [-- <slug>]     # fetch every URL; dead links fail, bot walls are listed as blocked
+npm run wikidata -- search "Virgil" | get Q1398   # facts, dates, coordinates, P18 image, Wikipedia link
+npm run commons -- "File:…"          # a MediaItem draft with real image URL, creator and license
 ```
 
 Before finishing any change: `npm run validate && npm test && npm run typecheck && npm run lint`.
 Stack pins: TypeScript stays on 6.0.x until typescript-eslint supports 7 (D-013).
 
-Claude Code skills (planned, Phase 2):
+Claude Code skills (`.claude/skills/`):
 
 - `/build-graph "<title>" [language]`: research and create a new book graph
 - `/expand <book> <entity>`: add or enrich one entity (and its depth-2 context) in an existing graph
-- `/refresh-sources <book>`: re-verify links and replace dead or weak sources
+- `/refresh-sources <book>` *(planned, Phase 6)*: re-verify links and replace dead or weak sources
 
 ## Code conventions
 

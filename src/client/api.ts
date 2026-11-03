@@ -8,6 +8,12 @@ export const BookSummary = z.object({
   author: z.string(),
   currentSection: z.string(),
   sections: z.number(),
+  cover: z.string().optional(),
+  sectionLabel: z.string(),
+  about: z.string(),
+  figures: z.number(),
+  contextEntries: z.number(),
+  sources: z.number(),
 });
 export type BookSummary = z.infer<typeof BookSummary>;
 

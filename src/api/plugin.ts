@@ -31,12 +31,21 @@ async function handle(req: IncomingMessage, res: ServerResponse): Promise<boolea
       const { bundle } = await loadBook(s, undefined, entities);
       if (!bundle) continue;
       const author = bundle.entities[bundle.book.author];
+      const at = bundle.book.sections.find((x) => x.id === bundle.progress.currentSection);
       rows.push({
         slug: s,
         title: bundle.book.title,
         author: author?.name[bundle.book.language] ?? Object.values(author?.name ?? {})[0] ?? bundle.book.author,
         currentSection: bundle.progress.currentSection,
         sections: bundle.book.sections.length,
+        ...(bundle.book.cover?.imageUrl ? { cover: bundle.book.cover.imageUrl } : {}),
+        sectionLabel: at ? [at.group, at.label].filter(Boolean).join(', ') : bundle.progress.currentSection,
+        about: bundle.book.about,
+        figures: bundle.graph.nodes.filter((n) => n.depth === 1).length,
+        contextEntries: bundle.graph.nodes.filter((n) => n.depth === 2).length,
+        sources: bundle.book.media.length
+          + bundle.graph.nodes.reduce((sum, n) => sum + (n.depth === 1 ? n.media.length : 0), 0)
+          + Object.values(bundle.entities).reduce((sum, e) => sum + e.media.length, 0),
       });
     }
     send(res, 200, rows);
