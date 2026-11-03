@@ -1,10 +1,11 @@
-// /book/:slug, the whole-book graph (Phase 3). Ported from design/prototype/book.html.
+// /book/:slug, the whole-book map. The map takes the full width; the chosen figure's card floats over its right side.
 import { useEffect, useMemo, useState } from 'react';
-import { useParams } from 'react-router';
+import { useParams, useSearchParams } from 'react-router';
 import type { BookBundle } from '../schema/index.ts';
 import { fetchBook, putProgress } from '../client/api.ts';
 import { computeVisibility } from '../lib/visibility.ts';
-import { graphElements, KINDS, type KindId } from '../lib/graphElements.ts';
+import { anchorsOf, graphElements, KINDS, type KindId } from '../lib/graphElements.ts';
+import { pictureOf, thumb } from '../lib/media.ts';
 import { Shell, SearchIcon } from '../components/Shell.tsx';
 import { CantoStrip } from '../components/CantoStrip.tsx';
 import { GraphCanvas } from '../components/GraphCanvas.tsx';
@@ -27,7 +28,10 @@ function BookPage({ slug }: { slug: string }) {
   const [showAll, setShowAll] = useState(false);
   const [bookOnly, setBookOnly] = useState(false);
   const [kinds, setKinds] = useState<Set<KindId>>(ALL_KINDS);
-  const [selected, setSelected] = useState<string>();
+  // The chosen figure lives in the URL (?e=virgil), so it can be bookmarked and shared.
+  const [params, setParams] = useSearchParams();
+  const selected = params.get('e') ?? undefined;
+  const setSelected = (id: string | undefined) => setParams((p) => { const n = new URLSearchParams(p); if (id) n.set('e', id); else n.delete('e'); return n; }, { replace: true });
   const [query, setQuery] = useState('');
 
   useEffect(() => {
@@ -65,9 +69,9 @@ function BookPage({ slug }: { slug: string }) {
     return new Set(elements.filter((e) => e.group === 'nodes' && e.data.label.toLowerCase().includes(q)).map((e) => e.data.id));
   }, [query, elements]);
 
-  // A selection that the reader's position now hides is dropped; with none, pick the most important figure new here.
+  // The card opens only when the reader chooses someone; a choice the reading position now hides is dropped.
   const shown = new Set(elements.filter((e) => e.group === 'nodes').map((e) => e.data.id));
-  const current = selected && shown.has(selected) ? selected : visible?.newHere.toSorted((a, b) => b.importance - a.importance)[0]?.entity;
+  const current = selected && shown.has(selected) ? selected : undefined;
   const pickNode = current ? [...(visible?.nodes ?? []), ...(visible?.context ?? [])].find((n) => n.entity === current) : undefined;
 
   if (error) return <Shell crumbs={[['Library', '/'], ['Book']]}><p className="sub">Couldn’t load this book. {error}</p></Shell>;
@@ -86,6 +90,7 @@ function BookPage({ slug }: { slug: string }) {
     if (nextSet.has(k) && nextSet.size > 1) nextSet.delete(k); else nextSet.add(k);
     return nextSet;
   });
+  const CARD = 380;
 
   return (
     <Shell
@@ -126,60 +131,61 @@ function BookPage({ slug }: { slug: string }) {
           <span className="meta">Each dot is someone or something met for the first time. Ahead, only the count shows.</span>
         </div>
         <CantoStrip sections={book.sections} at={at} debuts={debuts} onChange={move} />
+        {visible.newHere.length > 0 && !showAll && (
+          <ul className="faces" aria-label={`New in ${sec?.label ?? 'this canto'}`}>
+            {visible.newHere.map((n) => {
+              const pic = pictureOf(bundle.entities[n.entity], n);
+              return (
+                <li key={n.entity}>
+                  <button type="button" aria-pressed={current === n.entity} onClick={() => setSelected(n.entity)}>
+                    {pic?.imageUrl && <img src={thumb(pic.imageUrl, 120)} alt="" />}{name(n.entity)}
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        )}
       </section>
 
-      <div className="work">
-        <section className="panel map" aria-labelledby="map-h">
-          <div className="panel-head">
-            <h2 id="map-h">{showAll ? 'The whole poem' : 'Everything met so far'}</h2>
-            <div className="legend" aria-label="Key and filter">
-              {KINDS.map((k) => (
-                <button key={k.id} aria-pressed={kinds.has(k.id)} onClick={() => toggleKind(k.id)} title={`Show or hide ${k.label.toLowerCase()}`}>
-                  <i className={LEGEND_CLASS[k.id]} />{k.label}
-                </button>
-              ))}
-              <span><i className="s-ctx" />Context</span>
-              <span><i className="s-new" />New in this canto</span>
-            </div>
+      <section className="panel map" aria-labelledby="map-h">
+        <div className="panel-head">
+          <h2 id="map-h">{showAll ? 'The whole poem' : 'Everything met so far'}</h2>
+          <div className="legend" aria-label="Key and filter">
+            {KINDS.map((k) => (
+              <button key={k.id} aria-pressed={kinds.has(k.id)} onClick={() => toggleKind(k.id)} title={`Show or hide ${k.label.toLowerCase()}`}>
+                <i className={LEGEND_CLASS[k.id]} />{k.label}
+              </button>
+            ))}
+            <span><i className="s-ctx" />Context</span>
+            <span><i className="s-new" />New in this canto</span>
           </div>
-          <GraphCanvas
-            elements={elements}
-            selected={current}
-            hits={hits}
-            onSelect={setSelected}
-            label={`Graph of the ${plural(visible.nodes.length, 'figure')} and ${visible.context.length} context entries met so far`}
-          />
-          <div className="map-foot">
-            <div className="seg" role="group" aria-label="Show">
-              <button aria-pressed={!bookOnly} onClick={() => setBookOnly(false)}>With context</button>
-              <button aria-pressed={bookOnly} onClick={() => setBookOnly(true)}>Only the book</button>
-            </div>
-            <span className="meta num">
-              {visible.nodes.length} met · {visible.context.length} context · {visible.edges.length} connections
-            </span>
-          </div>
-        </section>
-
-        <div className="rail">
-          <section className="panel pick" aria-live="polite" aria-label="Selected">
-            {pickNode
-              ? <EntityPreview bundle={bundle} node={pickNode} sectionLabel={sectionLabel} />
-              : <><div className="panel-head"><h2>Nothing selected</h2></div><p className="sub">Choose anyone or anything on the map to see who they are and what to explore.</p></>}
-          </section>
-          <section className="panel" aria-labelledby="new-h">
-            <div className="panel-head"><h2 id="new-h">New in this canto</h2><span className="meta num">{visible.newHere.length}</span></div>
-            <div className="new-list">
-              {visible.newHere.length
-                ? visible.newHere.map((n) => (
-                    <button key={n.entity} onClick={() => setSelected(n.entity)}>
-                      <span>{name(n.entity)}</span><span className="meta">{bundle.entities[n.entity]?.type}</span>
-                    </button>
-                  ))
-                : <p className="sub">No one new in {sec?.label}.</p>}
-            </div>
-          </section>
         </div>
-      </div>
+        <GraphCanvas
+          elements={elements}
+          anchors={anchorsOf(elements)}
+          selected={current}
+          hits={hits}
+          onSelect={setSelected}
+          reserveRight={pickNode ? CARD + 16 : 0}
+          label={`Map of the ${plural(visible.nodes.length, 'figure')} and ${visible.context.length} context entries met so far, in reading order`}
+        >
+          {pickNode && (
+            <aside className="panel pick map-card" aria-label="Chosen on the map" style={{ width: CARD }}>
+              <button type="button" className="card-close" aria-label="Close" onClick={() => setSelected(undefined)}>×</button>
+              <EntityPreview bundle={bundle} node={pickNode} sectionLabel={sectionLabel} edges={visible.edges} onPick={setSelected} />
+            </aside>
+          )}
+        </GraphCanvas>
+        <div className="map-foot">
+          <div className="seg" role="group" aria-label="Show">
+            <button aria-pressed={!bookOnly} onClick={() => setBookOnly(false)}>With context</button>
+            <button aria-pressed={bookOnly} onClick={() => setBookOnly(true)}>Only the book</button>
+          </div>
+          <span className="meta num">
+            {visible.nodes.length} met · {visible.context.length} context · {visible.edges.length} connections · drag to move, scroll to zoom
+          </span>
+        </div>
+      </section>
     </Shell>
   );
 }

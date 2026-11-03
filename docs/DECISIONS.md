@@ -84,3 +84,11 @@ arrives with the real screens in Phase 3.
 **Decision:** Graph rules (`src/lib/rules.ts`) and spoiler visibility (`src/lib/visibility.ts`) are pure functions. The CLI
 validator, the dev-server API and the tests all call the same code. The API refuses to serve a book that fails validation (422 with the issues).
 **Consequences:** A broken generation can never reach the UI silently, and every rule has a unit test with a failing case.
+
+### D-015 · The whole-book map is a reading spiral, not concentric rings (2026-11-03)
+**Context:** The concentric layout put the book cover at the centre with a spoke to every figure, so the centre carried no information
+and context leaves landed far from their parents.
+**Decision:** `src/lib/constellation.ts` places the two best-connected figures (the companions) at the centre and everyone else on an
+elliptical Archimedean spiral in reading order, so the map grows outward as you read. Each context leaf orbits its parent. The layout is
+pure and deterministic, and tests assert no overlaps. The book node and its spokes are gone. The ego graph keeps concentric rings around its focus.
+**Consequences:** The same visible set always gets the same positions. The rail card now opens only on a choice, and the choice lives in the URL (`?e=virgil`).

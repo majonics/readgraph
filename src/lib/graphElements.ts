@@ -4,6 +4,7 @@
 import type { BookBundle, EntityType } from '../schema/index.ts';
 import type { Visible } from './visibility.ts';
 import { pictureOf, thumb } from './media.ts';
+import { companionsOf, constellation, type Point } from './constellation.ts';
 
 export type Shape = 'ellipse' | 'rectangle' | 'round-rectangle' | 'diamond';
 export const SHAPE: Record<EntityType, Shape> = {
@@ -20,8 +21,8 @@ export const KINDS = [
 export type KindId = (typeof KINDS)[number]['id'];
 export const kindOf = (t: EntityType): KindId => KINDS.find((k) => (k.types as readonly EntityType[]).includes(t))?.id ?? 'ideas';
 
-const SIZE = { 3: 72, 2: 52, 1: 38 } as const;
-export const BOOK_ID = '__book__';
+export const SIZE = { 3: 96, 2: 72, 1: 54 } as const;
+const LEAF = 30;
 
 export interface ElementOptions {
   /** Show only these kinds (all when undefined). */
@@ -43,7 +44,14 @@ export interface NodeData {
   kind?: KindId;
 }
 export interface EdgeData { id: string; source: string; target: string; label: string }
-export type ElementDef = { group: 'nodes'; data: NodeData; classes: string } | { group: 'edges'; data: EdgeData; classes: string };
+export type ElementDef =
+  | { group: 'nodes'; data: NodeData; classes: string; position?: Point }
+  | { group: 'edges'; data: EdgeData; classes: string };
+
+/** The ids the view should open on: the companions and whoever is new at the reader's section. */
+export function anchorsOf(els: ElementDef[]): string[] {
+  return els.filter((e) => e.group === 'nodes' && /\b(companion|new)\b/.test(e.classes)).map((e) => e.data.id);
+}
 
 export function graphElements(bundle: BookBundle, visible: Visible, opts: ElementOptions = {}): ElementDef[] {
   const name = (id: string) => {
@@ -69,30 +77,45 @@ export function graphElements(bundle: BookBundle, visible: Visible, opts: Elemen
   const present = new Set([...d1.map((n) => n.entity), ...d2.map((c) => c.entity)]);
   edges = edges.filter((e) => present.has(e.source) && present.has(e.target));
 
-  const out: ElementDef[] = [];
+  // The whole-book map uses the reading spiral (constellation.ts); the ego graph keeps concentric rings around its focus.
+  const order = new Map(bundle.book.sections.map((s, i) => [s.id, i]));
+  const sizeOf = (imp: 1 | 2 | 3, type: EntityType) => (type === 'work' ? Math.round(SIZE[imp] * 1.25) : SIZE[imp]);
+  let positions: Map<string, Point> | undefined;
+  let companions: string[] = [];
   if (!opts.focus) {
-    const cover = bundle.book.cover?.imageUrl;
-    out.push({ group: 'nodes', classes: 'book', data: { id: BOOK_ID, label: '', level: 4, w: 84, h: 84, shape: 'ellipse', ...(cover ? { image: thumb(cover, 330) } : {}) } });
+    const degree = new Map<string, number>();
+    for (const e of edges) for (const id of [e.source, e.target]) degree.set(id, (degree.get(id) ?? 0) + 1);
+    const layoutNodes = d1.map((n) => ({ id: n.entity, size: sizeOf(n.importance, typeOf(n.entity)), order: order.get(n.firstSection) ?? 0, importance: n.importance }));
+    companions = companionsOf(layoutNodes, degree);
+    positions = constellation(layoutNodes, d2.map((c) => ({ id: c.entity, size: LEAF, parents: c.via })), companions);
   }
+
+  const out: ElementDef[] = [];
   for (const n of d1) {
     const type = typeOf(n.entity);
     const focused = opts.focus === n.entity;
-    const size = focused ? 84 : SIZE[n.importance];
+    const h = focused ? SIZE[3] : SIZE[n.importance];
     const pic = pictureOf(bundle.entities[n.entity], n);
+    const position = positions?.get(n.entity);
     out.push({
       group: 'nodes',
-      classes: ['d1', n.firstSection === visible.at ? 'new' : '', pic ? 'img' : '', n.importance === 1 ? 'minor' : ''].filter(Boolean).join(' '),
+      classes: ['d1', n.firstSection === visible.at ? 'new' : '', pic ? 'img' : '', n.importance === 1 ? 'minor' : '', companions.includes(n.entity) ? 'companion' : ''].filter(Boolean).join(' '),
       data: {
         id: n.entity, label: name(n.entity), level: focused ? 4 : n.importance === 3 ? 3 : 2,
-        w: type === 'work' ? Math.round(size * 1.5) : size, h: size, shape: SHAPE[type], kind: kindOf(type),
+        w: focused ? h : sizeOf(n.importance, type), h, shape: SHAPE[type], kind: kindOf(type),
         ...(pic?.imageUrl ? { image: thumb(pic.imageUrl, 330) } : {}),
       },
+      ...(position ? { position } : {}),
     });
-    if (!opts.focus) out.push({ group: 'edges', classes: 'to-book', data: { id: `${BOOK_ID}-${n.entity}`, source: BOOK_ID, target: n.entity, label: '' } });
   }
   for (const c of d2) {
     const type = typeOf(c.entity);
-    out.push({ group: 'nodes', classes: 'd2', data: { id: c.entity, label: name(c.entity), level: 1, w: type === 'work' ? 39 : 26, h: 26, shape: SHAPE[type], kind: kindOf(type) } });
+    const position = positions?.get(c.entity);
+    out.push({
+      group: 'nodes', classes: 'd2',
+      data: { id: c.entity, label: name(c.entity), level: 1, w: type === 'work' ? Math.round(LEAF * 1.25) : LEAF, h: LEAF, shape: SHAPE[type], kind: kindOf(type) },
+      ...(position ? { position } : {}),
+    });
   }
   edges.forEach((e) => out.push({ group: 'edges', classes: '', data: { id: `${e.source}|${e.type}|${e.target}`, source: e.source, target: e.target, label: e.label } }));
   return out;

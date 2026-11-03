@@ -4,6 +4,12 @@ Newest entry first. Each entry: what was done, what was learned, what's next. Ke
 
 ---
 
+## 2026-11-03 · Reading-spiral map
+- **Done:** Replaced the concentric whole-book layout with a pure, tested reading spiral (`constellation.ts`, D-015): the companions sit at the centre,
+  figures spiral outward in reading order, context leaves orbit their parents. Bigger nodes, no book node. The selection lives in the URL (`?e=`),
+  the strip lists the faces new in this canto, and the rail card lists relations as sentences you can click.
+- **Next:** Phase 4, starting with the `entityView` view model.
+
 ## 2026-11-03 · Plan for the next phases
 - **Done:** Committed Phases 2 and 3 separately. Wrote the detailed plan for Phases 4–7 (plus 4.5 browser tests and 2b research) in ROADMAP.md,
   with goals, tasks, done-when criteria, sizes, and the decisions waiting for the owner.
