@@ -1,0 +1,51 @@
+{
+  "id": "madrid",
+  "type": "place",
+  "name": {
+    "en": "Madrid"
+  },
+  "wikidataId": "Q2807",
+  "location": {
+    "lat": 40.4169,
+    "lon": -3.7033
+  },
+  "image": {
+    "kind": "artwork",
+    "title": "The Puerta del Sol in the 1830 model of Madrid",
+    "creator": "Carlos Teixidor Cadenas (photograph)",
+    "publisher": "Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:La_Puerta_del_Sol_en_maqueta_del_a%C3%B1o_1830,_Museo_de_Historia_de_Madrid.JPG",
+    "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/La_Puerta_del_Sol_en_maqueta_del_a%C3%B1o_1830%2C_Museo_de_Historia_de_Madrid.JPG/1280px-La_Puerta_del_Sol_en_maqueta_del_a%C3%B1o_1830%2C_Museo_de_Historia_de_Madrid.JPG",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Carlos Teixidor Cadenas, CC BY-SA 4.0, via Wikimedia Commons",
+    "language": "en",
+    "tier": 1,
+    "why": "Madrid as it stood four years before the novel, in León Gil de Palacio's model of the city (Museo de Historia de Madrid)",
+    "verifiedAt": "2026-11-03"
+  },
+  "summary": {
+    "en": "Capital of Spain and seat of the royal court. In 1834 it was still a city closed in by walls and gates, governed in the name of the child queen Isabel II by her mother, the regent María Cristina."
+  },
+  "facts": {
+    "en": [
+      "León Gil de Palacio's model of the city, finished in 1830, is in the Museo de Historia de Madrid"
+    ]
+  },
+  "media": [
+    {
+      "kind": "website",
+      "title": "Blocks 456, 464, 465 and 466 of the 1830 model of Madrid",
+      "publisher": "Europeana",
+      "url": "https://www.europeana.eu/item/2022711/21915",
+      "language": "es",
+      "tier": 1,
+      "why": "A close-up record of one corner of the 1830 model, with the model's size and commonly accepted scale",
+      "verifiedAt": "2026-11-03"
+    }
+  ],
+  "links": {
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Madrid"
+    }
+  }
+}

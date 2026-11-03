@@ -7,6 +7,7 @@ import { fetchBook } from '../client/api.ts';
 import { entityView, type ContextEntry, type EntityView } from '../lib/entityView.ts';
 import { graphElements, type ElementDef } from '../lib/graphElements.ts';
 import { computeVisibility } from '../lib/visibility.ts';
+import { sectionNoun } from '../lib/sections.ts';
 import { TYPE_LABEL } from '../lib/labels.ts';
 import { embedSrc, thumb } from '../lib/media.ts';
 import { Shell } from '../components/Shell.tsx';
@@ -104,7 +105,7 @@ function EntityPage({ slug, id }: { slug: string; id: string }) {
           {/* One panel the height of the main column, so both columns end level; its content stays in view while scrolling. */}
           <aside className="rail panel" aria-label="In the book">
             <div className="rail-inner">
-              <InThisBook view={view} at={at} sectionLabel={sectionLabel} showAll={showAll} />
+              <InThisBook view={view} at={at} sectionLabel={sectionLabel} showAll={showAll} noun={sectionNoun(book).one} />
               {connections}
             </div>
           </aside>
@@ -166,7 +167,7 @@ function Connections({ view, ego, pageOf, sectionLabel, onOpen }: {
 }
 
 /** The in-book notes up to the reader's place, the current section in gilt; what is ahead is only counted. */
-function InThisBook({ view, at, sectionLabel, showAll }: { view: EntityView; at: string; sectionLabel: (id: string) => string; showAll: boolean }) {
+function InThisBook({ view, at, sectionLabel, showAll, noun }: { view: EntityView; at: string; sectionLabel: (id: string) => string; showAll: boolean; noun: string }) {
   const { notes, media } = view.hidden;
   const ahead = [notes > 0 && (notes === 1 ? '1 more note' : `${notes} more notes`), media > 0 && (media === 1 ? '1 more source' : `${media} more sources`)].filter(Boolean);
   return (
@@ -182,7 +183,7 @@ function InThisBook({ view, at, sectionLabel, showAll }: { view: EntityView; at:
             </li>
           ))}</ol>
         : <p className="sub">Nothing noted yet.</p>}
-      {ahead.length > 0 && <p className="empty-line num">{ahead.join(' and ')} after this canto, hidden until you read on.</p>}
+      {ahead.length > 0 && <p className="empty-line num">{ahead.join(' and ')} after this {noun}, hidden until you read on.</p>}
     </section>
   );
 }

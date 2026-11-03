@@ -109,3 +109,12 @@ which `src/server/library.ts` honours. One worker, and every test resets the pos
 The tests read the map through Cytoscape's own `_cyreg` property on its container, rather than adding a test hook to the app.
 **Consequences:** The owner's reading position is never touched (checked by hashing `progress.json` around a run). `_cyreg` is
 undocumented, so a Cytoscape upgrade may break the map tests. Fix them there, not in the app.
+
+### D-018 · Read-along books: the owner's account is the source for the story (2026-11-03)
+**Context:** For *La Bestia* (2021) there is no public text, and public sources cover only the setup. Chapter tags guessed from
+memory or reviews would be fabrication, and in a thriller a wrong tag is a spoiler.
+**Decision:** A read-along book starts with what the cover states (the author, the setting) and plot-free background. Story nodes,
+notes and edges come only from the owner's account of each chapter, through the `/chapter` skill, which confirms a plan before
+editing. Sources are verified with the project's honest user agent; sites that refuse it are left out (no bot-check workarounds).
+UI wording takes the section noun from the labels (`sectionNoun`: canto, chapter), so the app no longer assumes the *Comedy*.
+**Consequences:** The graph grows at the owner's reading pace. Notes are only as precise as the account, and the cost per chapter is small.

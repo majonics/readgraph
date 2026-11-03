@@ -2,6 +2,7 @@
 // first appearance above it. Ahead of the reader it shows how many, never who. It is the progress control.
 import { useMemo, useRef, useState, type CSSProperties, type KeyboardEvent, type MouseEvent } from 'react';
 import type { Section } from '../schema/index.ts';
+import { sectionNoun } from '../lib/sections.ts';
 
 interface Props {
   sections: Section[];
@@ -17,6 +18,7 @@ export function CantoStrip({ sections, at, debuts, onChange, compact = false, la
   const ref = useRef<HTMLDivElement>(null);
   const [tip, setTip] = useState<{ text: string; left: number }>();
   const now = sections.findIndex((s) => s.id === at);
+  const noun = sectionNoun({ sections });
   const maxDots = compact ? 4 : 8;
 
   const groups = useMemo(() => {
@@ -90,7 +92,7 @@ export function CantoStrip({ sections, at, debuts, onChange, compact = false, la
         <div className="strip-labels" style={{ '--cols': columns } as CSSProperties}>
           {groups.map((g) => (
             <span key={g.name} className={g.name === here ? 'current' : ''}>
-              <span>{g.name}</span><span className="count num">{g.items.length} cantos</span>
+              <span>{g.name}</span><span className="count num">{g.items.length} {g.items.length === 1 ? noun.one : noun.many}</span>
             </span>
           ))}
         </div>

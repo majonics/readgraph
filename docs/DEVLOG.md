@@ -4,6 +4,16 @@ Newest entry first. Each entry: what was done, what was learned, what's next. Ke
 
 ---
 
+## 2026-11-03 · La Bestia: a read-along book
+- **Done:** Added *La Bestia* (Carmen Mola, 2021; the owner reads the Russian translation, Sindbad 2025): 85 chapters, position at
+  Chapter 1, and the cover-level nodes (Carmen Mola, Madrid, the 1826–1837 cholera pandemic) with the Premio Planeta and the
+  First Carlist War as context. 5 entities, 5 verified sources, 3 Commons images; `check-links` clean. New `/chapter` skill (D-018).
+  The app's "canto"/"poem" wording now comes from the book's own section labels.
+- **Open:** the part boundaries (the four parts' first chapters) and the chapter count, which comes from one reader review of the
+  Spanish edition. Both are to be confirmed from the owner's copy. Britannica and the Madrid city site refuse automated requests,
+  so they aren't used.
+- **Next:** `/chapter la-bestia 1` once the owner has read it.
+
 ## 2026-11-03 · Phase 4.5: browser smoke tests
 - **Done:** `npm run e2e` (D-017): 9 Playwright tests in the installed Chrome against the production build and a copy of the library.
   The strip on arrow keys and across a reload, nothing ahead of the reader in the DOM, the map or the strip tooltips, "Show everything"

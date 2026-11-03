@@ -70,6 +70,7 @@ Claude Code skills (`.claude/skills/`):
 
 - `/build-graph "<title>" [language]`: research and create a new book graph
 - `/expand <book> <entity>`: add or enrich one entity (and its depth-2 context) in an existing graph
+- `/chapter <book> <n> [what happened]`: read-along update from the owner's account of one chapter (D-018)
 - `/refresh-sources <book>` *(planned, Phase 6)*: re-verify links and replace dead or weak sources
 
 ## Code conventions

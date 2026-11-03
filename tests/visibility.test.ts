@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { computeVisibility } from '../src/lib/visibility.ts';
+import { sectionNoun } from '../src/lib/sections.ts';
 import { tinyBundle } from './helpers.ts';
 
 const ids = (xs: { entity: string }[]) => xs.map((x) => x.entity);
@@ -53,5 +54,17 @@ describe('computeVisibility', () => {
 
   it('rejects an unknown section', () => {
     expect(() => computeVisibility(bundle, 'nope')).toThrow(/unknown section/);
+  });
+});
+
+describe('sectionNoun', () => {
+  it('takes the noun from the labels', () => {
+    expect(sectionNoun({ sections: [{ id: 'inf-01', label: 'Canto I' }] })).toEqual({ one: 'canto', many: 'cantos' });
+    expect(sectionNoun({ sections: [{ id: 'ch-01', label: 'Chapter 1' }] })).toEqual({ one: 'chapter', many: 'chapters' });
+  });
+
+  it('falls back to "section" when the label is not "<word> <number>"', () => {
+    expect(sectionNoun({ sections: [{ id: 's-01', label: 's-01' }] })).toEqual({ one: 'section', many: 'sections' });
+    expect(sectionNoun({ sections: [] })).toEqual({ one: 'section', many: 'sections' });
   });
 });

@@ -4,6 +4,7 @@ import { useNavigate, useParams, useSearchParams } from 'react-router';
 import type { BookBundle } from '../schema/index.ts';
 import { fetchBook, putProgress } from '../client/api.ts';
 import { computeVisibility } from '../lib/visibility.ts';
+import { sectionNoun } from '../lib/sections.ts';
 import { anchorsOf, graphElements, KINDS, type KindId } from '../lib/graphElements.ts';
 import { pictureOf, thumb } from '../lib/media.ts';
 import { Shell, SearchIcon } from '../components/Shell.tsx';
@@ -79,6 +80,7 @@ function BookPage({ slug }: { slug: string }) {
   if (!bundle || !at || !visible) return <Shell crumbs={[['Library', '/'], ['…']]}><p className="meta">Loading the book…</p></Shell>;
 
   const { book } = bundle;
+  const noun = sectionNoun(book);
   const sec = book.sections.find((s) => s.id === at);
   const sectionLabel = (id: string) => book.sections.find((s) => s.id === id)?.label ?? id;
   const next = book.sections[book.sections.findIndex((s) => s.id === at) + 1];
@@ -115,11 +117,11 @@ function BookPage({ slug }: { slug: string }) {
           <h1>{book.title}</h1>
           <p>
             {showAll
-              ? 'Showing the whole poem, spoilers included. Your place is kept.'
+              ? 'Showing the whole book, spoilers included. Your place is kept.'
               : <>
                   {[sec?.group, sec?.label].filter(Boolean).join(', ')}.{' '}
                   {visible.newHere.length > 0 && <span className="gilt">{visible.newHere.length} new</span>}
-                  {visible.newHere.length > 0 ? ' in this canto; ' : 'No one new in this canto; '}
+                  {visible.newHere.length > 0 ? ` in this ${noun.one}; ` : `No one new in this ${noun.one}; `}
                   {plural(visible.ahead.nodes, 'more figure')} still ahead.
                 </>}
           </p>
@@ -134,7 +136,7 @@ function BookPage({ slug }: { slug: string }) {
         </div>
         <CantoStrip sections={book.sections} at={at} debuts={debuts} onChange={move} />
         {visible.newHere.length > 0 && !showAll && (
-          <ul className="faces" aria-label={`New in ${sec?.label ?? 'this canto'}`}>
+          <ul className="faces" aria-label={`New in ${sec?.label ?? `this ${noun.one}`}`}>
             {visible.newHere.map((n) => {
               const pic = pictureOf(bundle.entities[n.entity], n);
               return (
@@ -151,7 +153,7 @@ function BookPage({ slug }: { slug: string }) {
 
       <section className="panel map" aria-labelledby="map-h">
         <div className="panel-head">
-          <h2 id="map-h">{showAll ? 'The whole poem' : 'Everything met so far'}</h2>
+          <h2 id="map-h">{showAll ? 'The whole book' : 'Everything met so far'}</h2>
           <div className="legend" aria-label="Key and filter">
             {KINDS.map((k) => (
               <button key={k.id} aria-pressed={kinds.has(k.id)} onClick={() => toggleKind(k.id)} title={`Show or hide ${k.label.toLowerCase()}`}>
@@ -159,7 +161,7 @@ function BookPage({ slug }: { slug: string }) {
               </button>
             ))}
             <span><i className="s-ctx" />Context</span>
-            <span><i className="s-new" />New in this canto</span>
+            <span><i className="s-new" />New in this {noun.one}</span>
           </div>
         </div>
         <GraphCanvas

@@ -94,7 +94,7 @@ and 35 linked sources without embeds (Yale pages, BBC *In Our Time*, Gutenberg, 
 - [ ] "Also appears in" on entity pages, and "Across your books" on the home screen. Spoiler-aware: an entity that is shared but still ahead in
       one book is counted, never named.
 - [ ] Remember which sources were opened (`library/books/<slug>/visits.json` through the API) so "For tonight" doesn't repeat itself.
-- [ ] A second book with `/build-graph`. *The Prince* is a good test, because Florence and others are shared. The owner chooses the book and the budget
+- [ ] A second book with `/build-graph`. Started 2026-11-03: *La Bestia*, as a read-along book (D-018) that grows chapter by chapter. *The Prince* is a good test, because Florence and others are shared. The owner chooses the book and the budget
       (a lean 25-figure book costs about 300–500k tokens).
 - **Done when:** both books show "Also appears in" correctly, and switching books keeps each one's own reading position.
 

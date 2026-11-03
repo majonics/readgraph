@@ -12,3 +12,10 @@ export function reached(order: Map<string, number>, section: string, at: string)
   if (s === undefined || a === undefined) return false;
   return s <= a;
 }
+
+/** What the book calls its sections, from the labels themselves: "Canto I" → canto/cantos, "Chapter 1" → chapter/chapters. */
+export function sectionNoun(book: Pick<Book, 'sections'>): { one: string; many: string } {
+  const word = /^(\p{L}+)\s+\S/u.exec(book.sections[0]?.label ?? '')?.[1]?.toLowerCase();
+  const one = word ?? 'section';
+  return { one, many: `${one}s` };
+}
